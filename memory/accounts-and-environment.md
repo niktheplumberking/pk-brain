@@ -57,3 +57,4 @@ C:\Users\nicol\.claude\instagram\voice.md.
 
 ## WFACT3.0
 WFACT3.0 = developer's factory project, separate; not ours to touch.
+- Cloud environment: "TypeSafe Docs" (env_01Dt2HDHuZmwXvHyV7WEimth), network unrestricted (checked 16 Nov). Others: JEV, 2x Default (trusted network). The new project must use TypeSafe Docs.
