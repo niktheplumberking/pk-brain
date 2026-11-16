@@ -21,7 +21,7 @@ with a guess.
 - nick.bennettx had a false "asking for money" flag and blocked DMs. Avoid the
   word "free" in first DMs and in posts. Send one test DM before any DM batch.
 - Reading Instagram from Nick's PC (via Remote Control): profile at
-  `C:\Users\nicol\Downloads\edwin-radd-links\ig-profile`, opened with the
+  `C:\PK-WORK\Tools\edwin-radd-links\ig-profile`, opened with the
   installed Chrome. If another job holds the profile, wait. Never kill it.
 
 ## How to deliver work

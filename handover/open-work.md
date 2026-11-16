@@ -64,7 +64,7 @@ Recreate with the scheduled-task tool (create_trigger), each into the new projec
 3. **Daily following scan** (old id trig_01Ud5EpfgA3rCKactPcX3qQ6; only if Nick says move it). Schedule
    `CRON_TZ=Asia/Bangkok 3 6 * * *`. Prompt starts Remote Control on the PC (folder C:\Users\nicol\Downloads; old prompt pins
    message_id cmsg_01JcVwzrWUQdguS5Ff2vqQcw82ek5T5trCyDUAy2XPQyRp, which must change to a message in the new thread) to run
-   `ig-lead-machine-scan\run-scan.cmd` once; stop on 429/login, never log in as nick.bennettx. Index says this scan is blocked
+   `C:\PK-WORK\Tools\ig-lead-machine-scan\run-scan.cmd` once (prompt updated 16 Nov after the move); stop on 429/login, never log in as nick.bennettx. Index says this scan is blocked
    by the PC safety check: never push past it.
 Order: create new -> fire once and verify a real result -> only then disable the old one (Nick's rule).
 

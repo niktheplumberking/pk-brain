@@ -18,8 +18,13 @@ Move log: C:\PK-WORK\move-log-2026-11-16.csv (842 moves). Undo: C:\PK-WORK\undo-
 - ARCHIVE\2026-11-16: united-plumbing-research (2.2 GB), Website Klijenti, claude-setup-audit, Downloads-sorted.
 - _SECRETS-move-to-password-manager: 8 private files. Never open or move them; Nick moves them to a password manager.
 
-## Stays in Downloads on purpose (live tools; the 06:03 IG scan runs from here)
-ig-lead-machine-scan, ig-lead-machine-app, edwin-radd-links (sukunda02 browser profile), IG-grid-posts, DropboxInstaller.exe.
+- Tools (moved from Downloads 16 Nov, Nick approved; logged + undo): ig-lead-machine-scan (06:03 scan launcher run-scan.cmd,
+  scan-log.txt, .env), ig-lead-machine-app (git clone the scan runs from), edwin-radd-links (sukunda02 browser profile),
+  IG-grid-posts. edwin-radd-links\.venv still holds old Downloads paths: python.exe works, rebuild with uv if activate fails.
+- C:\PK-WORK is local only (not OneDrive, not git). Cloud threads reach it through folder access or Remote Control.
+
+## Downloads
+Only DropboxInstaller.exe. Remote Control sessions still start with folder C:\Users\nicol\Downloads (the approved RC folder).
 
 ## Left untouched
 Desktop: WFACT SOPS (developer's), Real Estate, Work, personal files. Documents\court-hub-2.0 (has unsaved work).

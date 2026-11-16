@@ -24,7 +24,7 @@ session_013rHJ3ZrPZXB6jcn3rH9g8y; last runs SUCCEEDED = wake delivered)
 |---|---|---|---|
 | IG Lead Machine content scripts | trig_01WKdeBsPrEQd8Fwr1L3azyB | `48 * * * *` (hourly at :48 UTC) | repo doc `docs/CONTENT-SCRIPT-JOB.md` in ig-lead-machine |
 | IG Lead Machine daily research | trig_01JDVWDEiW5QXKG16E4ousRs | `CRON_TZ=Asia/Bangkok 41 6 * * *` (06:41 Bangkok) | repo doc `docs/ROUTINE-PROMPT.md` steps 1-7, Supabase connector execute_sql |
-| IG Lead Machine daily following scan | trig_01Ud5EpfgA3rCKactPcX3qQ6 | `CRON_TZ=Asia/Bangkok 3 6 * * *` (06:03 Bangkok) | starts Remote Control on the PC to run C:\Users\nicol\Downloads\ig-lead-machine-scan\run-scan.cmd (log scan-log.txt); needs the PC on |
+| IG Lead Machine daily following scan | trig_01Ud5EpfgA3rCKactPcX3qQ6 | `CRON_TZ=Asia/Bangkok 3 6 * * *` (06:03 Bangkok) | starts Remote Control on the PC to run C:\PK-WORK\Tools\ig-lead-machine-scan\run-scan.cmd (log scan-log.txt); needs the PC on |
 - The index talks about "2 scheduled CRM jobs" (the content-scripts job and the 06:41 research). The live list also has the
   06:03 scan; the index says the daily follow scan is blocked by the PC safety check. Nick to say whether it moves too.
 - Content-script job details: workflow rule book owned by thread "Build Ed's audit flaw list":

@@ -8,7 +8,7 @@
 - Missing folders: CONTENT GALLERY NICK, FINAL CONTENT, Edited Reels ALL (not in local bin; maybe in OneDrive online bin until
   ~27 Nov). Nick: not needed, wants them gone.
 - Nick runs `powercfg -h off` himself (hibernation). CapCut: delete all (decided 16 Nov).
-- Live tools kept in Downloads on purpose: ig-lead-machine-scan, ig-lead-machine-app, edwin-radd-links (IG browser profile), IG-grid-posts.
+- Live IG tools live in C:\PK-WORK\Tools (moved from Downloads 16 Nov): ig-lead-machine-scan, ig-lead-machine-app, edwin-radd-links (IG browser profile), IG-grid-posts.
 - Playwright's bundled Chromium is blocked by Windows on the PC; use channel 'chrome' + a temporary profile.
 - PC filter blocks Windows Task Scheduler ("persistence"). Daily follow scan hit the PC safety check ("Undermining
   Oversight"): never push past it.
