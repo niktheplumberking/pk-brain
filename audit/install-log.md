@@ -1,0 +1,31 @@
+# Install log (16 Nov 2026, new project PLUMBER KING AGENCY, thread "Install pk-brain setup end to end")
+
+Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
+
+| Step | Check actually run | Result |
+|---|---|---|
+| 1 repos | `ls /home/user` | PASS: pk-brain, plumber-king-agency, ig-lead-machine; no WFACT3.0 |
+| 1 skills | session skill list | PASS: 4 pka-*, 13 ig-*, apple-design, apple-website-checklist, plumberking-site-playbook, jev-judge, reverse-engineer-anything (22/22) |
+| 1 claude-seo | skill list (no seo-*), SearchPlugins, ListPlugins | FAIL/OPEN: not installed; AgriciDaniel/claude-seo is not in the claude.ai plugin catalog, so no install card can be shown. Installed only on Nick's PC Claude Code |
+| 1 Jev | `bash rules/jev/jev-call.sh` one noul question | FAIL/OPEN: HTTP 403 `authentication_error` "Must supply an API key" (the API answered; not a proxy 403). get_environment: this project runs in env "TypeSafe Docs" (env_01Dt2HDHuZmwXvHyV7WEimth), network unrestricted, 0 network secrets. Env "JEV" has the api.typesafe.ai Authorization secret but allows only that host. The old CRM thread runs in "TypeSafe Docs" too, so the jobs are at parity. Fix: Nick adds the TypeSafe key as a network secret to "TypeSafe Docs" |
+| 1 network | curl plumberkingagency.com | PASS (301 -> 200) |
+| 1 connectors | Supabase list_projects, Figma whoami, Drive list_recent_files, Claude Docs guide | PASS: all 4 answered (Claude Docs: guide call; no doc id to read) |
+| 1 PC folders | list_devices; one folder-access prompt for all 3; device_list_dir each; write `PLUMBER KING\_claude-access-test.txt` via device_commit_files, read back via device_stage_files | PASS: all 3 granted and listed; file written and read back ("2026-11-16 install access test ..."). NOTE: device_bash VM fails (hypervisor off in BIOS); file tools work |
+| 2 standing yes | decision card | PASS: Nick chose yes 22:37; saved in project memory MEMORY.md. Default branch = `claude/project-thread-4p3al4` (repo HEAD; no main) |
+| 3 seed | list memory dir (empty), cp, sha256 per file | PASS: 9/9 files, all hashes match. `git mv memory seed-memory-2026-11-16` + README, references fixed (CLAUDE.md, handover), commit b261dd7. "Installed" line added to MEMORY.md |
+| 4 CRM thread | coordinator started it | thread cmsg_015Ezzhub3Y5NMvHaXpu5C3fSsof3F13fwryRUWAxB9P9B, session session_013rHJ3ZNq7L6CCkpfEHsWG5 |
+| 4 prompts | get_trigger on old jobs, copied word for word | Changes made: none to prompt text. Only persistent_session_id changed (old session_013rHJ3ZrPZXB6jcn3rH9g8y -> new CRM session) |
+| 4 content scripts | created trig_015VdtC3R82K4wYcmXPtQeok, disabled at once | First fire_trigger (22:32) ran in a fresh session with no repo access (manual fires do not use the persistent session). Probe trig_019diz1K7GRa14X9ivVqWh7T (one-shot 22:44) proved scheduled wakes land in the CRM thread with repo access (pull ok, 79a2687). CRM thread fired it again 22:43 at Nick's request: Supabase read ok, 0 queued / 0 working. OPEN: a real card would fail; the doc needs old project files (3-audits rule book, Valley Air references, /mnt/project-files/jev/*), none reachable from here (not in any repo; cross-project send_message: not found). Old job stays ON |
+| 4 daily research | created trig_01G2djPR6pavdtQJek7ZMTrE, disabled at once | First fire (22:32) failed: fresh session, no repo access; it pushed a false alarm to Nick and project chat (my error: manual fire). Code check: a second run the same Bangkok day cannot double picks (daily-pick.mjs: slots minus today's picks; on conflict do nothing). OPEN: test in CRM thread is Nick's call there. Old job stays ON |
+| 4 following scan | not moved | Per INSTALL: ask Nick in step 7 |
+| 4 old reminders | list_triggers | NOTE: two 18 Nov reminders live in the old project (trig_01USLXioCokgtQuPa6Bh5iU5 05:00 UTC, trig_01AXFJSir2KD8g3TrQAEuN1F 08:00 UTC), not one; left there |
+| 4 list check | list_triggers | Old project jobs ARE visible from here (all 3 enabled). New copies: both disabled |
+| 5 paths | script over skills, CLAUDE.md, rules, handover, memory | PASS: no dead repo-relative path. 30 /mnt/project-files paths missing (old project files), all labelled except jev-cookbook (fixed with a banner) |
+| 5 routing | 7 real fresh threads (coordinator) + checker simulation | PASS 7/7: scripts -> pka-video-scripts, descriptions -> pka-post-descriptions, site -> pka-client-site, both runs agree; quotes grep-verified in those skills |
+| 5 negative | "write captions" thread; grep step-close/graphify | PASS: routed to pka-post-descriptions; no step-close/graphify anywhere |
+| 5 clashes | checker diff | FIXED: FLAGS #19 status (now OPEN, PD holding rule), playbook vs pka-client-site (playbook now defers), voice.md "/ig-caption" label. OPEN for interview: FLAGS #4/#14/#17 marked settled while open-items lists them for Nick |
+| 5 secrets | grep repo, memory, `git log -p --all` | PASS: none |
+| 5 size | wc | PASS: CLAUDE.md 56 lines, max SKILL.md 180, max description 912 chars, MEMORY.md 35 lines. FIXED: 3 memory files over 4 KB split (clients -> + client-plumbing-by-paul, design-log; accounts -> + accounts-and-services; agency-brand -> + agency-site-and-content) |
+| 5 links | curl | FAIL/OPEN: Calendly booking link 404 (whole calendly.com/plumber-king-agency page), and it is the live site's booking button. Other sites 200; Figma/Drive need sign-in; 13 artifact links not checked |
+| 5 coverage | 20 random rows (seed 42) | PASS 19/20; row 270 status fixed |
+| 5 separate checker | general-purpose agent, read-only | Done; its findings above. Fixes in commit 63590e9 |
