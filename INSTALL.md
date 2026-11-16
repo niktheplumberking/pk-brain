@@ -16,6 +16,11 @@ Never guess. If a step fails twice, stop and tell Nick in one line what failed a
   one line to pick the same environment in Project settings. Also check that Supabase, Figma, Google Drive and Claude Docs
   respond with one read call each.
 
+- PC folders: call list_devices. This project's threads must reach Nick's PC folders `C:\Users\nicol\OneDrive\Desktop\PLUMBER KING`,
+  `C:\PK-WORK` and `C:\Users\nicol\OneDrive\Desktop\DONE FILES` (map: memory `pc-folders.md`). For any that are not approved,
+  request them in ONE folder-access prompt. Prove it: list each folder's top level, and write then read back
+  `PLUMBER KING\_claude-access-test.txt` (leave it; one line, the date). Log the result.
+
 ## 2. Standing permission (ask Nick once, one yes/no)
 "May I commit rule and memory changes directly to the default branch in pk-brain? Skills only load from the default branch." Record his answer in
 project memory. Without a yes, rule changes go on a branch and wait for his OK.

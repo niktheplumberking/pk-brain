@@ -48,6 +48,8 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
 - Reference files the skills point to: `rules/` (incl. `rules/sop/` for the homepage CRO and one-call-close SOPs).
 - Facts and state: project memory (seeded at install from this repo's `memory/`, which is then renamed
   `seed-memory-2026-11-16/` and is no longer live). Keep one file per subject; the index stays short.
+- Finished files for Nick go on his PC, in the matching folder of `Desktop\PLUMBER KING` (map: memory `pc-folders.md`), through
+  folder access or Remote Control. Cloud-only files are not delivered. Tools and code live in `C:\PK-WORK`, never in OneDrive.
 - Open work and links from the old project: `handover/open-work.md`.
 - Proof of the migration: `audit/`.
 - Install and QA steps: `INSTALL.md`.
