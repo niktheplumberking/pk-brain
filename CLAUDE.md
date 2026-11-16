@@ -18,7 +18,7 @@ Nick's personal preferences (how to talk to him) load separately from his accoun
 | SEO, audit a site's SEO, schema, sitemap, GEO | claude-seo plugin skills (`seo-*`) |
 | a Jev gate/pick/score, when a skill step calls for it or Nick asks (only then; max 5 Jev calls per task) | skill `jev-judge` |
 | reverse engineer an app/binary/site capture | skill `reverse-engineer-anything` |
-| Apple-quality design, site checklist, site playbook | skills `apple-design`, `apple-website-checklist`, `plumberking-site-playbook` (being added; if not listed, say so) |
+| Apple-quality design, site checklist, site playbook | skills `apple-design`, `apple-website-checklist`, `plumberking-site-playbook` |
 | /ig-reel, /ig-caption and the other /ig-* commands | Jake's `ig-*` skills, ONLY when Nick calls them by name |
 | (never for Plumber King work unless Nick asks) | account skills `client-progress-report`, `progress-sync`: the developer's |
 

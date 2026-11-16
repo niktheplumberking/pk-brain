@@ -7,9 +7,8 @@ Never guess. If a step fails twice, stop and tell Nick in one line what failed a
 ## 1. Confirm what loaded (facts only)
 - This repo is cloned and `CLAUDE.md` is in your context. List the repos in your working directory. Expected: pk-brain,
   plumber-king-agency, ig-lead-machine, and NOT WFACT3.0.
-- Your skill list contains all 4 `pka-*` skills, the 13 `ig-*` skills, `jev-judge` and `reverse-engineer-anything`. List any
-  that are missing. `apple-design`, `apple-website-checklist` and `plumberking-site-playbook` are being added to this repo
-  later: if they are not listed yet, note it in the log; do not ask Nick for them.
+- Your skill list contains all 4 `pka-*` skills, the 13 `ig-*` skills, `apple-design`, `apple-website-checklist`,
+  `plumberking-site-playbook`, `jev-judge` and `reverse-engineer-anything`. List any that are missing and find out why.
 - Check whether the claude-seo plugin is installed (any `seo-*` skill listed). If it isn't, offer Nick the plugin install
   (marketplace github.com/AgriciDaniel/claude-seo) with one card.
 - Jev and connectors depend on the cloud environment. Run one Jev test call (`bash rules/jev/jev-call.sh` with a one-question
