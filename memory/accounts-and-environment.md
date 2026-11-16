@@ -3,11 +3,8 @@
 ## Nick's PC
 - Windows, DESKTOP-3FA292L. Remote Control works. Claude in Chrome works in his signed-in Chrome (route for GSC, Bing, Google
   profiles, Pinterest).
-- Folders: C:\Users\nicol\Downloads (approved, folder pulls capped 400 MB/file); C:\Users\nicol\.claude is blocked for folder
-  access. Downloads also holds plaintext password files: only open the subfolder you need.
-- Finished work: C:\Users\nicol\OneDrive\Desktop\DONE FILES (by category; move log DONE FILES\_move-log.csv). Nick dislikes
-  Claude working from Downloads and wants a new organised desktop folder; he will give the structure (incl. Dropbox). Don't build it yet.
-- C: is 97% full (6.2 GB free, 16 Nov). Dropbox app uninstalled ~4 Nov; Nick will reinstall (don't raise).
+- PC folders: see [pc-folders.md](pc-folders.md) (structure built 16 Nov). Folder pulls capped 400 MB/file; C:\Users\nicol\.claude is blocked for folder access.
+- C: 52 GB free after the 16 Nov cleanup (was 6.2). Backup + logs: C:\backup-2026-11-16. Dropbox app uninstalled ~4 Nov; Nick will reinstall (don't raise).
 - Missing folders: CONTENT GALLERY NICK, FINAL CONTENT, Edited Reels ALL (not in local bin; maybe in OneDrive online bin until
   ~27 Nov). Nick: not needed, wants them gone.
 - Nick runs `powercfg -h off` himself (hibernation). CapCut: delete all (decided 16 Nov).
@@ -17,7 +14,7 @@
   Oversight"): never push past it.
 - TunnelBear VPN (Belgrade exit) makes Hostinger look down for Nick only.
 - Nick's PC CLAUDE.md (C:\Users\nicol\.claude\CLAUDE.md, read 9 Nov) does not load in cloud threads. It names PC-only skills
-  plumberking-site-playbook, apple-design, apple-website-checklist (source: OneDrive\Desktop\Claude Local\apple-design-system\skills).
+  plumberking-site-playbook, apple-design, apple-website-checklist (source: C:\PK-WORK\Code\apple-design-system\skills).
 
 ## Cloud
 - Network full. File transfers to the PC: device_commit_files caps 25 MB/file; /mnt/project-files silently changes .mp4 (and
@@ -46,7 +43,7 @@
 - Cold-call dialer: Dialpad Connect Standard 14-day trial from 9 Nov (ends ~23 Nov), then RingCentral trial; Zadarma backup.
   No stacking trials with new emails. JustCall refused 6 Nov (2-licence minimum ~$80/mo); JustCall campaign #3413461 held the
   first 1,383-lead list (23 Oct).
-- Lead list tool: G Maps Extractor Lite ($19/mo). Lead files `/mnt/project-files/plumber-king-agency/leads/` (old project files; may not exist in new project) and PC Downloads\Lead
+- Lead list tool: G Maps Extractor Lite ($19/mo). Lead files `/mnt/project-files/plumber-king-agency/leads/` (old project files; may not exist in new project) and PC C:\Users\nicol\OneDrive\Desktop\PLUMBER KING\3 LEADS AND SALES\Lead lists\Lead
   List ORGANIZED\. JustCall maps by column POSITION: keep the exact column order of plumber-leads-FINAL-with-owners-2026-10-22.csv,
   Dial Priority last.
 - Models: Opus 5.5 default for threads/subagents; Fable 5.2 rarely (burns limits).

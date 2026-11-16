@@ -7,7 +7,7 @@ every rule that was here is now in one of those two skills (move log: pk-brain `
 
 ## Posting facts
 - Nick posts 2 reels a day = 14 a week, from IG drafts. In-between photo posts paused since 1 Nov.
-- Posting history file (check before picking topics): Nick's PC `Downloads\ig-stats-2026-11-07\nick.json`.
+- Posting history file (check before picking topics): Nick's PC `C:\Users\nicol\OneDrive\Desktop\PLUMBER KING\5 RESEARCH\from-downloads\ig-stats-2026-11-07\nick.json`.
 
 ## Used audit companies (do not repeat)
 Boise Family, Signature (Creswell OR), Acorn (Billings), Joe Ganzel (Toledo), Wile (Lancaster PA), Paton Bros (London ON),

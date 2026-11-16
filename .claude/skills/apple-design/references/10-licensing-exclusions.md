@@ -53,4 +53,4 @@ These parts did not come through in the 2026-10-17 crawl. Verify them on the liv
 - Several Apple Pay minimum-size rows (`apple-pay`).
 - Activity ring colors.
 
-To refresh the crawl, run `node "C:\Users\nicol\OneDrive\Desktop\Claude Local\apple-design-system\source\crawl-hig.mjs" <empty-output-dir>`.
+To refresh the crawl, run `node "C:\PK-WORK\Code\apple-design-system\source\crawl-hig.mjs" <empty-output-dir>`.

@@ -76,5 +76,5 @@ Order: create new -> fire once and verify a real result -> only then disable the
 - nick-content/ 316 MB and nick-photos/ 235 MB (Higgsfield sets, Nick's refs; final set nick-content/final-content-2026-10-20/)
 - instagram-posts/ 126 MB, vsl/ 104 MB, leads/ 77 MB
 - Small but referenced by path (do not move; the CRM job reads them): content/3-audits/*
-- On Nick's PC: DONE FILES, Downloads\united-plumbing-research (IG media of Jim's account), Downloads\_stt-temp (1.8 GB per
+- On Nick's PC (moved 16 Nov, see memory/pc-folders.md): DONE FILES (content only), C:\PK-WORK\ARCHIVE\2026-11-16\united-plumbing-research (IG media of Jim's account), C:\PK-WORK\Tools\stt (1.8 GB per
   the 6 Nov note; can be deleted: ask Nick one yes/no, then Claude deletes it via Remote Control).

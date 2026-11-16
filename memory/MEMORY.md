@@ -14,6 +14,7 @@ Facts only. Rules for repeat work live in skills. Read the topic file before rel
   prospects, design style + praise log.
 - [agency-brand.md](agency-brand.md) - business, legal entity, brand (Bobo, charcoal + hot pink, Urbanist + Open Sans),
   own site + GSC baseline, portfolio, 40-day challenge tracker, content model facts.
+- [pc-folders.md](pc-folders.md) - Nick's PC folder structure (Desktop\PLUMBER KING 1-7, C:\PK-WORK), where new work goes, move log + undo.
 - [accounts-and-environment.md](accounts-and-environment.md) - Nick's PC, cloud limits, file-transfer method, GitHub/Vercel/
   Hostinger/Namecheap/Supabase/Figma/Higgsfield/Jev/dialer, core skills list.
 - [crm-and-jobs.md](crm-and-jobs.md) - IG Lead Machine CRM, lead funnel, the scheduled jobs (ids, cron, job docs).

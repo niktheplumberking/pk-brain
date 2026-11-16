@@ -99,7 +99,7 @@ Fill in `report-template.md`:
 - a counts summary;
 - the BLOCKER and MAJOR failures listed first, each with the exact location and the recommended fix (rule ID).
 
-Save the report as `<project-root>/docs/apple-checklist-report-YYYY-MM-DD.md` only if the user wants it in the repo; otherwise save it in the agency audits folder `C:\Users\nicol\OneDrive\Desktop\Claude Local\apple-design-system\audits\`. Give the user the summary plus the path.
+Save the report as `<project-root>/docs/apple-checklist-report-YYYY-MM-DD.md` only if the user wants it in the repo; otherwise save it in the agency audits folder `C:\PK-WORK\Code\apple-design-system\audits\`. Give the user the summary plus the path.
 
 **Overall verdict:**
 - **PASSES** only if there are 0 BLOCKER FAILs, 0 MAJOR FAILs and 0 UNVERIFIED BLOCKERs.

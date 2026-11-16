@@ -48,7 +48,7 @@ Nick's own "Suki's team" seat is view-only).
 - C & H Plumbing (Calvin Hinton, St. Louis): page 146:437, v2 demo https://claude.ai/artifact/FYazkibUDG7EncA8eUBibH.
   Has a live site calvinsplumbingllc.com. Calvin ghosted: cold lead, don't list. Before/after posted.
 - Real Deal Plumbing SD (Tony / Antonio Gamez, La Mesa CA): researched 29 Oct; site down (hosting dropped), CSLB 1129530
-  C-36 expires 2026-11-30 (stale fact, re-check). Notes on PC Downloads\real-deal-plumbing-research\.
+  C-36 expires 2026-11-30 (stale fact, re-check). Notes on C:\Users\nicol\OneDrive\Desktop\PLUMBER KING\2 CLIENTS\Prospects\Real Deal Plumbing\.
 - Premium Plumbing (Tampa, owner Brad Pinkert): DM audit 27 Oct; screens in `/mnt/project-files/plumber-king-agency/audits/premium-plumbing/` (old project files; may not exist in new project).
 - Kody Glass and BP (site hacked, 1,633 spam posts) were flagged as warm leads in Oct audits (stale; status unknown).
 

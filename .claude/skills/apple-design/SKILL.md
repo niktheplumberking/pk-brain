@@ -23,7 +23,7 @@ These are the agency's rules for building websites. They come from Apple's Human
 ## Truthfulness rule
 
 - **Never claim a rule is met without evidence.** When you say a rule is satisfied, point to the code, a measured value or a browser check.
-- **When unsure what Apple actually said**, read the original page in `C:\Users\nicol\OneDrive\Desktop\Claude Local\apple-design-system\source\hig-crawl-2026-10-17\<src>.md`. Do not guess.
+- **When unsure what Apple actually said**, read the original page in `C:\PK-WORK\Code\apple-design-system\source\hig-crawl-2026-10-17\<src>.md`. Do not guess.
 - **Images are missing from that crawl.** Only the text was captured.
 
 ## Core MUST rules (always apply)
