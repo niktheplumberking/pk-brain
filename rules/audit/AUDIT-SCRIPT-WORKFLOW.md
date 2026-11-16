@@ -1,5 +1,6 @@
 # Audit script workflow (approved by Nick 2026-10-30, proven on Valley Air)
-> Paths starting `/mnt/project-files/` in this file are old project files; they may not exist in the new project.
+> Examples and Jev request shapes are in pk-brain (`rules/audit/examples/`, `rules/jev/examples/`). Reports are written to
+> `/mnt/project-files/plumber-king-agency/content/3-audits/reports/` (create it if missing).
 > Outdated lines (skill `pka-video-scripts` section 8 wins): "the cloud is blocked by Google" (Google Maps works from the
 > cloud via Playwright since 14 Nov; PC is the fallback); "REPORT to Nick" (the report stays private, only the script is
 > delivered); "3-4 sentences, about 15-20 seconds" (now 4-6 sentences, under 25 s); "in Ed's voice" (Ed's structure, Nick's
@@ -29,4 +30,4 @@ Lesson (Sam's, 2026-10-30): a phone number that is "not a link" in the code can 
 4. SCREEN-MATCH CHECK before sending: walk through the desktop page in order as Nick would (top to bottom, mouse on each thing) and check every sentence matches what is on screen at that moment. Never say something the viewer can see is false (e.g. "the only button is further down" when a Call now button is right there). Order the flaws in the script in the order Nick will reach them on screen.
 5. Ed sometimes covers 2-3 flaws in one video; same short sentences, one beat per flaw, ending on a rule.
 
-GOLD STANDARD (Nick 2026-10-30 15:55: "now we're talking, this is the perfect workflow for all scripts"): the Sam's Plumbing round 2 output in /mnt/project-files/plumber-king-agency/content/3-audits/reports/2026-10-30-sams-plumbing.md: 3 flaws in screen order, Ed voice, honest Jev numbers, no false on-screen claims. Improve script by script from Nick's feedback.
+GOLD STANDARD (Nick 2026-10-30 15:55: "now we're talking, this is the perfect workflow for all scripts"): the Sam's Plumbing round 2 output in rules/audit/examples/2026-10-30-sams-plumbing.md: 3 flaws in screen order, Ed voice, honest Jev numbers, no false on-screen claims. Improve script by script from Nick's feedback.
