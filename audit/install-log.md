@@ -29,3 +29,5 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 | 5 links | curl | FAIL/OPEN: Calendly booking link 404 (whole calendly.com/plumber-king-agency page), and it is the live site's booking button. Other sites 200; Figma/Drive need sign-in; 13 artifact links not checked |
 | 5 coverage | 20 random rows (seed 42) | PASS 19/20; row 270 status fixed |
 | 5 separate checker | general-purpose agent, read-only | Done; its findings above. Fixes in commit 63590e9 |
+| 4 content real card | CRM thread queued Pipe Masters (Mesa AZ) "install test", fired new job 22:52 | PASS: I verified content_items d234642a: done, stage shooting, script 565 chars, report 7,256 chars, jev_line "Jev not connected; Claude's pick" |
+| 4 switch | update_trigger enabled=false on old trig_01WKdeBsPrEQd8Fwr1L3azyB and trig_01JDVWDEiW5QXKG16E4ousRs | FAIL x2: "not found" (old-project tasks are visible in list_triggers but cannot be changed from this project). Asked Nick to have an old-project thread disable them; new copies stay off until then |
