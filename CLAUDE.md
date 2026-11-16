@@ -46,8 +46,8 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
 - Rules for repeat work: `.claude/skills/<skill>/SKILL.md`. A new or changed rule from Nick goes into the right skill **in the same turn**, gets committed, and is noted in project memory. Push it to the default branch only if
   Nick gave the standing yes (INSTALL step 2, recorded in project memory); otherwise put it on a branch and ask him once.
 - Reference files the skills point to: `rules/` (incl. `rules/sop/` for the homepage CRO and one-call-close SOPs).
-- Facts and state: project memory (seeded at install from this repo's `memory/`, which is then renamed
-  `seed-memory-2026-11-16/` and is no longer live). Keep one file per subject; the index stays short.
+- Facts and state: project memory (seeded 16 Nov 2026 from this repo's former `memory/` folder, now the frozen
+  `seed-memory-2026-11-16/`, which is no longer live). Keep one file per subject; the index stays short.
 - Finished files for Nick go on his PC, in the matching folder of `Desktop\PLUMBER KING` (map: memory `pc-folders.md`), through
   folder access or Remote Control. Cloud-only files are not delivered. Tools and code live in `C:\PK-WORK`, never in OneDrive.
 - Open work and links from the old project: `handover/open-work.md`.
