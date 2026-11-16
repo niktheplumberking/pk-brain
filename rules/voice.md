@@ -2,7 +2,7 @@
 
 Every ig-* skill reads this first. Nick's message in the current chat beats this file.
 
-Last updated 2026-11-08. Blanks marked {{ask Nick}} are unknown. Never fill them
+Last updated 2026-11-16. Blanks marked {{ask Nick}} are unknown. Never fill them
 with a guess.
 
 ## Who I am
@@ -87,7 +87,7 @@ differently per script, then the flaw. No ask at the end. Frame it as how to fix
 hookscore rates these audit openers low because they are long. Ignore its
 verdict on audit hooks. Accuracy to the screen comes first.
 
-## Post descriptions (the /ig-caption job)
+## Post descriptions (skill pka-post-descriptions wins)
 
 - Short rows, little text per row, simple. Captions SHORT.
 - **Hard rule: never write a description by transcribing the video.**

@@ -6,7 +6,7 @@ description: "Plumber King Agency client site flow, from research to launch and 
 # Plumber King client site
 
 Nick runs Plumber King Agency: websites, SEO and IG content for US/Canada plumbers. This skill is the whole flow for a
-plumber's site. Facts about each client live in project memory `clients.md`; this file holds the rules.
+plumber's site. Facts about each client live in project memory `clients.md` (United) and `client-plumbing-by-paul.md` (one file per client); this file holds the rules.
 
 ## Must-follow rules (read before any step)
 1. **Order is fixed:** deep research -> claude-seo SEO/AEO/GEO/CRO plan -> full multi-page redesign IN the client's Figma
@@ -64,7 +64,7 @@ plumber's site. Facts about each client live in project memory `clients.md`; thi
   About collage, clipped-corner service cards; United full site "best website in my portfolio" (every section its own idea,
   placeholders clearly marked). Criticised: Process/FAQ/Contact looking "lazy" (pale, centred heading + white cards). Rule:
   the end of the page gets the same effort as the hero; alternate light/dark; header aligned to grid edges; paired buttons
-  same height. Log new praise/criticism in project memory `clients.md` design log; source: old project memory note `nick-design-praise-log` (not copied).
+  same height. Log new praise/criticism in project memory `design-log.md`; source: old project memory note `nick-design-praise-log` (not copied).
 - Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
   the new row. For real client builds the client's own brand fonts win (Paul = Montserrat / Russo One / Yellowtail).
   Open question for Nick: confirm this split (see project memory `open-items.md`).

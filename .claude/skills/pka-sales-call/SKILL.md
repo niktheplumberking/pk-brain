@@ -75,7 +75,7 @@ Brand and approval
 15. Who approves the design, and the fastest way to reach him.
 
 ## After the call (same day)
-1. Nick sends the Loom link or notes; Claude pulls every answer into the client file (project memory `clients.md` + client folder)
+1. Nick sends the Loom link or notes; Claude pulls every answer into the client file (project memory: the client's own `client-<name>.md`, indexed in MEMORY.md, + client folder)
    and the Figma thread.
 2. Send the after-call form with only what's left: story, crew names, warranty, payment methods, financing, call-out fee,
    price ranges on site, Spanish, awards, colours, sites he likes, job goals.

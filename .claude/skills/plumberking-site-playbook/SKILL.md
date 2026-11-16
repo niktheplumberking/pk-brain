@@ -7,6 +7,10 @@ metadata:
 
 # PlumberKing site playbook
 
+> **Plumber King client work (added 16 Nov 2026, install QA):** plumbers only. Where this playbook and skill
+> `pka-client-site` differ (motion level and the United motion system, parallax or transforms on photos, flow and gates),
+> `pka-client-site` wins. This playbook supplies the checklists underneath it.
+
 The goal is sites that **get the phone ringing first** and **look award-level second**, with no trade-off between the two. Premium motion sits on top of a conversion-first structure and never replaces it.
 
 ## How the rule sets fit together

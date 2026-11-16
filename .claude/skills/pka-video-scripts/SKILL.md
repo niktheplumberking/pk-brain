@@ -116,8 +116,8 @@ script is delivered.
    does well too. Count verified flaws out of 36: under 60% = 1 flaw, 60-75% = 2, over 75% = 3 (Nick may
    override the count).
 3. Pick with Jev: a choice question run twice with the options reversed; for N > 1 pick #1, then ask again
-   with the picked ones removed. Max 5 Jev calls per task; log them in `/mnt/project-files/jev/jev-usage-log.csv` (old project files path; the file was not
-   found there on 16 Nov, so create it if missing). Task text
+   with the picked ones removed. Max 5 Jev calls per task; log them in `/mnt/project-files/jev/jev-usage-log.csv` (`bash rules/jev/jev-call.sh` in pk-brain logs there
+   and creates it if missing). Task text
    says plumbers only (not "plumbers and HVAC owners"), filmed as a desktop screen recording, and includes
    Nick's posting history so picks don't repeat a lesson. If Jev can't be reached, test it live first, then
    say so.

@@ -1,8 +1,8 @@
 #!/bin/bash
 # usage: bash jev-call.sh request.json [extra curl args, e.g. -H 'TypeSafe-Danger-Zone-Images: true']
-# Prints the response + HTTP status, and appends one line per call to jev-usage-log.csv (see jev-cookbook.md section 0).
+# Prints the response + HTTP status, and appends one line per call to /mnt/project-files/jev/jev-usage-log.csv (this project's shared files; override with JEV_LOG) (see jev-cookbook.md section 0).
 req="$1"; shift
-log="$(dirname "$0")/jev-usage-log.csv"
+log="${JEV_LOG:-/mnt/project-files/jev/jev-usage-log.csv}"; mkdir -p "$(dirname "$log")" 2>/dev/null
 out=$(curl -sS -w '\nHTTP %{http_code} %{time_total}s' -X POST https://api.typesafe.ai/v1/systemone -H 'Content-Type: application/json' "$@" --data @"$req")
 rc=$?
 echo "$out"

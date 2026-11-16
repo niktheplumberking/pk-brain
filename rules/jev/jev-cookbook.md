@@ -1,5 +1,11 @@
 # Jev cookbook v2 (TypeSafe) — read before you spend a single Jev call
 
+> **Paths (16 Nov 2026 install):** run the script from this repo: `bash rules/jev/jev-call.sh request.json`. It logs to
+> `/mnt/project-files/jev/jev-usage-log.csv` in the new project. Other `/mnt/project-files/jev/...` files named below
+> (docs-read-list, valley.json, jev-cookbook-v1.md) are old project files and may not exist here.
+> Key: this project's cloud environment "TypeSafe Docs" reaches api.typesafe.ai but has no TypeSafe key (16 Nov test: 403
+> "Must supply an API key"); only the "JEV" environment carries one. Do not route around it.
+
 Rebuilt from zero on 2026-10-19 after reading **every page of docs.typesafe.ai** (128 pages, list in
 `/mnt/project-files/jev/docs-read-list.md`) and TypeSafe's own agent skill. v1 (built from search excerpts) is kept at
 `jev-cookbook-v1.md` for history only; do not work from it.

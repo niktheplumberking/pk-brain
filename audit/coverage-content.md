@@ -267,7 +267,7 @@ Pure history lines (what was done on a date, file locations of old batches) are 
 | mem/content-editing-workflow.md:18 | "Nick wanted bullet flaw lists, not scripts" | VS | dropped-superseded-by MEM:17 (FLAGS 37) |
 | mem/content-editing-workflow.md:21 | "ONE strong pain point per audit ... Never give multi-flaw lists for audit videos again." | VS 8 | dropped-superseded-by 1-3 flaws (FLAGS 10) |
 | mem/content-editing-workflow.md:23 | voice "-14.4 LUFS"; charcoal outline on white pages | PD Sound, Placement | kept |
-| mem/content-editing-workflow.md:24-25 | Ed-style title; then "Do NOT add titles to reels." | PD Cutting | dropped-superseded-by text hooks / HOOK block (FLAGS 19) |
+| mem/content-editing-workflow.md:24-25 | Ed-style title; then "Do NOT add titles to reels." | PD Cutting | kept as holding rule in PD (FLAGS 19 corrected 16 Nov install QA: open, Nick settles) |
 | mem/content-editing-workflow.md:26 | "white 2px outline, 66% height, no title), voice -14 LUFS" | PD Placement, Sound | kept |
 | mem/content-editing-workflow.md:27 | charcoal outline when a white shirt is behind captions | PD Placement | kept |
 | mem/content-editing-workflow.md:29 | "IG post captions must be SHORT and simple, a few lines max" | PD 4 | merged (FLAGS 17) |
