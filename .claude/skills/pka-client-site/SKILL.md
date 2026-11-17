@@ -48,7 +48,9 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
 ## Step 3: Full redesign in Figma (Figma MCP only)
 - File: Plumber King designs, https://www.figma.com/design/QbPRX8MU5AA6peTerdP5gg (team OnlyRichTeam). Never Remote Control
   or a browser for Figma. `create_session` first; load figma-use / figma-design-to-code before use.
-- **Page rules:** ONE Figma page per company, named after the company. Desktop (1440) + mobile (390) for every page type.
+- **Page rules:** ONE Figma page per company, named after the company, ALWAYS and only that one (Nick, 17 Nov, permanent):
+  never create a second page for the same client, never rename or archive a page as "old vX". If a redo is needed, delete
+  everything on the page and rebuild it from zero on the same page. Desktop (1440) + mobile (390) for every page type.
   Every design page gets 3 content blocks: 01 Old vs New Sitemap, 02 Brand Moodboard, 03 Colors & Fonts (copy layout from
   Paul frames 112:1528 / 112:1621 / 112:1721, restyle). Assets column optional. One thread per company, touching only its page.
 - Homepage formula and QA list: **homepage CRO SOP**
