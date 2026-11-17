@@ -29,6 +29,7 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 | 19 | no date | Ken (Easy BreeZy) consent for a story | Nick | Claude Editor | 17 Nov | memory open-items.md |
 | 20 | no date | Jim's CSLB licence (do not raise it with Jim) | Nick | Client - United Plumbing (not created) | 17 Nov | memory open-items.md |
 | 21 | no date | Desktop folder structure for the new chapter, incl. Dropbox | Nick | none (general) | 17 Nov | memory open-items.md |
+| 22 | Wed 18 Nov, morning (Nick promised Mike the site "by tomorrow morning") | Mike's Plumbing Services (Mike Navarro, Riverside CA, hottest lead, free site, he said "Let's do it!"): research + claude-seo plan + full Figma design today; Nick approves Figma; then build, QA, Vercel preview link | Claude builds, Nick approves Figma | Client - Mike's Plumbing Services | 17 Nov | Nick, 17 Nov 11:03 UTC |
 
 ## Done (date + proof)
 
