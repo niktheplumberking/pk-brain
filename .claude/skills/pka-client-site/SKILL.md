@@ -178,6 +178,12 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
     CSS transforms/parallax on photos (parallax goes on wrappers, yPercent); raw resize -> ScrollTrigger.refresh
     (width-only + `ignoreMobileResize`). Phones: x distances ±40.
   - Reduced motion = static; no-JS = everything visible; anything moving >5 s gets a pause.
+  - **Scroll-controlled moments (Nick, 17 Nov 22:05, permanent):** on top of the entrance reveals, every page gets 1-2 GSAP
+    ScrollTrigger `scrub` moments driven by the Lenis smooth scroll, so the page reacts to the user's scroll. Example (Mike,
+    "How a job goes"): water/arrows travel along the pipe from the left as you scroll; it reaches 01, then 02, 03...;
+    each number lights up, grows slightly (~1.08) and rotates a little as the water hits it. Same idea for dials, route
+    maps, pipe seams. Very smooth (scrub ~0.6-1), controlled, clear hierarchy like Plumbing by Paul; transform, opacity and
+    stroke-dashoffset only; reduced motion = final state; nothing hidden while in view; lighter on phones.
   Full plan: `/mnt/project-files/plumber-king-agency/designs/plumbing-by-paul/ROUND4-MOTION-PLAN.md` (old project files; may not exist in new project).
 - Forms: no backend unless `PUBLIC_FORM_ENDPOINT` set; else go to `/thank-you` (say so in README).
 
