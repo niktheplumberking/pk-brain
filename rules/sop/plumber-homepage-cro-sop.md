@@ -297,6 +297,7 @@ Before picking fonts: read this register, pick from an unused style group, then 
 | C & H Plumbing (26 Oct 2026) | Sora (ExtraBold/Bold) | Manrope | Caveat ("Your photo goes here" stickers only) | geometric sans |
 | United Plumbing (4 Nov 2026) | Big Shoulders Display (Black/ExtraBold) | IBM Plex Sans | Doto (dot-matrix LED accents) | condensed sans |
 | Plumbing by Paul LIVE SITE rebrand (12 Nov 2026, "Sunshine City") | Tilt Warp (sign-painter display) | Rubik | none | soft sign-painter display (replaces Paul Figma v2 Unbounded + Karla) |
+| Khinda Electrical (17 Nov 2026, electrician, Nick's one-time exception) | Saira (Black/ExtraBold, semi-extended techy) | Onest | Michroma (eyebrows/labels; echoes the logo's extended "ELECTRIC" wordmark) | techy extended grotesk |
 
 Reserved (26 Oct) so the two redos don't collide: **Paul → Unbounded (wide rounded display) + Karla**; **Paradise → Zilla Slab (slab serif) + Hanken Grotesk**. Update the rows when done.
 
