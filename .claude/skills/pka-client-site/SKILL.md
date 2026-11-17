@@ -101,7 +101,10 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   the new row. For real client builds the client's own brand fonts win (Paul = Montserrat / Russo One / Yellowtail).
   Open question for Nick: confirm this split (see project memory `open-items.md`).
 - Yellow "<client> to confirm" sticky notes sit BESIDE frames, never in them.
-- Figma gotchas: upload_assets with webp renders blank (convert to JPEG); never upload_assets with a page id as nodeId;
+- Figma gotchas: start EVERY use_figma call with `await figma.setCurrentPageAsync(<your company page>)` and create frames on
+  that page explicitly: other threads work in the same file and switch the current page, so new frames can land on another
+  client's page (happened 17 Nov, Glass frames landed on Mike/Khinda/Easy Breezy pages; moved back).
+  upload_assets with webp renders blank (convert to JPEG); never upload_assets with a page id as nodeId;
   vector paths have no "A" arc (use C curves); createNodeFromSvg + resize does not scale strokes (use rescale());
   2x export = clone into temp clip frame, rescale(2), screenshot, delete; thread attachment cap ~24 (send Figma links).
 - Self-review (ideally a different instance), fix blockers, then report to Nick: Figma link + screenshots + to-confirm list.
