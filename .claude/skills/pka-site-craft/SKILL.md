@@ -29,7 +29,7 @@ the next one started, and every look came from something the client already owns
    (fact: `references/paul-three-directions.md`)
 4. **Client design system** with ONE signature motif made from owned objects, used on a budget.
    (fact: `references/paul-design-system.md`, "the website is the van")
-5. **Page sheet**: every section has final copy, archetype, background, overlap, motif, photo, 21st.dev reference, CRO
+5. **Page sheet**: every section has final copy, plumbing object, background, overlap, motif, photo, 21st.dev reference, CRO
    reason and "to confirm" notes BEFORE Figma. (fact: `references/paul-page-sheet-home.md`)
 6. **Figma from the sheet**, then an **independent review** with a severity table, fix, re-check, then Nick.
    (fact: `references/paul-design-review-excerpt.md` found 9 blockers and 27 majors; the Paul thread, 13 Nov, reports all
@@ -97,10 +97,10 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
   tickers, LED step numbers, LED phone. A motif from nowhere (Paul v1's sun and heart) is the main sign of a generic site.
 - **Photo treatments** (framed, hero frame, tilted snapshot, offset block, full bleed with scrim, caption plate), one
   colour grade so phone shots and pro photos match, a low-res max width, focal-point rule, honest placeholder style.
-- **Section-variety rule** (Paul section 7, adapted to Nick's 17 Nov rule): every section declares one archetype
-  (split collage, bento, photo card grid, rail, review wall, pipe-run process, full-bleed band, map + chips, sticky
-  column + accordion, spotlight quote, ticket table, timeline, stat band, tabbed selector, stacked rows, masonry, final
-  CTA...). Under Nick's rule a section layout is used ONCE per site, and never matches another client's section.
+- **Section-variety rule** (Paul section 7, adapted to Nick's 17 Nov rules): every section declares the plumbing object
+  it is (pka-client-site "What plumbing object could this section be?"; Mike VFACT: ticket stubs, a pipe with stops and
+  a valve, a 24h dial, a route map with a service ticket, a job ticket with a carbon copy), never a component type.
+  Under Nick's rule a section layout is used ONCE per site, and never matches another client's section.
   Allowed repeats (Nick, 17 Nov: yes to the final CTA repeating on every page, as on both live sites): utility bar,
   header, final CTA and footer. Pages of one type (all service pages, all city pages) share one template; that part is
   the coordinator's reading of Nick's yes, not his words. Every other section layout appears once on the site.
@@ -131,8 +131,9 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
    heading on an empty field.
 3. Backgrounds alternate from the token set; never the same value twice in a row. Paul home: mist, white, navy, sky,
    white, tint, white, tint, white, navy, white, tint, white, waterline, footer.
-4. Drawn dividers from the motif between sections (United: wave + cyan line, praised 4 Nov "that's how we differentiate";
-   Paul: van swoosh stripes). Never a plain hr between two generic sections.
+4. Designed seams from the motif between sections: shaped edges (waves) and objects crossing the join (United: wave + cyan
+   line, praised 4 Nov "that's how we differentiate"; Paul: van swoosh stripes; Mike VFACT: pipes, tags, drips, gauge,
+   wave seams, keyword band). Never a plain hr, and never one divider repeated down the page.
 5. Real photos large, owner/crew more than once on home, never the same photo twice on a page, never a cut-out on a blob.
 6. **The end is as strong as the start.** Process, FAQ and Contact get the same effort as the hero (United 4 Nov: those
    three were called "lazy" and rebuilt). Final CTA = second-largest heading on the site; footer is a designed object.
@@ -148,7 +149,7 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
 - Dribbble / Pinterest / live competitor sites: each kept image gets one "what to take" line. Log blocked sources honestly.
 - United's and Paul's section ORDER and CONTENT may be followed (that is the fixed structure); their layouts and devices
   never.
-- The component map logs: page, section, archetype, 21st.dev URL, reference file, adaptation. The build pulls from it.
+- The component map logs: page, section, plumbing object, 21st.dev URL, reference file, adaptation. The build pulls from it.
 
 ## 8. Review loop (before Nick, every round)
 
@@ -203,7 +204,7 @@ an LED tile; nothing is shared but the discipline.
 - [ ] BRAND-AUDIT, anatomy (or reuse), 3 directions + translation table, DESIGN-SYSTEM, page sheet all exist as files.
 - [ ] Every client-column cell in the translation table differs from United, Paul and every other client.
 - [ ] Motif comes only from owned objects; budget per page met.
-- [ ] Every section: archetype used once on the site, overlap, density, CTA, two type voices, proof under promises.
+- [ ] Every section: plumbing object and layout used once on the site, overlap, density, CTA, two type voices, proof under promises.
 - [ ] Headlines trace to the client's own lines or real reviews; facts only from the facts list; stand-ins labelled.
 - [ ] Independent review table done, blockers 0, open items listed for Nick.
 

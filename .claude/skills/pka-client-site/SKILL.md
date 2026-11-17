@@ -77,29 +77,50 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   - LAYOUT/DESIGN = how a section looks. It is NEVER copied. No section may look like another client's section. No section
     layout may repeat anywhere on the same site. If the homepage shows reviews as a carousel, the Reviews page, service pages
     and city pages must each show reviews in a different layout.
-- **Master structure (from the live United and Paul sites):**
-  - Every page: utility bar (rating, licence, hours), header with phone CTA, emergency strip, BreadcrumbList + LocalBusiness
-    schema, then it ends with CTA + form, areas, footer with NAP.
-  - HOME: hero (H1 "<24/7> <Trade> in <City>, <ST>", towns served, call button + "Tap to call" microline, text-a-photo,
-    trust badges) / call-back form bar with "What's going on?" chips / rating band + reviews / 6 services (one marked "Most
-    asked") / family-about teaser + crew / work photos / why us / process in 4-5 steps (price first) / emergency band /
-    areas / FAQ (schema) + "Ask a person" / final estimate form.
-  - SERVICES HUB: hero + form / emergency strip / symptom picker ("Tell us what you see") / service families / full list /
-    promises / reviews / FAQ / CTA.
-  - SERVICE PAGE: H1 "<Service> in <City>, <ST>" + short form / quick-answer block (AEO) + job-facts card / problem types /
-    DIY vs pro / process / equipment feature / pricing explainer / reviews / why us / prevention tips / FAQ (schema) /
-    related services / CTA / areas.
-  - AREA HUB: hero + form / "one base" (NAP) / towns grouped / "closer means faster" / local quirks / reviews by town / FAQ /
-    CTA.
-  - CITY PAGE: H1 "<Trade> in <City>, <ST>" / quick answer / distance from base / local home problems / top 6 services
-    (links) / neighbourhoods / local permits question as H2 / reviews / photos / family band / city emergency band / city
-    FAQ / nearby towns / city-named CTA.
-  - ABOUT: hero / origin story + timeline / numbers / owners / crew / 4 rules / proof (video, reviews) / community /
-    licences / CTA.
-  - CONTACT: hero ("real person, we pick up") / ways to reach us, fastest first / form + what happens next / shop NAP + map /
-    other tasks / 3 FAQs / phone band.
+- **Master structure = what each section must SAY** (from the live United and Paul sites). It names the message, never
+  the component. How it looks comes from the method below (Nick, 17 Nov 21:51).
+  - Every page: rating, licence and hours up top; phone always one tap away; what to do in an emergency; breadcrumbs +
+    LocalBusiness schema; it ends with a way to ask for an estimate, the towns served and the full NAP.
+  - HOME: trade + town (H1 "<Trade> in <City>, <ST>"), the towns served, call now, send a photo, why trust us / ask for a
+    call back and say what's wrong / what customers say / the 6 main services (one is the most asked) / who the family or
+    owner is / real work / why us / how a job goes, price first, in 4-5 steps / what to do in an emergency / where we work /
+    the common questions (schema) + "ask a person" / ask for an estimate.
+  - SERVICES HUB: ask for help now / what to do in an emergency / "tell us what you see" (symptom -> service) / service
+    families / the full list / what we promise / what customers say / questions / ask for an estimate.
+  - SERVICE PAGE: H1 "<Service> in <City>, <ST>" + ask now / the quick answer (AEO) + the job facts / the problem types /
+    DIY vs pro / how the job goes / the equipment / how pricing works / what customers say / why us / how to prevent it /
+    questions (schema) / related services / ask for an estimate / where we work.
+  - AREA HUB: ask now / the one base (NAP) / the towns, grouped / closer means faster / local quirks / what customers in
+    each town say / questions / ask for an estimate.
+  - CITY PAGE: H1 "<Trade> in <City>, <ST>" / quick answer / distance from base / local home problems / the top 6 services
+    (links) / neighbourhoods / the local permits question as H2 / what customers here say / local work / the family /
+    city emergency help / city questions / nearby towns / ask for an estimate, city named.
+  - ABOUT: who we are / the origin story over time / the numbers / the owners / the crew / our 4 rules / proof (video,
+    reviews) / community / licences / ask for an estimate.
+  - CONTACT: a real person picks up / every way to reach us, fastest first / the form + what happens next / where the shop
+    is / other tasks / 3 questions / call now.
   - Plus Reviews, Our work and FAQ pages, and Guides if there's content. Adapt the trade words for non-plumbers (Khinda =
     electrician).
+- **How a section gets its look (Nick, 17 Nov 21:51; reference = Mike VFACT, Figma page 626:1943, "the quality level from now on"):**
+  - **Owned motif.** Before any frame, take ONE motif from the client's own things: logo, flyer, van, shirts, IG tiles.
+    Fonts and colours come from the same things (Mike: hex nut from the logo badge, flyer palette, flyer fonts, the
+    "every job gets the stamp" line). The motif shows up across the site, never one copy-pasted divider.
+  - **"What plumbing object could this section be?"** Ask it for every section and write the answer next to the section in
+    the wireframe (Mike: reviews = ticket stubs + a tally of hex nuts, process = a pipe with 5 stops and a valve,
+    emergency = a 24h dial, areas = a route map with a service ticket, FAQ = "Ask Mike." on a pipe, form = a job ticket
+    with a carbon copy). If the answer is a component type (cards, grid, slider), ask again.
+  - **Designed seams.** Sections join with shaped edges (waves, torn paper, pipe runs) and objects that cross from one
+    section into the next (pipes, tags, drips, a gauge, a keyword band, a review ticker). Straight edges everywhere or one
+    repeated divider = redo.
+  - **Section loop.** Design one section, take a full-size screenshot of it, fix what's off, then the next section.
+    Never design a whole page and look once at the end.
+  - **Repeat check across ALL pages** before review: no layout, photo, seam or final ask used twice anywhere on the site,
+    and none matching United, Paul or another client. Plus a facts check: every claim has a source line in FACTS-CHECK.
+  - **Independent review** (a separate agent that did not design it) against the wireframe, the facts and the repeat
+    check, desktop + mobile, before anything goes to Nick. Fix, then show Nick. Log his praise and criticism in
+    `design-log.md` the same turn.
+  - **Figma call budget:** max 2 agents on Figma at once. Cache every get_screenshot / get_design_context / get_metadata
+    result to disk (`<site>/handoff/figma-cache/<frame>/<section>.{png,json}`) and never fetch a cached node again.
 - **Craft:** load skill `pka-site-craft` with this one. It holds HOW United/Paul reached their quality (brand audit,
   United anatomy, 3 directions + translation table, client design system with an owned motif, copy from the client's own
   lines, section craft, review loop) and two Paul worked examples. This skill wins if they ever differ.
@@ -107,7 +128,7 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   1. Research the client + claude-seo plan.
   2. Write the WIREFRAME doc for every page from the master structure, with the client's real copy points. Show it to Nick
      first.
-  3. For EACH section, find 2-3 references: 21st.dev MCP first, then Dribbble, Awwwards, Land-book, Pinterest. Log in a
+  3. For EACH section, answer the plumbing-object question first, then find 2-3 references for how to craft that object: 21st.dev MCP first, then Dribbble, Awwwards, Land-book, Pinterest. Log in a
      component map which 21st.dev component or reference is used for which section on which page, so the build later just
      pulls those components. Send Nick the wireframe + component map before any Figma design.
   3b. Before Figma, run pka-site-craft steps 1-3 for the client: brand audit (what they own and already say), 3 design
@@ -116,11 +137,10 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
      references and WAIT for his pick (Nick, 17 Nov 17:48). Order when several clients wait: the order Nick gives.
   4. Design in Figma (file QbPRX8MU5AA6peTerdP5gg, the client's page) in the client's brand colours, font, logo and real
      photos. The imagery must match the trade (no pipes on an electrician site).
-  5. Details like United/Paul: small captions (e.g. Paul's "The plumber you deserve" under the button), drawn line dividers
-     between sections, no empty generic sections split by a plain line.
-  6. Independent review (a separate instance) before showing Nick, then QA: screenshot every frame and check that it matches the wireframe, that no layout repeats on the
-     site or matches United/Paul/another client, that there are 0 placeholders, and that there's no other client's name,
-     town, phone or photo. Desktop + mobile.
+  5. Section loop with the owned motif and designed seams (above). Small captions like Paul's "The plumber you deserve"
+     under the button.
+  6. Repeat check + facts check across all pages, then the independent review (above). It also checks 0 placeholders and
+     no other client's name, town, phone or photo. Desktop + mobile.
 - Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
   the new row. For real client builds the client's own brand fonts win (Paul = Montserrat / Russo One / Yellowtail).
   Open question for Nick: confirm this split (see project memory `open-items.md`).
