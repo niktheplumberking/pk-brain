@@ -25,9 +25,9 @@ cmsg_01JcVwzrWUQdguS5Ff2vqQcwHBbykTPq2SmPBGifjRYYcw · In-between post topic lis
 2. CRM from Mon 23 Nov: content management, link video folder, publish reels, leads/follow-ups, stats (closing rates).
 3. Send_later reminder Wed 18 Nov (set in the OLD project; it fires there): remind Nick of CRM (first), content-performance analysis, auto-cutting, if he hasn't raised them.
 4. Testimonial video with Atif, 17 Nov (Nick promotes on IG).
-5. Nick's stated plan (his words, 16 Nov; his schedule, not a deadline set by Claude): he teaches scripting, then editing,
-   Tue-Thu 17-19 Nov, then tests the scripting workflow Fri 20 Nov and the editing workflow Sat-Sun 21-22 Nov (~14 videos via
-   Dropbox). Follow his lead on timing. Remind him of Jake's 13 ig-* skills during scripting work.
+5. Nick's plan (his words, 17 Nov; superseded the 16 Nov week plan): this week "Claude Editor" (he teaches scripting and
+   editing; new skills, rules, workflows), next week the CRM and the Plumber King website. All in this project. Current
+   script rules stay until Claude Editor replaces them. Remind him of Jake's 13 ig-* skills during scripting work.
 6. Plumbing by Paul: Nick's review of round 4; Paul's blanks; launch steps (skill pka-client-site, step 6).
 7. PKA own site: homepage FAQ update (title, Q&A 1-8, duck + "Still got a question?" box); 28 Oct audit items.
 8. Content skills exist (`pka-video-scripts`, `pka-post-descriptions`). When Nick teaches scripting and editing, write each
@@ -40,7 +40,7 @@ cmsg_01JcVwzrWUQdguS5Ff2vqQcwHBbykTPq2SmPBGifjRYYcw · In-between post topic lis
   https://united-plumbing-pomona.vercel.app (preview) · CRM https://ig-lead-machine.vercel.app (/content)
 - Tracker: https://docs.google.com/spreadsheets/d/1TM79yGWFzev8IVOlZJ4lQQfS02ZpjkM354aDBo1bRPo/edit?gid=37902856
 - Figma: https://www.figma.com/design/QbPRX8MU5AA6peTerdP5gg
-- Booking: https://calendly.com/plumber-king-agency/30-minutes-detailed-call
+- Booking: https://calendly.com/plumberkingagency/30-minutes-detailed-call
 - Artifacts: new-chapter plan https://claude.ai/artifact/QmGVxfeP6tVFbvLZXqwVH8 · one-call close playbook
   https://claude.ai/artifact/EgMadkknvVzK1Vbdhd864j · Brand DNA https://claude.ai/artifact/BQdeW54xgM4GAWZA5YqXgL · United
   handover https://claude.ai/artifact/1GKcLSGDa4z3EiBQSveM4T · Ed study https://claude.ai/artifact/SZRC7Qj8GQ6gXFKZAX7sCC ·
