@@ -64,6 +64,19 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   placeholders clearly marked). Criticised: Process/FAQ/Contact looking "lazy" (pale, centred heading + white cards). Rule:
   the end of the page gets the same effort as the hero; alternate light/dark; header aligned to grid edges; paired buttons
   same height. Log new praise/criticism in project memory `design-log.md`; source: old project memory note `nick-design-praise-log` (not copied).
+- **Trust-first structure (Nick, 17 Nov, Mike's Plumbing, permanent):** the section right after the hero is ALWAYS reviews
+  (same as United and Paul), on the homepage and on every other page. Reviews and the trust/legal signals a homeowner checks
+  (rating + count, licence status, insured, family owned, real owner face/name) sit up front, never buried. Every SEO/AEO/GEO/
+  CRO choice serves one goal: the homeowner trusts the plumber immediately.
+- **Design freedom + pattern breakers (Nick, 17 Nov):** no full-width horizontal separator lines between sections and no
+  sections with a hard, identical start and end. Break the eye's pattern with elements that cross section edges: a "More we do"
+  box straddling two sections (Paul), a 3-line water-wave divider (Paul, under How it works), a review card crossing into the
+  next section (Paul), the map overlapping the section above (Paul). Don't overpopulate; sections must stay recognisable.
+  Praised on Mike: buttons shaped like the client's logo badge; a giant cropped watermark word ("SERVI...") bleeding off the
+  edge. Compare every new homepage (desktop + mobile) side by side with United and Paul before sending; Mike v1 lacked their
+  small details and backgrounds.
+- **Learn every project (Nick, 17 Nov):** after Nick approves a design, write down what it shares with United, Paul and the
+  earlier approved sites (small details, overall UI) in `design-log.md`, so each project gets better; goal = one-shot sites.
 - Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
   the new row. For real client builds the client's own brand fonts win (Paul = Montserrat / Russo One / Yellowtail).
   Open question for Nick: confirm this split (see project memory `open-items.md`).
