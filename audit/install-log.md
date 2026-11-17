@@ -52,3 +52,7 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 |  | Vercel API deploy (token via env PLUMBER) | PASS: project pk-install-probe, https://pk-install-probe.vercel.app = HTTP 200 |
 | 9 rename | grep "TypeSafe Docs" in repo + memory | 0 left (one memory line says "renamed from") |
 | 4 fresh thread | coordinator started "Test claude-seo skill loads" (cmsg_015Ezzhub3Y5NMvHaXpu5C3f6pqVnqhULCbnQq5KV4TSBS), 09:31 UTC | PASS: pk-brain at e1d5dab; 29 seo skills + seo agents visible; seo-schema used on plumberkingagency.com (2 valid JSON-LD blocks); no Skool footer. Gap: Python runtime not ready (deps not installed), skill fell back to reading page source |
+| claude-seo helpers | Nick saved PLUMBER setup script; fresh thread cmsg_015Ezzhub3Y5NMvHaXpu5C3f8JKEwms6By9KpRB5DgRSWP | doctor ready, but fetch refused the cloud proxy (127.0.0.1): FAIL. Fix 7d2ab5b (launcher trusts 127.0.0.1) |
+| claude-seo helpers retest | fresh thread cmsg_015Ezzhub3Y5NMvHaXpu5C3fAcZW9ZcMPBJaVBYNyPytHg, no CLAUDE_SEO_* vars | PASS: doctor ready (Python 3.13, Chromium); fetch_page.py plumberkingagency.com exit 0, HTTP 200, 193,386 bytes, 2 schema blocks |
+| PR #2 | merged at Nick's yes | plumber-king-agency main 0c9f955 has clients/ + new Calendly link |
+| 6 default branch | switched in Nick's Chrome at his yes | `git ls-remote --symref origin HEAD` = refs/heads/main |
