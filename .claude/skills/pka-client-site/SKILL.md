@@ -67,21 +67,26 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   (same as United and Paul), on the homepage and on every other page. Reviews and the trust/legal signals a homeowner checks
   (rating + count, licence status, insured, family owned, real owner face/name) sit up front, never buried. Every SEO/AEO/GEO/
   CRO choice serves one goal: the homeowner trusts the plumber immediately.
-- **Same principles, own design language (Nick, 17 Nov, rounds 2-3, permanent; replaces "rebuild United/Paul section by
-  section, then reskin"):** every client site keeps the SAME principles, files, site structure and CRO/SEO/GEO/AEO setup as
-  United and Paul: trust first, many tiny trust details, every element placed to make the homeowner trust and call. Homepage
-  order (United + Paul merged): hero + straddling form -> reviews + trust -> ticker/town band -> services + "more we do" ->
-  family/about (+ why us) -> process -> emergency band -> our work (+ IG tile) -> areas with real map -> FAQ (+ ask a person)
-  -> big-phone contact -> footer. Per client change: reviews, copy, images, licence, phone, company name, owner name, font,
-  colours, logo. The LOOK is NOT copied: each site gets its own design language that tells the client's story (United "feels
-  like a story"). Never copy another client's footer or section look (Mike r2 footer copied Paul: rejected). Keep Ed's proven
-  elements (trade + town H1, reviews with platform counts, owner face + name, call buttons everywhere, real photos). Hero type:
-  emergency = call first, planned = book first. Mobile = mobile version of desktop; keep two forms. United/Paul is the floor.
-- **Every section and page unique (Nick, 17 Nov, Mike r3):** no "blocks placed" sections, no template look, no AI slop. Never
-  repeat the same component, layout or style across pages: the Services hub must NOT reuse the homepage service cards; the
-  Areas hub must NOT be a grid of town boxes; How it works must not be generic numbered badges. Each section gets its own idea
-  and story. Kept from Mike r3 (praised): "Ready when you are" contact, slanted section edges instead of separators.
-- **Inspiration before designing (Nick, 17 Nov, Mike r3, full permission for the internet and his Chrome):** before each
+- **Copy United/Paul's frames, then reskin (Nick, 17 Nov 15:10 + 15:20, permanent; replaces "own design language" and
+  "every section unique"):** start every client homepage (and every other page type) from United's or Paul's ACTUAL Figma
+  frames, duplicated onto the client's one page. Keep their sections, order, layout, spacing, type scale and seriousness.
+  Map them first, section by section (example: `/mnt/project-files/clients/mikes-plumbing/HOMEPAGE-STRUCTURE-MAP.md`).
+  Then swap in the client's logo, colours, fonts, real photos, real reviews, copy, phone, licence and owner name. Nothing
+  else changes. Homepage order: utility bar -> header -> hero + straddling estimate form -> reviews/trust bento -> town or
+  service ticker -> services (every card ends in "Call about X") + "more we do" box -> family/about -> who shows up ->
+  reviews wall -> process -> emergency band -> our work (+ IG tile) -> areas with a real Google map -> FAQ (+ ask a person)
+  -> "Ready when you are" big-phone contact -> footer. Paul's mobile frame = the mobile template.
+- **We represent a business, not an ebook (Nick, 17 Nov, permanent):** no guides, quizzes, "Where's the problem?" routers,
+  "Start here" home/business splits, ledgers or self-help sections on any page. Every section shows the business (proof,
+  people, work, area) and ends in a call. A Paul section that is a router or guide gets deleted, not reskinned.
+- **Leftover check when reskinning:** scan every text for the source client's name, phone, licence, town, staff names,
+  award, "Google" and review counts; check mixed-colour text segments, gradients and shadow colours (Paul navy/blue hide
+  there); replace mascots and Google marks; never repeat the same review quote twice on one page.
+- **Pattern breakers (Nick, 17 Nov):** use them occasionally, as United and Paul do: a "More we do" box straddling two
+  sections, a 3-line wave divider, a review card crossing into the next section, the map overlapping the section above.
+  Normal straight section edges are fine; separators do not have to be inclined or covered. Don't overcolour. Praised on
+  Mike: buttons shaped like the client's logo badge; a giant cropped watermark word ("SERVI...") bleeding off the edge.
+- **Inspiration before designing (Nick, 17 Nov, Mike r3, full permission for the internet and his Chrome):** after the United/Paul frames are copied, and before each
   design round study United (code + Vercel site + Figma), Paul (Figma + https://plumbing-by-paul.vercel.app), 21st.dev via its
   MCP (search MANY components per section: heroes, testimonials, features, steps, footers, maps/locations, FAQ, CTA) and turn
   the best into static Figma, plus Awwwards, Landbook, Dribbble, Pinterest and Nick's Chrome bookmarks. Note the refs used per
@@ -90,13 +95,6 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   reviews section. Before ANY design is sent: screenshot every frame and check z-order (nothing straddling an edge is hidden
   by the next section), overlaps, clipped text, centring of numbers in badges/circles, gaps showing the wrong background
   (tilted tickers), repeated components across pages. Fix, re-screenshot, then send. Never send unchecked work.
-- **Design freedom + pattern breakers (Nick, 17 Nov):** no full-width horizontal separator lines between sections and no
-  sections with a hard, identical start and end. Break the eye's pattern with elements that cross section edges: a "More we do"
-  box straddling two sections (Paul), a 3-line water-wave divider (Paul, under How it works), a review card crossing into the
-  next section (Paul), the map overlapping the section above (Paul). Don't overpopulate; sections must stay recognisable.
-  Praised on Mike: buttons shaped like the client's logo badge; a giant cropped watermark word ("SERVI...") bleeding off the
-  edge. Compare every new homepage (desktop + mobile) side by side with United and Paul before sending; Mike v1 lacked their
-  small details and backgrounds.
 - **Learn every project (Nick, 17 Nov):** after Nick approves a design, write down what it shares with United, Paul and the
   earlier approved sites (small details, overall UI) in `design-log.md`, so each project gets better; goal = one-shot sites.
 - Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
