@@ -55,7 +55,18 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
    asks "where are we?", answer from that map, main threads only.
 4. Every report to Nick names which main thread the work belongs to.
 
+## To-do list and daily brief (Nick, 17 Nov, permanent)
+1. One to-do file: `todo.md` in this repo. Add an item **right away** (same turn, commit to main) when Nick says "remind me",
+   "we have to", gives a date, states a plan ("from next week we do X", even with few details: add its start date), or a
+   thread finds something Nick must do. Each item: due or start date, owner (Nick or Claude), main thread, date added.
+2. When an item is done AND verified (proof: commit, file, report, run result), mark it done with the date and the proof,
+   without Nick asking. Never mark done without proof.
+3. Daily brief: scheduled task every day 05:00 Europe/Belgrade (never Nick's travel time zone). Rule book:
+   `jobs/daily-brief.md`. It posts in the project (main) chat. Its thread and the monthly audit's thread are protected:
+   never close or resolve them (listed in memory `thread-map.md`).
+
 ## Where things live
+- To-dos, plans and reminders: `todo.md` (rule above). Memory `open-items.md` keeps only clashes and stale notes.
 - Rules for repeat work: `.claude/skills/<skill>/SKILL.md`. A new or changed rule from Nick goes into the right skill **in the same turn**, gets committed, and is noted in project memory. Push it to the default branch only if
   Nick gave the standing yes (INSTALL step 2, recorded in project memory); otherwise put it on a branch and ask him once.
 - Reference files the skills point to: `rules/` (incl. `rules/sop/` for the homepage CRO and one-call-close SOPs).
