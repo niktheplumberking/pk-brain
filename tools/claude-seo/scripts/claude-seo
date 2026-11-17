@@ -10,6 +10,8 @@ set -euo pipefail
 launcher_dir="$(CDPATH= cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 # pk-brain patch (17 Nov): runtime lives outside the repo, built by the PLUMBER env setup script.
 export CLAUDE_SEO_DATA_DIR="${CLAUDE_SEO_DATA_DIR:-/opt/claude-seo}"
+# pk-brain patch (17 Nov): trust the cloud sandbox's own web proxy on 127.0.0.1 (the documented opt-in for sandboxes).
+export CLAUDE_SEO_TRUSTED_PROXIES="${CLAUDE_SEO_TRUSTED_PROXIES:-127.0.0.1}"
 runtime="${launcher_dir}/runtime.py"
 
 if [[ ! -f "${runtime}" ]]; then
