@@ -51,3 +51,4 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 |  | 21st.dev search "testimonial carousel" | PASS: 3 results |
 |  | Vercel API deploy (token via env PLUMBER) | PASS: project pk-install-probe, https://pk-install-probe.vercel.app = HTTP 200 |
 | 9 rename | grep "TypeSafe Docs" in repo + memory | 0 left (one memory line says "renamed from") |
+| 4 fresh thread | coordinator started "Test claude-seo skill loads" (cmsg_015Ezzhub3Y5NMvHaXpu5C3f6pqVnqhULCbnQq5KV4TSBS), 09:31 UTC | PASS: pk-brain at e1d5dab; 29 seo skills + seo agents visible; seo-schema used on plumberkingagency.com (2 valid JSON-LD blocks); no Skool footer. Gap: Python runtime not ready (deps not installed), skill fell back to reading page source |
