@@ -3,7 +3,7 @@
 > **Paths (16 Nov 2026 install):** run the script from this repo: `bash rules/jev/jev-call.sh request.json`. It logs to
 > `/mnt/project-files/jev/jev-usage-log.csv` in the new project. Other `/mnt/project-files/jev/...` files named below
 > (docs-read-list, valley.json, jev-cookbook-v1.md) are old project files and may not exist here.
-> Key: Nick added the TypeSafe key to this project's environment "TypeSafe Docs" (network secret, Authorization header).
+> Key: Nick added the TypeSafe key to this project's environment "PLUMBER" (network secret, Authorization header).
 > Tested 17 Nov 08:25 UTC: HTTP 200, jev-1.14.0. Every request needs `"model": "jev-latest"` (without it: 422).
 
 Rebuilt from zero on 2026-10-19 after reading **every page of docs.typesafe.ai** (128 pages, list in
@@ -380,9 +380,9 @@ State = `{"exit_check": "...", "evidence": "<pasted command output or screenshot
 - **Auth:** in Nick's cloud setup the network proxy adds the TypeSafe key to calls to `api.typesafe.ai`. There is no
   key in any file or variable. **Never ask Nick for the key or paste one in chat.**
 - **Which cloud environment works:** as of 2026-10-19 12:20 UTC only the "JEV" environment reaches
-  `api.typesafe.ai`. The new "TypeSafe Docs" environment (made default at 12:06) reaches the docs but gets a proxy
+  `api.typesafe.ai`. The new "PLUMBER" environment (made default at 12:06) reaches the docs but gets a proxy
   **403 on the API**. If you get a proxy 403, say so in one line; do not retry or route around it.
-  Update 12:35 UTC: Nick allowed `api.typesafe.ai` in "TypeSafe Docs"; the API is now reachable there but answers
+  Update 12:35 UTC: Nick allowed `api.typesafe.ai` in "PLUMBER"; the API is now reachable there but answers
   401/403 "Must supply an API key!" until the key is added to that environment's network secrets.
 - **Errors (docs):** 400 broken body or `max_tokens_exceeded` (too long), also image problems and a missing image
   header; 401 key problem; 413 over a size limit; 415 bad compression; 422 malformed question (the body names the

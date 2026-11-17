@@ -13,9 +13,9 @@ Nick's personal preferences (how to talk to him) load separately from his accoun
 | scripts, weekend/Friday batch, audits, B-roll, edu/educational, hooks, reel script | skill `pka-video-scripts` |
 | post descriptions, captions text, "script" for a finished video, burning captions into a video | skill `pka-post-descriptions` |
 | edit the videos/reels, cut the raw footage, zooms, loudness, saving the finished files | skill `pka-post-descriptions` (editing section) |
-| client site, redesign, Figma, build/launch a site | skill `pka-client-site` (+ claude-seo plugin for SEO) |
+| client site, redesign, Figma, build/launch a site | skill `pka-client-site` (+ claude-seo skills `seo-*` for SEO) |
 | sales call, prep a call, one-call close, proposal on the call | skill `pka-sales-call` |
-| SEO, audit a site's SEO, schema, sitemap, GEO | claude-seo plugin skills (`seo-*`) |
+| SEO, audit a site's SEO, schema, sitemap, GEO | claude-seo skills in `.claude/skills/seo*` (copied 17 Nov, see `tools/claude-seo/README.md`) |
 | a Jev gate/pick/score, when a skill step calls for it or Nick asks (only then; max 5 Jev calls per task) | skill `jev-judge` |
 | reverse engineer an app/binary/site capture | skill `reverse-engineer-anything` |
 | Apple-quality design, site checklist, site playbook | skills `apple-design`, `apple-website-checklist`, `plumberking-site-playbook` |
@@ -41,6 +41,8 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
 - Never write secret values into this repo or memory (names of env vars are fine).
 - Scheduled or unattended jobs follow their job doc and never wait for Nick.
 - WFACT3.0 is the developer's separate project. It is not ours to touch.
+- When Nick says "add this skill" with GitHub links: read each repo, flag anything risky, copy it into pk-brain `.claude/skills`,
+  push to the default branch, prove a brand-new thread loads and uses it. Never call it installed without proof (Nick, 17 Nov).
 
 ## Where things live
 - Rules for repeat work: `.claude/skills/<skill>/SKILL.md`. A new or changed rule from Nick goes into the right skill **in the same turn**, gets committed, and is noted in project memory. Push it to the default branch only if

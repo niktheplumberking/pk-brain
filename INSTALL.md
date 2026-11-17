@@ -13,7 +13,7 @@ Never guess. If a step fails twice, stop and tell Nick in one line what failed a
   (marketplace github.com/AgriciDaniel/claude-seo) with one card.
 - Jev and connectors depend on the cloud environment. Run one Jev test call (`bash rules/jev/jev-call.sh` with a one-question
   noul request). A proxy 403 means this project uses a different environment from the old one. In that case, tell Nick in
-  one line to pick the cloud environment "TypeSafe Docs" (the old project's; unrestricted network) in Project settings. Also
+  one line to pick the cloud environment "PLUMBER" (the old project's; unrestricted network) in Project settings. Also
   check get_environment shows network unrestricted and fetch one live site. Also check that Supabase, Figma, Google Drive and Claude Docs
   respond with one read call each.
 

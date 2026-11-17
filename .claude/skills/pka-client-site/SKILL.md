@@ -41,10 +41,9 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
 
 ## Step 2: claude-seo plan (before design)
 - SEO/AEO/GEO/CRO plan: titles/H1s per page, URLs (keep the client's current paths), schema, FAQs, quick-answer boxes.
-- Route: if `seo-*` skills are listed in this thread (claude-seo plugin installed in the cloud project, INSTALL step 1),
-  use them. Otherwise: claude-seo 2.5.0 is a plugin in Claude Code **on Nick's PC** (`/seo audit <url>`; needs Python, installed 28 Oct).
-  The PC copy does not load in cloud threads. It injects a Skool footer into reports: always strip it. If the PC route is not
-  available, say so to Nick (one line) before writing the plan another way.
+- Route: use the claude-seo skills in pk-brain (`seo-plan`, `seo-audit`, `seo-local`, `seo-schema` and the other `seo-*`; copied
+  17 Nov, notes in `tools/claude-seo/README.md`). Their Python scripts need deps that are not installed; if a step needs one and it
+  fails, say so in one line. Never add the author's Skool footer. Backup route: claude-seo on Nick's PC (`/seo audit <url>`).
 
 ## Step 3: Full redesign in Figma (Figma MCP only)
 - File: Plumber King designs, https://www.figma.com/design/QbPRX8MU5AA6peTerdP5gg (team OnlyRichTeam). Never Remote Control
@@ -122,6 +121,6 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   check check-host.net first.
 
 ## Step 7: Monthly SEO
-- claude-seo audit (cloud `seo-*` skills if listed, else on Nick's PC); GSC/Bing read in Nick's signed-in Chrome via Claude in Chrome; compare to the last snapshot.
+- claude-seo audit (`seo-*` skills in pk-brain; backup: Nick's PC); GSC/Bing read in Nick's signed-in Chrome via Claude in Chrome; compare to the last snapshot.
 - Namecheap: never switch nameservers, never edit or delete MX/TXT; adding a NEW TXT is OK only with Nick's go.
 - Blogs/backlinks: only with Nick's approval per post; avoid scaled-content and link-exchange schemes.
