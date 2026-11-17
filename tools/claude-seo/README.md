@@ -11,6 +11,7 @@ Changed or left out on purpose (risk check, 17 Nov):
 - install.sh / install.ps1 / uninstall NOT copied and never run: they write to ~/.claude and install packages.
 - Extensions (DataForSEO, Ahrefs, Bing, PostHog, banana, etc.) are files only; none is set up. Some skills say to put API keys in
   ~/.claude/settings.json: never do that; keys go in the cloud environment's network secrets, added by Nick.
-- Python deps (requirements.txt: requests, playwright, weasyprint, Google API clients) are NOT installed. The scripts were not run
-  here (17 Nov: running third-party code was blocked by the safety check). The skills' instructions and references work without them.
+- Python runtime: built OUTSIDE the repo at /opt/claude-seo by `plumber-env-setup.sh` (paste it into the PLUMBER environment's
+  Setup script; it installs only requirements.txt + Playwright Chromium, ~60 s, 1.5 GB). Our only code patch: the launcher
+  `scripts/claude-seo` defaults CLAUDE_SEO_DATA_DIR to /opt/claude-seo. Check with `tools/claude-seo/scripts/claude-seo doctor`.
 - No telemetry or shell-injection patterns found (grep for os.system, shell=True, eval/exec, curl|sh, analytics calls).

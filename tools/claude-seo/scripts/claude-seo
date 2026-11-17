@@ -8,6 +8,8 @@ set -euo pipefail
 # plugin that ships a top-level bin/ directory. Skills, agents, and hooks call
 # it as "${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo"; runtime.py is a sibling.
 launcher_dir="$(CDPATH= cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+# pk-brain patch (17 Nov): runtime lives outside the repo, built by the PLUMBER env setup script.
+export CLAUDE_SEO_DATA_DIR="${CLAUDE_SEO_DATA_DIR:-/opt/claude-seo}"
 runtime="${launcher_dir}/runtime.py"
 
 if [[ ! -f "${runtime}" ]]; then

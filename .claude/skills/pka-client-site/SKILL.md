@@ -42,8 +42,8 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
 ## Step 2: claude-seo plan (before design)
 - SEO/AEO/GEO/CRO plan: titles/H1s per page, URLs (keep the client's current paths), schema, FAQs, quick-answer boxes.
 - Route: use the claude-seo skills in pk-brain (`seo-plan`, `seo-audit`, `seo-local`, `seo-schema` and the other `seo-*`; copied
-  17 Nov, notes in `tools/claude-seo/README.md`). Their Python scripts need deps that are not installed; if a step needs one and it
-  fails, say so in one line. Never add the author's Skool footer. Backup route: claude-seo on Nick's PC (`/seo audit <url>`).
+  17 Nov, notes in `tools/claude-seo/README.md`). Their Python scripts need the runtime from the PLUMBER setup script (`claude-seo doctor`
+  says ready); if it is not ready, say so in one line. Never add the author's Skool footer. Backup route: claude-seo on Nick's PC (`/seo audit <url>`).
 
 ## Step 3: Full redesign in Figma (Figma MCP only)
 - File: Plumber King designs, https://www.figma.com/design/QbPRX8MU5AA6peTerdP5gg (team OnlyRichTeam). Never Remote Control
