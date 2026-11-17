@@ -55,13 +55,6 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   `rules/sop/plumber-homepage-cro-sop.md` in this repo (copied 16 Nov from the old project files; v1.3: 14 blocks, mobile rules, section 8 QA,
   section 11 font register, section 13 hard rules). Read it before designing. Its "homepages only" scope is superseded:
   real clients get the full multi-page site.
-- **One pattern for every client (Nick, 17 Nov, Khinda, permanent; replaces the old "vary layout per project" line):** every
-  client site copies United and Paul: same files, site structure, homepage structure, inner-page structures and the same
-  CRO/SEO/GEO/AEO pattern. ONLY these change per client: font, colours, logo, licence number, phone, name, copy. Start every
-  new design by opening United's and Paul's Figma pages and rebuilding their structure section by section, then reskin.
-  Keep Ed's proven elements (trade + town H1, reviews with platform counts, owner face + name, call buttons everywhere,
-  real photos). Hero type per business: emergency = call first, planned = book first.
-  Mobile = mobile version of desktop; keep two forms; reviews styled like a live Google widget.
 - **Nick's praise/criticism (design log):** praised United v2 hero (full-bleed scene, real owner cut-out, glow, H1 trade+town
   in two colours, form straddling the hero edge), brand-motif dividers between sections ("that's how we differentiate"),
   About collage, clipped-corner service cards; United full site "best website in my portfolio" (every section its own idea,
@@ -72,12 +65,29 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   (same as United and Paul), on the homepage and on every other page. Reviews and the trust/legal signals a homeowner checks
   (rating + count, licence status, insured, family owned, real owner face/name) sit up front, never buried. Every SEO/AEO/GEO/
   CRO choice serves one goal: the homeowner trusts the plumber immediately.
-- **One pattern for every client (Nick, 17 Nov, permanent):** every client site keeps the SAME files, site structure,
-  homepage structure, other pages' structure and CRO/SEO/GEO/AEO setup as United and Paul. Only these change: font, colours,
-  logo, licence number, phone, name and copy. Never break the pattern. Homepage order (United + Paul merged): hero + straddling
-  form -> reviews + trust bento -> ticker/town band -> services + "more we do" box -> family/about (+ why us) -> process ->
-  emergency band -> our work (+ IG tile) -> areas with real map -> FAQ (+ "ask a person" card) -> big-phone contact -> footer.
-  Aim above average every time: United/Paul level is the floor (Khinda v1 and Mike v1 were judged below it).
+- **Same principles, own design language (Nick, 17 Nov, rounds 2-3, permanent; replaces "rebuild United/Paul section by
+  section, then reskin"):** every client site keeps the SAME principles, files, site structure and CRO/SEO/GEO/AEO setup as
+  United and Paul: trust first, many tiny trust details, every element placed to make the homeowner trust and call. Homepage
+  order (United + Paul merged): hero + straddling form -> reviews + trust -> ticker/town band -> services + "more we do" ->
+  family/about (+ why us) -> process -> emergency band -> our work (+ IG tile) -> areas with real map -> FAQ (+ ask a person)
+  -> big-phone contact -> footer. Per client change: reviews, copy, images, licence, phone, company name, owner name, font,
+  colours, logo. The LOOK is NOT copied: each site gets its own design language that tells the client's story (United "feels
+  like a story"). Never copy another client's footer or section look (Mike r2 footer copied Paul: rejected). Keep Ed's proven
+  elements (trade + town H1, reviews with platform counts, owner face + name, call buttons everywhere, real photos). Hero type:
+  emergency = call first, planned = book first. Mobile = mobile version of desktop; keep two forms. United/Paul is the floor.
+- **Every section and page unique (Nick, 17 Nov, Mike r3):** no "blocks placed" sections, no template look, no AI slop. Never
+  repeat the same component, layout or style across pages: the Services hub must NOT reuse the homepage service cards; the
+  Areas hub must NOT be a grid of town boxes; How it works must not be generic numbered badges. Each section gets its own idea
+  and story. Kept from Mike r3 (praised): "Ready when you are" contact, slanted section edges instead of separators.
+- **Inspiration before designing (Nick, 17 Nov, Mike r3, full permission for the internet and his Chrome):** before each
+  design round study United (code + Vercel site + Figma), Paul (Figma + https://plumbing-by-paul.vercel.app), 21st.dev via its
+  MCP (search MANY components per section: heroes, testimonials, features, steps, footers, maps/locations, FAQ, CTA) and turn
+  the best into static Figma, plus Awwwards, Landbook, Dribbble, Pinterest and Nick's Chrome bookmarks. Note the refs used per
+  section in the client's `figma/STYLE.md`.
+- **QA before sending, always (Nick, 17 Nov, Mike r2 mistake):** Mike r2 went out with the hero estimate form covered by the
+  reviews section. Before ANY design is sent: screenshot every frame and check z-order (nothing straddling an edge is hidden
+  by the next section), overlaps, clipped text, centring of numbers in badges/circles, gaps showing the wrong background
+  (tilted tickers), repeated components across pages. Fix, re-screenshot, then send. Never send unchecked work.
 - **Design freedom + pattern breakers (Nick, 17 Nov):** no full-width horizontal separator lines between sections and no
   sections with a hard, identical start and end. Break the eye's pattern with elements that cross section edges: a "More we do"
   box straddling two sections (Paul), a 3-line water-wave divider (Paul, under How it works), a review card crossing into the
