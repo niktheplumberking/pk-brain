@@ -9,8 +9,9 @@ Nick runs Plumber King Agency: websites, SEO and IG content for US/Canada plumbe
 plumber's site. Facts about each client live in project memory `clients.md` (United) and `client-plumbing-by-paul.md` (one file per client); this file holds the rules.
 
 ## Must-follow rules (read before any step)
-1. **Order is fixed:** deep research -> claude-seo SEO/AEO/GEO/CRO plan -> full multi-page redesign IN the client's Figma
-   (Figma MCP only) -> **STOP: Nick approves** -> build -> QA -> launch -> monthly SEO.
+1. **Order is fixed:** deep research -> claude-seo SEO/AEO/GEO/CRO plan -> WIREFRAME doc for every page + component map
+   -> **STOP: Nick approves the wireframe + component map** -> full multi-page design IN the client's Figma (Figma MCP only)
+   -> **STOP: Nick approves the Figma** -> build -> QA -> launch -> monthly SEO. (Design process in Step 3.)
 2. **Never build, deploy or open Vercel before Nick approves the full Figma.** (Paul, 13 Nov: code + Figma v2 rejected as low
    effort because design was skipped.)
 3. **Use the client's own brand**: their real logo, logo/van colours and fonts. Never invent a palette (Paul's "Sunshine City"
@@ -63,40 +64,50 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   placeholders clearly marked). Criticised: Process/FAQ/Contact looking "lazy" (pale, centred heading + white cards). Rule:
   the end of the page gets the same effort as the hero; alternate light/dark; header aligned to grid edges; paired buttons
   same height. Log new praise/criticism in project memory `design-log.md`; source: old project memory note `nick-design-praise-log` (not copied).
-- **Trust-first structure (Nick, 17 Nov, Mike's Plumbing, permanent):** the section right after the hero is ALWAYS reviews
-  (same as United and Paul), on the homepage and on every other page. Reviews and the trust/legal signals a homeowner checks
-  (rating + count, licence status, insured, family owned, real owner face/name) sit up front, never buried. Every SEO/AEO/GEO/
-  CRO choice serves one goal: the homeowner trusts the plumber immediately.
-- **Copy United/Paul's frames, then reskin (Nick, 17 Nov 15:10 + 15:20, permanent; replaces "own design language" and
-  "every section unique"):** start every client homepage (and every other page type) from United's or Paul's ACTUAL Figma
-  frames, duplicated onto the client's one page. Keep their sections, order, layout, spacing, type scale and seriousness.
-  Map them first, section by section (example: `/mnt/project-files/clients/mikes-plumbing/HOMEPAGE-STRUCTURE-MAP.md`).
-  Then swap in the client's logo, colours, fonts, real photos, real reviews, copy, phone, licence and owner name. Nothing
-  else changes. Homepage order: utility bar -> header -> hero + straddling estimate form -> reviews/trust bento -> town or
-  service ticker -> services (every card ends in "Call about X") + "more we do" box -> family/about -> who shows up ->
-  reviews wall -> process -> emergency band -> our work (+ IG tile) -> areas with a real Google map -> FAQ (+ ask a person)
-  -> "Ready when you are" big-phone contact -> footer. Paul's mobile frame = the mobile template.
-- **We represent a business, not an ebook (Nick, 17 Nov, permanent):** no guides, quizzes, "Where's the problem?" routers,
-  "Start here" home/business splits, ledgers or self-help sections on any page. Every section shows the business (proof,
-  people, work, area) and ends in a call. A Paul section that is a router or guide gets deleted, not reskinned.
-- **Leftover check when reskinning:** scan every text for the source client's name, phone, licence, town, staff names,
-  award, "Google" and review counts; check mixed-colour text segments, gradients and shadow colours (Paul navy/blue hide
-  there); replace mascots and Google marks; never repeat the same review quote twice on one page.
-- **Pattern breakers (Nick, 17 Nov):** use them occasionally, as United and Paul do: a "More we do" box straddling two
-  sections, a 3-line wave divider, a review card crossing into the next section, the map overlapping the section above.
-  Normal straight section edges are fine; separators do not have to be inclined or covered. Don't overcolour. Praised on
-  Mike: buttons shaped like the client's logo badge; a giant cropped watermark word ("SERVI...") bleeding off the edge.
-- **Inspiration before designing (Nick, 17 Nov, Mike r3, full permission for the internet and his Chrome):** after the United/Paul frames are copied, and before each
-  design round study United (code + Vercel site + Figma), Paul (Figma + https://plumbing-by-paul.vercel.app), 21st.dev via its
-  MCP (search MANY components per section: heroes, testimonials, features, steps, footers, maps/locations, FAQ, CTA) and turn
-  the best into static Figma, plus Awwwards, Landbook, Dribbble, Pinterest and Nick's Chrome bookmarks. Note the refs used per
-  section in the client's `figma/STYLE.md`.
-- **QA before sending, always (Nick, 17 Nov, Mike r2 mistake):** Mike r2 went out with the hero estimate form covered by the
-  reviews section. Before ANY design is sent: screenshot every frame and check z-order (nothing straddling an edge is hidden
-  by the next section), overlaps, clipped text, centring of numbers in badges/circles, gaps showing the wrong background
-  (tilted tickers), repeated components across pages. Fix, re-screenshot, then send. Never send unchecked work.
-- **Learn every project (Nick, 17 Nov):** after Nick approves a design, write down what it shares with United, Paul and the
-  earlier approved sites (small details, overall UI) in `design-log.md`, so each project gets better; goal = one-shot sites.
+- **Structure vs layout (Nick, 17 Nov 15:58, permanent; replaces every other design rule from 17 Nov):**
+  - STRUCTURE = the wireframe: which pages exist, which sections come in which order, and what each section SAYS. You could
+    write it on paper. It has no visuals. Structure is FIXED and comes from United Plumbing + Plumbing by Paul, because it's
+    built to rank #1 (SEO/AEO/GEO) and turn visitors into calls.
+  - LAYOUT/DESIGN = how a section looks. It is NEVER copied. No section may look like another client's section. No section
+    layout may repeat anywhere on the same site. If the homepage shows reviews as a carousel, the Reviews page, service pages
+    and city pages must each show reviews in a different layout.
+- **Master structure (from the live United and Paul sites):**
+  - Every page: utility bar (rating, licence, hours), header with phone CTA, emergency strip, BreadcrumbList + LocalBusiness
+    schema, then it ends with CTA + form, areas, footer with NAP.
+  - HOME: hero (H1 "<24/7> <Trade> in <City>, <ST>", towns served, call button + "Tap to call" microline, text-a-photo,
+    trust badges) / call-back form bar with "What's going on?" chips / rating band + reviews / 6 services (one marked "Most
+    asked") / family-about teaser + crew / work photos / why us / process in 4-5 steps (price first) / emergency band /
+    areas / FAQ (schema) + "Ask a person" / final estimate form.
+  - SERVICES HUB: hero + form / emergency strip / symptom picker ("Tell us what you see") / service families / full list /
+    promises / reviews / FAQ / CTA.
+  - SERVICE PAGE: H1 "<Service> in <City>, <ST>" + short form / quick-answer block (AEO) + job-facts card / problem types /
+    DIY vs pro / process / equipment feature / pricing explainer / reviews / why us / prevention tips / FAQ (schema) /
+    related services / CTA / areas.
+  - AREA HUB: hero + form / "one base" (NAP) / towns grouped / "closer means faster" / local quirks / reviews by town / FAQ /
+    CTA.
+  - CITY PAGE: H1 "<Trade> in <City>, <ST>" / quick answer / distance from base / local home problems / top 6 services
+    (links) / neighbourhoods / local permits question as H2 / reviews / photos / family band / city emergency band / city
+    FAQ / nearby towns / city-named CTA.
+  - ABOUT: hero / origin story + timeline / numbers / owners / crew / 4 rules / proof (video, reviews) / community /
+    licences / CTA.
+  - CONTACT: hero ("real person, we pick up") / ways to reach us, fastest first / form + what happens next / shop NAP + map /
+    other tasks / 3 FAQs / phone band.
+  - Plus Reviews, Our work and FAQ pages, and Guides if there's content. Adapt the trade words for non-plumbers (Khinda =
+    electrician).
+- **Design process (in this order, never skip):**
+  1. Research the client + claude-seo plan.
+  2. Write the WIREFRAME doc for every page from the master structure, with the client's real copy points. Show it to Nick
+     first.
+  3. For EACH section, find 2-3 references: 21st.dev MCP first, then Dribbble, Awwwards, Land-book, Pinterest. Log in a
+     component map which 21st.dev component or reference is used for which section on which page, so the build later just
+     pulls those components. Send Nick the wireframe + component map before any Figma design.
+  4. Design in Figma (file QbPRX8MU5AA6peTerdP5gg, the client's page) in the client's brand colours, font, logo and real
+     photos. The imagery must match the trade (no pipes on an electrician site).
+  5. Details like United/Paul: small captions (e.g. Paul's "The plumber you deserve" under the button), drawn line dividers
+     between sections, no empty generic sections split by a plain line.
+  6. QA before showing Nick: screenshot every frame and check that it matches the wireframe, that no layout repeats on the
+     site or matches United/Paul/another client, that there are 0 placeholders, and that there's no other client's name,
+     town, phone or photo. Desktop + mobile.
 - Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
   the new row. For real client builds the client's own brand fonts win (Paul = Montserrat / Russo One / Yellowtail).
   Open question for Nick: confirm this split (see project memory `open-items.md`).
