@@ -41,6 +41,10 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
 - Never write secret values into this repo or memory (names of env vars are fine).
 - Scheduled or unattended jobs follow their job doc and never wait for Nick.
 - WFACT3.0 is the developer's separate project. It is not ours to touch.
+- Lead lists and dialing (Nick, 17 Nov, permanent): never put on a call list, or dial, any lead in a state with a strict
+  state autodialer law: Florida (FTSA), Oklahoma (OTSA), Maryland (Stop the Spam Calls Act). Exclude by state AND by phone
+  area code (FL 239 305 321 324 352 386 407 448 561 645 656 689 727 728 754 772 786 813 850 863 904 941 954; OK 405 539 572
+  580 918; MD 227 240 301 410 443 667). If another state passes a similar law, flag it to Nick before adding it.
 - When Nick says "add this skill" with GitHub links: read each repo, flag anything risky, copy it into pk-brain `.claude/skills`,
   push to the default branch, prove a brand-new thread loads and uses it. Never call it installed without proof (Nick, 17 Nov).
 
