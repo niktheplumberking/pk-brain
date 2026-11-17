@@ -37,3 +37,17 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 | 4 scheduled run | get_trigger new content job, 17 Nov | PASS: scheduled run 07:48:51 UTC delivered into the CRM session cse_013rHJ3ZNq7L6CCkpfEHsWG5 (SUCCEEDED = wake delivered). Daily research first scheduled run is 17 Nov 23:41 UTC: not yet seen |
 | 5 links (artifacts) | Artifact list (scope all) | PASS (existence): all 13 artifact links in handover are listed as Nick's own artifacts from this project; contents not opened |
 | Calendly | curl new URL | PASS: https://calendly.com/plumberkingagency/30-minutes-detailed-call = 200, page "30 Minutes Discovery Call - Nick Bennett". Updated in handover, memory (MEMORY.md, agency-brand.md), site source (plumber-king-agency branch claude/project-thread-ljkqw7, fc4a9b4). Live site: confirmed byte-identical to preview 87ae163 (3 pages); patched the 99 HTML/RSC files of that build (283 links; reverse patch gives zero diff). Patch zip on Nick's PC `PLUMBER KING\4 BRAND AND DESIGNS\Website uploads\pka-calendly-fix-changed-files-2026-11-17.zip` (sha256 46b3133a..., read back, match). OPEN: upload to Hostinger (hPanel; no route from here: Chrome extension can only upload screenshots, no FTP credentials) |
+
+## 17 Nov final items (Nick 09:25 UTC)
+| Item | Check | Result |
+|---|---|---|
+| 1 scan card | closed as "Leave" | Parked to next week: Calendly live upload, CRM, 06:03 scan, PC safety-check issue (memory open-items #6) |
+| 2 Calendly | grep repo + memory for calendly.com | only the new link, except this log's history row |
+| 4 claude-seo | AgriciDaniel/claude-seo 2.6.2 @468ed5b copied (29 skills, 20 agents, tools/claude-seo) | risk notes in tools/claude-seo/README.md; hooks + installers left out; Skool footer removed; this session's skill list shows seo + 28 seo-* after the copy. Fresh-thread proof: see below |
+| 5 rule | CLAUDE.md Hard rules | "add this skill" rule added (041a410) |
+| 6 main | `main` created = 041a410 | default branch switch: no tool route from the cloud (GitHub MCP has no repo-settings call) |
+| 7 client code | WFACT3.0 read (clone, both branches): no United/Paul files | code copied from its real branches into plumber-king-agency clients/ (8ddc922, tree hashes identical), PR #2; root build: TypeScript passed, then Next 16.4.3 security gate stopped the build (pre-existing) |
+| 8 tools | Figma get_metadata on QbPRX8MU5AA6peTerdP5gg | PASS: 7 pages listed |
+|  | 21st.dev search "testimonial carousel" | PASS: 3 results |
+|  | Vercel API deploy (token via env PLUMBER) | PASS: project pk-install-probe, https://pk-install-probe.vercel.app = HTTP 200 |
+| 9 rename | grep "TypeSafe Docs" in repo + memory | 0 left (one memory line says "renamed from") |

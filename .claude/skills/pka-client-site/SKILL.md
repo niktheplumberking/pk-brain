@@ -109,6 +109,8 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
 - Proof for Nick: side-by-side videos vs United for motion changes.
 
 ## Step 6: Deploy preview and launch
+- Vercel API token is in the cloud env PLUMBER (network secret, api.vercel.com; proven 17 Nov): deploy previews from the cloud via
+  the API/CLI first.
 - Vercel (Nick's account): if the CLI is logged out, open the Vercel device-approval page in a new tab in Nick's Chrome
   (Claude in Chrome) and tell him in the thread; HE clicks approve. Deploy: `vercel build --prod` then
   `vercel deploy --prebuilt --prod` (plain deploy hung).
