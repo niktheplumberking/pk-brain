@@ -9,6 +9,11 @@ description: "How Plumber King client sites reach United Plumbing / Plumbing by 
 This skill says HOW the quality was reached on United Plumbing and Plumbing by Paul. Where they ever differ,
 `pka-client-site` wins, and Nick's newest word wins over both.
 
+**Nick's rule, first (17 Nov, permanent):** the STRUCTURE is always the same, for every client and every page type: which
+pages exist, which sections come in which order, what each section says (the master structure in pka-client-site). It
+works and brings calls, so it never changes. Only the UI changes per client: layout, fonts, photos, colours, motif.
+Everything below is about doing that UI part at United/Paul level.
+
 Labels: **fact** = seen in the files, threads or live sites (13-17 Nov 2026). **inferring** = my reading of why it worked.
 
 ## 0. The secret in one paragraph
