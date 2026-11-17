@@ -18,7 +18,6 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 | 8 | Start Mon 23 Nov | Upload the Calendly link fix to the live site (zip on Nick's PC: site/pka-calendly-fix-changed-files-2026-11-17.zip) | Claude, Nick approves | Agency website | 17 Nov | Nick, 17 Nov (parked item) |
 | 9 | Start Mon 23 Nov | Next.js upgrade (plumber-king-agency build is stopped by the Next 16.4.3 security gate, per `audit/install-log.md`) | Claude | Agency website | 17 Nov | Nick, 17 Nov (parked item) |
 | 10 | Fri 1 Jan 2027 | First monthly setup audit report arrives (scheduled task trig_01QSZrS3UmUnN63jCon9qNmp, 10:00 Belgrade); Nick reads it and picks cleanups | Claude runs, Nick reads | none (protected sub thread "Set up monthly setup audit") | 17 Nov | Nick, 17 Nov |
-| 11 | Tue 17 Nov, night (daily research runs 06:41 Bangkok = 00:41 Belgrade 18 Nov) | Check tonight's daily-research run in the new CRM thread, then close the install sub thread | Claude | CRM | 17 Nov | memory thread-map.md |
 | 12 | Wed 18 Nov (05:00 + 08:00 UTC) | Two reminders fire in the OLD project (CRM, content analysis, auto-cutting) | Nick (reads them there) | CRM | 17 Nov | memory crm-and-jobs.md |
 | 13 | ~Mon 23 Nov | Dialpad trial ends (date approximate) | Nick | CRM | 17 Nov | memory open-items.md |
 | 14 | ~Fri 27 Nov | OneDrive recycle bin purge (date approximate) | Nick | none (general) | 17 Nov | memory open-items.md |
@@ -39,6 +38,7 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 
 | Done | Item | Main thread | Proof |
 |---|---|---|---|
+| 18 Nov | Check the first daily-research run in the new CRM thread; close the install thread | CRM | trig_01G2djPR6pavdtQJek7ZMTrE fired 17 Nov 23:41 UTC, SUCCEEDED; daily_picks 2026-11-18 = 6 rows at 23:43:57 UTC (audit/install-log.md) |
 | 17 Nov | Main/sub thread rule saved in CLAUDE.md + thread map in memory | none (general) | pk-brain commit 05dd88d |
 | 17 Nov | Monthly setup audit scheduled task saved (first real run 1 Jan 2027) | none (general) | trig_01QSZrS3UmUnN63jCon9qNmp read back; `jobs/monthly-setup-audit.md` commit 9458016 |
 | 17 Nov | To-do rule + todo.md + daily brief task (05:00 Belgrade) | none (general) | task trig_016rpA1vXyTY6u6kETE37DYS read back; commit that added this file; memory `daily-brief.md` |
