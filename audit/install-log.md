@@ -56,3 +56,4 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 | claude-seo helpers retest | fresh thread cmsg_015Ezzhub3Y5NMvHaXpu5C3fAcZW9ZcMPBJaVBYNyPytHg, no CLAUDE_SEO_* vars | PASS: doctor ready (Python 3.13, Chromium); fetch_page.py plumberkingagency.com exit 0, HTTP 200, 193,386 bytes, 2 schema blocks |
 | PR #2 | merged at Nick's yes | plumber-king-agency main 0c9f955 has clients/ + new Calendly link |
 | 6 default branch | switched in Nick's Chrome at his yes | `git ls-remote --symref origin HEAD` = refs/heads/main |
+| daily research, first scheduled run | get_trigger trig_01G2djPR6pavdtQJek7ZMTrE + daily_picks | PASS: fired 2026-11-17 23:41:26 UTC into the CRM session, status SUCCEEDED; daily_picks day 2026-11-18 = 6 rows created 23:43:57 UTC |
