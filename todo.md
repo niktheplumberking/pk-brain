@@ -30,6 +30,8 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 | 20 | no date | Jim's CSLB licence (do not raise it with Jim) | Nick | Client - United Plumbing (not created) | 17 Nov | memory open-items.md |
 | 21 | no date | Desktop folder structure for the new chapter, incl. Dropbox | Nick | none (general) | 17 Nov | memory open-items.md |
 | 22 | Wed 18 Nov, morning (Nick promised Mike the site "by tomorrow morning") | Mike's Plumbing Services (Mike Navarro, Riverside CA, hottest lead, free site, he said "Let's do it!"): research + claude-seo plan + full Figma design today; Nick approves Figma; then build, QA, Vercel preview link | Claude builds, Nick approves Figma | Client - Mike's Plumbing Services | 17 Nov | Nick, 17 Nov 11:03 UTC |
+| 23 | Wed 18 Nov, ~11:00 UTC (= 18:00 Bangkok; Nick promised "something really cool in less than 24h" on 17 Nov ~11:00 UTC) | Khinda Electrical (Surrey BC, ELECTRICIAN; IG khinda__electrical; he said "Yes sure bro"): research + claude-seo plan + full Figma design; Nick approves Figma; then build, QA, Vercel preview link | Claude builds, Nick approves Figma | Client - Khinda Electrical | 17 Nov | Nick, 17 Nov 11:10 UTC |
+| 24 | Between Tue 1 Dec and Tue 22 Dec (2-5 weeks from 17 Nov) | Promise to Khinda: "at least 5 calls in the next 2-5 weeks". Needs more than the site (Google Business Profile etc.; plan in the Khinda thread) | Nick + Claude | Client - Khinda Electrical | 17 Nov | Nick, 17 Nov 11:10 UTC |
 
 ## Done (date + proof)
 
