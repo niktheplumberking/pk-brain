@@ -44,6 +44,17 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
 - When Nick says "add this skill" with GitHub links: read each repo, flag anything risky, copy it into pk-brain `.claude/skills`,
   push to the default branch, prove a brand-new thread loads and uses it. Never call it installed without proof (Nick, 17 Nov).
 
+## Threads: main and sub (Nick, 17 Nov, permanent)
+1. MAIN threads = ongoing work Nick comes back to: "Claude Editor", "CRM", "Agency website", and one per client named
+   "Client - <name>". Only Claude (the coordinator) creates them, and only when Nick starts new ongoing work.
+2. SUB threads = Claude's working threads for one or more tasks it handles while working. Nick does not read them, does not need
+   to know about them and must not be involved in them (it creates organisation mess for him); he cares only about main threads.
+   When a sub thread is done and verified, it saves its key results and decisions to project memory, then Claude closes it
+   (resolve, never delete). Reopen it only if it is needed again.
+3. Keep a thread map in project memory (`thread-map.md`): each main thread, its status, and what it is waiting on. When Nick
+   asks "where are we?", answer from that map, main threads only.
+4. Every report to Nick names which main thread the work belongs to.
+
 ## Where things live
 - Rules for repeat work: `.claude/skills/<skill>/SKILL.md`. A new or changed rule from Nick goes into the right skill **in the same turn**, gets committed, and is noted in project memory. Push it to the default branch only if
   Nick gave the standing yes (INSTALL step 2, recorded in project memory); otherwise put it on a branch and ask him once.
