@@ -9,8 +9,11 @@ Nick runs Plumber King Agency: websites, SEO and IG content for US/Canada plumbe
 plumber's site. Facts about each client live in project memory `clients.md` (United) and `client-plumbing-by-paul.md` (one file per client); this file holds the rules.
 
 ## Must-follow rules (read before any step)
+0. **Load both skills for every client design** (Nick, 17 Nov 17:48): `pka-client-site` (this one: what and in which order)
+   + `pka-site-craft` (how United/Paul quality is reached). No client design step starts with only one of them.
 1. **Order is fixed:** deep research -> claude-seo SEO/AEO/GEO/CRO plan -> WIREFRAME doc for every page + component map
-   -> **STOP: Nick approves the wireframe + component map** -> full multi-page design IN the client's Figma (Figma MCP only)
+   -> **STOP: Nick approves the wireframe + component map** -> pka-site-craft steps 1-3 (brand audit, 3 directions,
+   translation table + one signature idea) -> **STOP: Nick picks the direction** -> full multi-page design IN the client's Figma (Figma MCP only)
    -> **STOP: Nick approves the Figma** -> build -> QA -> launch -> monthly SEO. (Design process in Step 3.)
 2. **Never build, deploy or open Vercel before Nick approves the full Figma.** (Paul, 13 Nov: code + Figma v2 rejected as low
    effort because design was skipped.)
@@ -20,7 +23,10 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
    real ones (4+ stars or clearly positive), never labelled "Google" unless they are. No AggregateRating schema.
    Every stand-in is labelled as a stand-in; keep a "<client> to confirm" list in the site README.
 5. **Real photos only**, never the same photo twice on one page. Owner photo ladder: real owner > real family/team > Higgsfield
-   stand-in. Only a generated stand-in gets a small "Your photo goes here" sticker, inside the frame.
+   stand-in.
+5b. **Missing facts** (licence, owner name, photo, reviews; Nick, 17 Nov 17:48): design the section as it will really look,
+   and put a short yellow "confirm" note BESIDE the frame. Never grey boxes, "[name]" text or placeholder stickers
+   inside the design.
 6. **Ratings = real Google numbers** (stars + count), dated. **Areas map = a real Google Maps screenshot.** If the cloud
    browser is blocked, read them on Nick's PC via Remote Control.
 7. **Nothing covers a face**; no text overlaps; process lines pass through the numbers.
@@ -104,11 +110,15 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   3. For EACH section, find 2-3 references: 21st.dev MCP first, then Dribbble, Awwwards, Land-book, Pinterest. Log in a
      component map which 21st.dev component or reference is used for which section on which page, so the build later just
      pulls those components. Send Nick the wireframe + component map before any Figma design.
+  3b. Before Figma, run pka-site-craft steps 1-3 for the client: brand audit (what they own and already say), 3 design
+     directions, and the translation table vs United, Paul and every other client (any matching cell = change it), plus
+     one signature idea from the client's own stuff. Send Nick the direction in one short message with 1-2 visual
+     references and WAIT for his pick (Nick, 17 Nov 17:48). Order when several clients wait: the order Nick gives.
   4. Design in Figma (file QbPRX8MU5AA6peTerdP5gg, the client's page) in the client's brand colours, font, logo and real
      photos. The imagery must match the trade (no pipes on an electrician site).
   5. Details like United/Paul: small captions (e.g. Paul's "The plumber you deserve" under the button), drawn line dividers
      between sections, no empty generic sections split by a plain line.
-  6. QA before showing Nick: screenshot every frame and check that it matches the wireframe, that no layout repeats on the
+  6. Independent review (a separate instance) before showing Nick, then QA: screenshot every frame and check that it matches the wireframe, that no layout repeats on the
      site or matches United/Paul/another client, that there are 0 placeholders, and that there's no other client's name,
      town, phone or photo. Desktop + mobile.
 - Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
