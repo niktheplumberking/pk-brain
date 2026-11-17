@@ -13,7 +13,7 @@ Nick's personal preferences (how to talk to him) load separately from his accoun
 | scripts, weekend/Friday batch, audits, B-roll, edu/educational, hooks, reel script | skill `pka-video-scripts` |
 | post descriptions, captions text, "script" for a finished video, burning captions into a video | skill `pka-post-descriptions` |
 | edit the videos/reels, cut the raw footage, zooms, loudness, saving the finished files | skill `pka-post-descriptions` (editing section) |
-| client site, redesign, Figma, build/launch a site | skill `pka-client-site` (+ claude-seo skills `seo-*` for SEO) |
+| client site, redesign, Figma, build/launch a site | skill `pka-client-site` + skill `pka-site-craft` (how to reach United/Paul quality) (+ claude-seo skills `seo-*` for SEO) |
 | sales call, prep a call, one-call close, proposal on the call | skill `pka-sales-call` |
 | SEO, audit a site's SEO, schema, sitemap, GEO | claude-seo skills in `.claude/skills/seo*` (copied 17 Nov, see `tools/claude-seo/README.md`) |
 | a Jev gate/pick/score, when a skill step calls for it or Nick asks (only then; max 5 Jev calls per task) | skill `jev-judge` |

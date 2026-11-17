@@ -94,6 +94,9 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
     other tasks / 3 FAQs / phone band.
   - Plus Reviews, Our work and FAQ pages, and Guides if there's content. Adapt the trade words for non-plumbers (Khinda =
     electrician).
+- **Craft:** load skill `pka-site-craft` with this one. It holds HOW United/Paul reached their quality (brand audit,
+  United anatomy, 3 directions + translation table, client design system with an owned motif, copy from the client's own
+  lines, section craft, review loop) and two Paul worked examples. This skill wins if they ever differ.
 - **Design process (in this order, never skip):**
   1. Research the client + claude-seo plan.
   2. Write the WIREFRAME doc for every page from the master structure, with the client's real copy points. Show it to Nick
