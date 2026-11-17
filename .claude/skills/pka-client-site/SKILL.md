@@ -72,6 +72,12 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   (same as United and Paul), on the homepage and on every other page. Reviews and the trust/legal signals a homeowner checks
   (rating + count, licence status, insured, family owned, real owner face/name) sit up front, never buried. Every SEO/AEO/GEO/
   CRO choice serves one goal: the homeowner trusts the plumber immediately.
+- **One pattern for every client (Nick, 17 Nov, permanent):** every client site keeps the SAME files, site structure,
+  homepage structure, other pages' structure and CRO/SEO/GEO/AEO setup as United and Paul. Only these change: font, colours,
+  logo, licence number, phone, name and copy. Never break the pattern. Homepage order (United + Paul merged): hero + straddling
+  form -> reviews + trust bento -> ticker/town band -> services + "more we do" box -> family/about (+ why us) -> process ->
+  emergency band -> our work (+ IG tile) -> areas with real map -> FAQ (+ "ask a person" card) -> big-phone contact -> footer.
+  Aim above average every time: United/Paul level is the floor (Khinda v1 and Mike v1 were judged below it).
 - **Design freedom + pattern breakers (Nick, 17 Nov):** no full-width horizontal separator lines between sections and no
   sections with a hard, identical start and end. Break the eye's pattern with elements that cross section edges: a "More we do"
   box straddling two sections (Paul), a 3-line water-wave divider (Paul, under How it works), a review card crossing into the
