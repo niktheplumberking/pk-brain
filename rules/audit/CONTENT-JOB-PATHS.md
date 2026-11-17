@@ -17,7 +17,7 @@ project, read each one from pk-brain instead (same content, cleaned 16 Nov):
   `main`). Use: `git -C /home/user/pk-brain fetch -q origin claude/project-thread-4p3al4 && git -C /home/user/pk-brain checkout -q FETCH_HEAD`
   and `git -C /home/user/ig-lead-machine fetch -q origin main && git -C /home/user/ig-lead-machine checkout -q FETCH_HEAD`.
 - Reports and Jev request files are written to the same `/mnt/project-files/...` paths as the doc says; `mkdir -p` first.
-- Jev: the "Test Jev connection" thread is in the old project and cannot be reached from here. From this project's
-  cloud environment (TypeSafe Docs) a Jev call returns 403 "Must supply an API key" (tested 16 Nov). Until the Jev key is
-  added to this environment, skip Jev: Claude picks, and `jev_line` says "Jev not connected; Claude's pick".
+- Jev: call it directly with `bash rules/jev/jev-call.sh <file>` (both orders, as the doc says). The "Test Jev connection"
+  thread is in the old project; do not use it. The key works in this project since 17 Nov (tested: HTTP 200, jev-1.14.0).
+  If a call fails, `jev_line` says "Jev didn't answer; Claude's pick".
 - Google profile step: Remote Control on Nick's PC, folder `C:\Users\nicol\Downloads` (still the approved RC folder).
