@@ -96,9 +96,9 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
   (split collage, bento, photo card grid, rail, review wall, pipe-run process, full-bleed band, map + chips, sticky
   column + accordion, spotlight quote, ticket table, timeline, stat band, tabbed selector, stacked rows, masonry, final
   CTA...). Under Nick's rule a section layout is used ONCE per site, and never matches another client's section.
-  Open question for Nick (not yet answered): both live sites repeat the globals (utility bar, header, final CTA, footer)
-  and one template per page type (all service pages, all city pages). Until Nick says otherwise, treat only header and
-  footer as allowed repeats, and design the final CTA and each template's sections so they look like nothing else on the site.
+  Allowed repeats (Nick, 17 Nov: yes to the final CTA repeating on every page, as on both live sites): utility bar,
+  header, final CTA and footer. Pages of one type (all service pages, all city pages) share one template; that part is
+  the coordinator's reading of Nick's yes, not his words. Every other section layout appears once on the site.
 
 ## 5. Copy voice
 
