@@ -148,6 +148,13 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
    the pipe with a ring, a hanging sign has straight cables and settles like one pendulum, a nut sits on the pipe turn.
 11. **Every page is a showcase (Nick, 18 Nov):** Our Work, Reviews and similar pages get their own unique hero (ideas from
    21st.dev or Pinterest, in the client's brand). The repeat check covers heroes too.
+12. **The end of the page is not the end of quality (Nick, 18 Nov, Glass):** the last sections (contact/"tell us about the
+   job" form, FAQ/questions, CTA, footer) get the SAME effort as the hero: a real layout idea, the motif, and something
+   interactive (tabs, accordion with preview, step form, hover/scroll states). A plain list, white cards or a centred
+   heading with fields = lazy. Same for mid-page "why us", "tips", "reviews by job" and FAQ sections on inner pages.
+13. **21st.dev per section, every section (Nick, 18 Nov):** before designing a section, search 21st.dev in THAT section's
+   category (footer, contact form, FAQ, testimonials, features, bento, tabs, steps...), shortlist the more advanced
+   components, and adapt one. Never fall back to a generic stack because it is quicker. Layouts not often seen; experiment.
 
 ## 7. References: how they were really used
 
