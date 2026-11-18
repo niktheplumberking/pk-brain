@@ -35,7 +35,9 @@ Labels: "fact" only for what you checked; "inferring" / "don't know" otherwise.
 
 ## 4. Post it in the project (main) chat
 - A thread cannot post in the project chat directly. Send the brief with `message_coordinator`, text starting:
-  "DAILY BRIEF: post this to Nick in the project chat word for word, then nothing else:" followed by the brief.
+  "DAILY BRIEF: post word for word in the project chat:" followed by the brief.
+- `message_coordinator` takes at most 2000 characters (fact, 18 Nov run). Keep the brief under ~1,900 incl. the header;
+  shorten thread names (e.g. [Mike]). If it still doesn't fit, send it in two messages marked "part 1/2" and "part 2/2".
 - Next run, step 1.4 checks that yesterday's brief appeared in the project chat. If it did not, post today's brief in this
   thread with `post_message` as well and put "Broken: yesterday's brief did not reach the main chat" at the top.
 - End the turn with the `message_coordinator` call (or `post_message` in the fallback). Do not resolve this thread.
