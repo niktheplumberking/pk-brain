@@ -133,12 +133,21 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
    white, tint, white, tint, white, navy, white, tint, white, waterline, footer.
 4. Designed seams from the motif between sections: shaped edges (waves) and objects crossing the join (United: wave + cyan
    line, praised 4 Nov "that's how we differentiate"; Paul: van swoosh stripes; Mike VFACT: pipes, tags, drips, gauge,
-   wave seams, keyword band). Never a plain hr, and never one divider repeated down the page.
+   wave seams, keyword band). Never a plain hr, and never one divider repeated down the page. **Clean seams (Nick, 18 Nov):**
+   content keeps 24 px (desktop) / 16 px (mobile) clear of a wave; only named seam objects may cross it, on purpose. A
+   photo meeting a wave runs up behind it (ink gradient top) or the wave goes. Footer: ~64/40 px room above its rule, one
+   colour top to bottom, bottom-bar links on the grid edge.
 5. Real photos large, owner/crew more than once on home, never the same photo twice on a page, never a cut-out on a blob.
 6. **The end is as strong as the start.** Process, FAQ and Contact get the same effort as the hero (United 4 Nov: those
    three were called "lazy" and rebuilt). Final CTA = second-largest heading on the site; footer is a designed object.
 7. Header on the grid edges; paired buttons the same height (United v1 criticism).
 8. Imagery and icons match the trade (no pipes on an electrician's site).
+9. **Proof on the page (Nick, 18 Nov):** show the proof (review slips word for word, the rating badge, real job photos,
+   the actual video) on the page; never only a link to it.
+10. **Physical logic (Nick, 18 Nov):** objects behave like the real thing: tag strings start at the pipe centreline behind
+   the pipe with a ring, a hanging sign has straight cables and settles like one pendulum, a nut sits on the pipe turn.
+11. **Every page is a showcase (Nick, 18 Nov):** Our Work, Reviews and similar pages get their own unique hero (ideas from
+   21st.dev or Pinterest, in the client's brand). The repeat check covers heroes too.
 
 ## 7. References: how they were really used
 
@@ -159,9 +168,9 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
   NOT covered and that a same-vendor review is same-vendor.
 - Fix all blockers, as many majors as the data allows, re-check, then send Nick the Figma link + screenshots + what is
   still open. Log what Nick praises or criticises in memory `design-log.md`.
-- In the build, port the United motion system exactly as pka-client-site says. Only the loader's and counters' CONTENT
-  comes from the client's own motif (United loader: pipe draws, drop falls, logo lands; Paul: seal drops, stripes draw,
-  meter rolls to the review count).
+- In the build, port the United motion system exactly as pka-client-site says, with its 18 Nov rules (controlled motion,
+  new loader per client from 21st.dev, one kit, parallax, bands, idle life). Counters' content comes from the client's
+  own motif (Paul: meter rolls to the review count).
 
 ## 9. Why earlier versions failed (fact, from the WFACT 3.0 project threads and Nick's 17 Nov notes)
 
@@ -205,6 +214,7 @@ an LED tile; nothing is shared but the discipline.
 - [ ] Every client-column cell in the translation table differs from United, Paul and every other client.
 - [ ] Motif comes only from owned objects; budget per page met.
 - [ ] Every section: plumbing object and layout used once on the site, overlap, density, CTA, two type voices, proof under promises.
+- [ ] Every page hero is unique on the site; proof shown on the page; objects physically logical; seams 24/16 clear.
 - [ ] Headlines trace to the client's own lines or real reviews; facts only from the facts list; stand-ins labelled.
 - [ ] Independent review table done, blockers 0, open items listed for Nick.
 
