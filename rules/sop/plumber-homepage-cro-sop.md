@@ -299,7 +299,7 @@ Before picking fonts: read this register, pick from an unused style group, then 
 | Plumbing by Paul LIVE SITE rebrand (12 Nov 2026, "Sunshine City") | Tilt Warp (sign-painter display) | Rubik | none | soft sign-painter display (replaces Paul Figma v2 Unbounded + Karla) |
 | Khinda Electrical (17 Nov 2026, electrician, Nick's one-time exception) | Saira (Black/ExtraBold, semi-extended techy) | Onest | Michroma (eyebrows/labels; echoes the logo's extended "ELECTRIC" wordmark) | techy extended grotesk |
 | Mike's Plumbing Services (17 Nov 2026, real client, his brand) | Playfair Display (Black + Black Italic accent word) | Jost | Yellowtail (one signature per page) | high-contrast serif, black/cream badge brand |
-| Glass Plumbing Services (17 Nov 2026, prospect, free concept) | Bowlby One (heavy retro display, all caps, powder-blue offset shadow) | Instrument Sans | Courier Prime (work-order eyebrows, captions, stamps) | retro heavy display (trade-print poster) |
+| Glass Plumbing Services (18 Nov 2026 restart, prospect, free concept, "Clear Water") | Schibsted Grotesk (ExtraBold/Bold, -2%) | Public Sans | JetBrains Mono (eyebrows, spec plates, licence, numbers) | editorial grotesk + mono spec voice (replaces the 17 Nov Bowlby One / Instrument Sans / Courier Prime row) |
 
 Reserved (26 Oct) so the two redos don't collide: **Paul → Unbounded (wide rounded display) + Karla**; **Paradise → Zilla Slab (slab serif) + Hanken Grotesk**. Update the rows when done.
 
