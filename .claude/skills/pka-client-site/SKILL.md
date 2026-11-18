@@ -161,6 +161,11 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
   Nick does. Figma is the spec, 1:1 (`get_design_context` / `get_metadata` / `get_screenshot`).
 - **Build standard:** clean public Vercel link (`<name>.vercel.app`, noindex preview), loading screen, entrance animations
   with clear hierarchy, wide screens scale with Figma proportions (zoom the html above 1440; `--vw100` for full-bleed).
+- **One kit before parallel builders (Nick, 18 Nov).** Before 2+ builders start, one builder writes ONE shared
+  `src/components/kit/` (Wave with clearance, Marquee, Accordion, Scrub, Curtain/Loader, Hover/Idle) with a README of its
+  API and a "one writer per CSS property" table. No per-page copies of Wave, scrub, buttons or eyebrows. Merging kits later
+  needs before/after screenshot diffs of every page at 1440 and 390.
+- **Nick's rules win over Figma.** Every deviation goes in the site README: what Figma shows, what the site does, why.
 - **United motion system = the UX standard (Nick, 15 Nov).** Port from United
   (`git show origin/claude/project-thread-lela0k:clients/united-plumbing-site/src/scripts/motion.ts`, Intro.astro):
   - Lenis `lerp 0.1, wheelMultiplier 1, smoothWheel true`, GSAP ticker, `lagSmoothing(0)`, Lenis scroll -> ScrollTrigger.update.
@@ -172,18 +177,41 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
     rotate 2 -> 0, 0.9 s, 0.1 s/line, back.out(1.4); children stagger 0.09 s. Mix effects per element by role.
   - Nick's 3 priority groups per section: G1 main (headline, subtitle, key photo) delay 0; G2 support (buttons, pills,
     chips, name patches) +0.15 s; G3 add-ons (seals, underlines, counters, line draws) +0.3 s.
-  - Hero: ordered timeline, 0.12 s steps, 0.85-0.9 s; header drops first; loader on first visit only, hands off into the hero.
+  - Hero: ordered timeline, 0.12 s steps, 0.85-0.9 s; header drops first. The hero/header timeline and Lenis start only in
+    the loader's or curtain's exit `onComplete` (the page starts after the cover is gone).
+  - **Controlled motion (Nick, 18 Nov):** every state change (open/close, hover, colour, active item, slide) is a continuous
+    ease-in-out tween from 0 to 100% (sine/power2, 0.5-0.9 s). "Linear" means smooth ease-in-out. Nothing pops: no display
+    toggles, no class colour swaps without a transition, no visible `.set` jumps. CSS default state = JS start state. One
+    writer per CSS property (never CSS transform + GSAP transform on the same node). Write this rule at the top of MOTION.md.
+  - **Loader and curtain (Nick, 18 Nov):** new for each client, sourced on 21st.dev and re-skinned with the client's brand
+    (Mike: Swiss Poster Counter Preloader, 8 blinds); the page-change curtain is the same family. Vanilla TS + GSAP, under
+    8 KB, once per session, skippable, max 3.4 s, none under reduced motion. One transform channel only; cover to 100%
+    before navigating; the new page starts covered.
+  - **New page at the top (Nick, 18 Nov):** every cross-page link opens at scrollY 0 (`history.scrollRestoration='manual'`
+    + `lenis.scrollTo(0,{immediate:true})` under the cover). No cross-page hash links: link the real page instead. Same-page
+    # links scroll smoothly; back/forward stay native.
+  - **Pictures carry parallax (Nick, 18 Nov):** in-frame photo parallax like United (img scale ~1.14, translate -5% -> 5%,
+    scrub ~0.6, separate CSS `scale`/`translate` properties so nothing fights). Not on the hero at load, carousels or
+    cut-outs. Media columns max ±16 px, headings ±10 px, stamps ±14 px. No ScrollTrigger.refresh while scrolling.
+  - **Moving bands (Nick, 18 Nov):** every word band and tape is one shared GSAP marquee: ~40 s loop, speeds up with scroll
+    velocity and eases back over ~1.2 s, pauses on hover/focus, two seamless copies (no gap 360-1920), static under reduced motion.
+  - **Interaction and life (Nick, 18 Nov):** every clickable object has a hover. One idle scheduler: every 5-7 s one small
+    gesture (0.4-0.8 s) on one in-view object (badge shake, stamp thump, nut turn, drip...), never text, never the same
+    object twice in a row; paused while scrolling, on hover, on form focus, tab hidden, reduced motion. Entrances vary by
+    object (max 2 types per section, neighbours differ); record the map in MOTION.md. Accordions: one FLIP controller
+    (~0.7 s, never two open, aria-expanded correct, native details without JS).
   - **Never:** an element flashing before its animation (pre-hide under `html.motion` before first paint, 3.5 s safety
     shows all if JS fails); instant-finish fast-scroll shortcuts; triggers at 105%; durations under ~0.9 s for reveals;
-    CSS transforms/parallax on photos (parallax goes on wrappers, yPercent); raw resize -> ScrollTrigger.refresh
-    (width-only + `ignoreMobileResize`). Phones: x distances ±40.
+    raw resize -> ScrollTrigger.refresh (width-only + `ignoreMobileResize`; one refresh after fonts, images and zoom
+    settle). Phones: x distances ±40.
   - Reduced motion = static; no-JS = everything visible; anything moving >5 s gets a pause.
   - **Scroll-controlled moments (Nick, 17 Nov 22:05, permanent):** on top of the entrance reveals, every page gets 1-2 GSAP
     ScrollTrigger `scrub` moments driven by the Lenis smooth scroll, so the page reacts to the user's scroll. Example (Mike,
     "How a job goes"): water/arrows travel along the pipe from the left as you scroll; it reaches 01, then 02, 03...;
     each number lights up, grows slightly (~1.08) and rotates a little as the water hits it. Same idea for dials, route
     maps, pipe seams. Very smooth (scrub ~0.6-1), controlled, clear hierarchy like Plumbing by Paul; transform, opacity and
-    stroke-dashoffset only; reduced motion = final state; nothing hidden while in view; lighter on phones.
+    stroke draws only (DrawSVG; `pathLength=1` + dashoffset can jump 1->0); one timeline per VISIBLE copy (gsap.matchMedia,
+    never animate a hidden mobile/desktop twin); reduced motion = final state; nothing hidden while in view; lighter on phones.
   Full plan: `/mnt/project-files/plumber-king-agency/designs/plumbing-by-paul/ROUND4-MOTION-PLAN.md` (old project files; may not exist in new project).
 - Forms: no backend unless `PUBLIC_FORM_ENDPOINT` set; else go to `/thank-you` (say so in README).
 
@@ -192,6 +220,10 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
 - No overlaps, no broken links (every internal link hits a built page), no error pages, no misclicks, no horizontal scroll
   at 390, 44 px tap targets, axe 0 violations, console clean, keyboard path through menu and forms.
 - Lighthouse mobile Home: LCP <= 2.5 s, CLS 0. Report what was NOT checked.
+- **Verify scrubbed fills by sampling (Nick, 18 Nov):** for every scrubbed path, take 10 scroll samples mid-range; values
+  must be strictly between 0 and 1 and rise smoothly (no >30% jump in one frame). Also sample: curtain edge monotonic (no
+  stall >50 ms), accordion heights every 50 ms, marquees moving >20 px/s with no gap, nav lands at scrollY 0.
+- Seams script: scan every 8 px for content within 24 px (desktop) / 16 px (mobile) of a wave; 0 hits.
 - Proof for Nick: side-by-side videos vs United for motion changes.
 
 ## Step 6: Deploy preview and launch
