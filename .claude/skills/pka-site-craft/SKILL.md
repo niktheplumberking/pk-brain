@@ -155,6 +155,19 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
 13. **21st.dev per section, every section (Nick, 18 Nov):** before designing a section, search 21st.dev in THAT section's
    category (footer, contact form, FAQ, testimonials, features, bento, tabs, steps...), shortlist the more advanced
    components, and adapt one. Never fall back to a generic stack because it is quicker. Layouts not often seen; experiment.
+14. **No left/right slop (Nick, 20 Nov, Glass build):** a section that is a text block on one side and a list/text/cards
+   on the other, with empty space around it, is "AI slop", even when the message is good. Each section needs a real layout
+   idea chosen from what THAT page and section are about (21st.dev first, then Pinterest, Dribbble, Awwwards), so the
+   result reads "controlled" and above average. Example failures: Glass "What people mention" (3 text blocks left, tally
+   right), Glass Contact "5 ways to reach us" (empty and bold), Glass Reviews hero (empty).
+15. **Every section is interactive (Nick, 20 Nov):** something answers the visitor in each section: scroll-driven motion,
+   hover states that reveal, tabs, filters, drag/swipe, counters, a step that fills. Text-only sections fail.
+16. **Proof sections look like proof (Nick, 20 Nov):** review/credibility sections show stars, counts, platform marks, real
+   photos and moving review walls; never only text. Licence, Instagram and other public records get shown and promoted.
+17. **Titles may be centred (Nick, 20 Nov):** do not default to left- or right-aligned headings; centre where the section
+   is symmetric. Alignment varies down the page.
+18. **Nothing cut off or off-centre (Nick, 20 Nov):** logos, cards and photos are never clipped by a frame or overlap
+   (Glass "Kody Glass, Owner" card had its logo cut in half); photo crops centre the subject (focal point set per photo).
 
 ## 7. References: how they were really used
 
@@ -189,6 +202,7 @@ One file, `plan/DESIGN-SYSTEM.md`. Model: `references/paul-design-system.md`.
 | Paul v3 Figma (13 Nov) | approved 14 Nov: "Wow, amazing job" | all six steps done in order |
 | Khinda (17 Nov) | United's layout recoloured, pipes on an electrician | anatomy split craft/looks, translation table, trade imagery |
 | Mike (17 Nov) | structure read like a manual | copy voice from owned lines; density and proof rules |
+| Glass build (20 Nov) | "terrible" mid-page sections: text-left/text-right, text-only reviews, empty heroes, cut logo | section craft 14-18 |
 
 ## 10. Worked examples (Plumbing by Paul)
 

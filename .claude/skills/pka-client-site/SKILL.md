@@ -79,8 +79,8 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
     and city pages must each show reviews in a different layout.
 - **Master structure = what each section must SAY** (from the live United and Paul sites). It names the message, never
   the component. How it looks comes from the method below (Nick, 17 Nov 21:51).
-  - Every page: rating, licence and hours up top; phone always one tap away; what to do in an emergency; breadcrumbs +
-    LocalBusiness schema; it ends with a way to ask for an estimate, the towns served and the full NAP.
+  - Every page: rating, licence and hours up top; phone always one tap away; what to do in an emergency; BreadcrumbList +
+    LocalBusiness schema (breadcrumbs as schema ONLY, never visible "Home / Reviews" text: Nick, 20 Nov); it ends with a way to ask for an estimate, the towns served and the full NAP.
   - HOME: trade + town (H1 "<Trade> in <City>, <ST>"), the towns served, call now, send a photo, why trust us / ask for a
     call back and say what's wrong / what customers say / the 6 main services (one is the most asked) / who the family or
     owner is / real work / why us / how a job goes, price first, in 4-5 steps / what to do in an emergency / where we work /
@@ -192,7 +192,10 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
     # links scroll smoothly; back/forward stay native.
   - **Pictures carry parallax (Nick, 18 Nov):** in-frame photo parallax like United (img scale ~1.14, translate -5% -> 5%,
     scrub ~0.6, separate CSS `scale`/`translate` properties so nothing fights). Not on the hero at load, carousels or
-    cut-outs. Media columns max ±16 px, headings ±10 px, stamps ±14 px. No ScrollTrigger.refresh while scrolling.
+    cut-outs. Media columns max ±16 px, headings ±10 px, stamps ±14 px.
+    **Site-wide (Nick, 20 Nov):** parallax runs on images AND text (headings, big numerals, plates) on every page, so the
+    whole scroll feels layered; scroll-driven pieces where they fit (e.g. a review wall whose middle column moves against
+    the outer ones). Loader + page curtain must not resemble any other client's (Mike's blinds, Khinda's): check before build. No ScrollTrigger.refresh while scrolling.
   - **Moving bands (Nick, 18 Nov):** every word band and tape is one shared GSAP marquee: ~40 s loop, speeds up with scroll
     velocity and eases back over ~1.2 s, pauses on hover/focus, two seamless copies (no gap 360-1920), static under reduced motion.
   - **Interaction and life (Nick, 18 Nov):** every clickable object has a hover. One idle scheduler: every 5-7 s one small
