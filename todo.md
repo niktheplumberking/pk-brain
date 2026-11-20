@@ -35,6 +35,7 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 | 29 | no date (blocks launch) | Get Mike's answers: CSLB licence # (blocks launch), real hours, texts on his number, real photo of him, insured, towns, lead email, Google Business Profile, pressure washing + 15% off terms, legal check (full list: Mike thread / README) | Nick asks Mike | Client - Mike's Plumbing Services | 18 Nov | Mike thread, 18 Nov 02:00 UTC |
 | 30 | waiting since Tue 17 Nov 13:48 UTC | JustCall dialer test: upload the 1,127-lead file (Desktop\PLUMBER KING\3 LEADS AND SALES\Lead lists\plumber-leads-justcall-predictive-2026-11-17.csv) in the open Chrome window, reply "done" | Nick | CRM | 18 Nov | dialer sub thread, 17 Nov |
 | 32 | before any launch (no date) | Forms on Khinda's and Glass's previews send nothing (no form service connected). Pick where leads go before launch | Nick decides, Claude connects | Client - Khinda Electrical / Client - Glass Plumbing (prospect) | 20 Nov | Khinda thread 19 Nov 14:26 UTC, Glass thread 19 Nov 11:22 UTC |
+| 33 | Sun 22 or Mon 23 Nov ("in 2-3 days" from Fri 20 Nov) | Remind Nick: he has new ideas to make the content work easier; talk them through | Claude reminds, Nick explains | Claude Editor | 20 Nov | Nick, 20 Nov 09:00 UTC |
 
 ## Done (date + proof)
 
