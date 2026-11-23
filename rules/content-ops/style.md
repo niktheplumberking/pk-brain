@@ -10,4 +10,5 @@ styles per format. Until a format has a row, use pka-video-edit defaults.
 From @tenfoldmarc Def9pj5TWtA (Nick 23 Nov "goldmine"). Status per effect lives in tool-status.md.
 orbit, couch wall, UI world, frame break, digital zoom, phone mockup, checklist (list on screen, current item lit),
 headline wall, zoom-through cut, chart grow, pull-back reveal, green screen, paper cut, doodle boil, vertigo, cover story,
-glass type. First set for plumber reels: phone mockup, checklist, headline wall, chart grow, zoom-through cut, pull-back reveal.
+glass type. First set BUILT 23 Nov (tools/content/remotion/src/effects/README.md): phone mockup, checklist, headline wall,
+chart grow, zoom-through cut, pull-back reveal.
