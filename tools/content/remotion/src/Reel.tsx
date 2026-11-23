@@ -42,14 +42,14 @@ const Captions: React.FC<{ words: Word[]; style?: CaptionStyle }> = ({ words, st
   const start = i - (i % 3);
   const chunk = words.slice(start, start + 3);
   return (
-    <div style={{ position: "absolute", top: centerY - size * 0.6, width: "100%", textAlign: "center", fontFamily: FONT, fontWeight: 900,
+    <div style={{ position: "absolute", top: centerY - size * 0.6, left: 70, right: 70, textAlign: "center", lineHeight: 1.1, fontFamily: FONT, fontWeight: 900,
       fontSize: size, color: "white", WebkitTextStroke: `2px ${outline}`, paintOrder: "stroke fill",
       textShadow: `0 0 2px ${outline}, 0 4px 14px rgba(0,0,0,.55)` }}>
       {chunk.map((w, k) => {
         const on = start + k === i;
         return (
-          <span key={k} style={{ display: "inline-block", marginRight: 20, color: on && highlight ? highlight : "white",
-            transform: on && !highlight ? "scale(1.12)" : "none" }}>{w.w.toUpperCase()}</span>
+          <span key={k} style={{ display: "inline-block", margin: "0 16px", color: on && highlight ? highlight : "white",
+            transform: on && !highlight ? "scale(1.1)" : "none", transformOrigin: "center bottom" }}>{w.w.toUpperCase()}</span>
         );
       })}
     </div>

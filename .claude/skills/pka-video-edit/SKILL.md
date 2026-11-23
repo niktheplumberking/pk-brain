@@ -46,10 +46,10 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
 11. Export: 1080x1920, 30 fps, H.264 + AAC, `<Format> N - final.mp4`.
 12. Check before done: `pka-reel-reviewer` agent reviews (size/fps, LUFS, captions vs words, captions clear of face
     and IG buttons, nothing from another client, licences logged, flags.json present). Fix everything it finds.
-13. Deliver to Nick's folder; verify the copy by hash. Log any failure in `rules/content-ops/incident-log.md`
+13. Deliver (route: `rules/content-ops/folders.md` "How files move"); verify the copy by hash. Log any failure in `rules/content-ops/incident-log.md`
     (what broke, cause, fix, rule changed).
 14. 48 h after posting: grade the flags against the real retention (Nick's insights screenshot or his account,
-    view only) and add the row to the tracker; rebuild the viewer profile. Judge the reel by its script's JOB:
+    view only) and add the row to `rules/content-ops/reel-tracker.csv`; rebuild the viewer profile. Judge the reel by its script's JOB:
     reach = views + shares, follow = follows per 1K views, client = comments/DMs. A low-view client reel is not a failure.
 
 ## Rules carried over from Nick (Oct-Nov 2026)

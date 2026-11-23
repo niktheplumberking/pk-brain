@@ -40,6 +40,8 @@ Scheduled task id and schedule: project memory `crm-and-jobs.md`. This doc is th
    Vercel as above. Record HTTP code / error. 401/403/expired = broken access, with who fixes it and how
    (e.g. reconnect card, new token in env PLUMBER).
 7. Repo secret scan: grep pk-brain + memory for key-like strings (names are fine, values are a finding).
+8. Claude Editor incidents (E4, 23 Nov): read `rules/content-ops/incident-log.md` rows since the last report; flag any row with
+   no fix commit or no "new check added", and any cause that repeats. Read `rules/content-ops/tool-status.md` for tools not PROVEN.
 
 ## 4. Write the report (one doc)
 Every point carries a label: **fact** (with the check) · **inferring** · **don't know** (with why). Sections, in this order:
