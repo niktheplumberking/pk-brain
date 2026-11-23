@@ -15,6 +15,6 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 | remocn (copied parts only, MIT @995f1be) | ready-made motion parts | with Remotion | PROVEN: check-list | 2026-11-23 | check-list + handwrite rendered over the test clip (6 s), local Caveat font; list in tools/content/remotion/src/remocn/README.md |
 | Earshot (MIT @7a7f7c5, venv) + openverse_fetch.py (CC0 only) | sound effects | cloud | PROVEN | 2026-11-23 | Earshot made whoosh/pop/cash register/shutter; Openverse fetched 2 CC0 whooshes with credit rows; see tools/content/sfx/README.md |
 | mind reader (viewer_profile.mjs, flag_cut.mjs; MIT Christian Johnston) + make_beats.py | retention flags before a cut | cloud | PROVEN (no profile yet) | 2026-11-23 | test clip: 10 beats, flags F1 pause 0.7 s + F2 "That's it." after payoff; tight clip: 0 flags, no crash. Profile needs 2+ past reels with curves (E2) |
-| last30days (MIT, mvanhorn) | Reddit/web research | cloud | NOT PROVEN | | (task C6) |
+| last30days (MIT, mvanhorn @331025e) | Reddit/web research | cloud | DROPPED (cloud) | 2026-11-23 | one run, no keys, no browser cookies, sandboxed HOME: Reddit search 403 from the cloud network, web fallbacks throttled -> 2 threads, 0 recent, no owner questions. Not copied. Retry only from a home network (Nick's machine) if research needs it |
 | pka-reel-reviewer agent | independent check of a finished reel | cloud | NOT PROVEN | | (task D1) |
 | pka-script-reviewer agent | independent check of scripts | cloud | NOT PROVEN | | (task D2) |
