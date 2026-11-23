@@ -34,7 +34,8 @@ Copy the approved shape: Audit 8/9/10 in the thread "Write post descriptions for
 - Captions SHORT and simple: one short row per line (about 6 words), little text per row, a blank line
   between rows.
 - No bullets, no headers, no emojis, no hashtags, mostly no full stops, no links in the body.
-- NO comment word and no ask ("Comment X", "Agree or disagree?"). End on a rule line.
+- No comment word and no ask ("Comment X", "Agree or disagree?"). End on a rule line. Exception (clash 14,
+  23 Nov): on the 2 comment-word test reels a week, repeat the word said in the video once, as the last row.
 - Avoid the word "free" and any money/free-offer wording (nick.bennettx had a false "asking for money" flag).
 - Plain words, no jargon. Only facts shown in the video; never invent a number, review or result.
 - Ed is the model: copy his pattern, never his words.
@@ -55,7 +56,7 @@ Placement:
   Instagram's icons, wherever the gap is. Measure the screen and camera rows for each video.
 - Split screen with no gap (screen top, his face below): never across his face; the top is for his title;
   put them below his chin (measure the chin across frames first).
-- Phone-only videos: the usual lower position, no zooms.
+- Phone-only videos: the usual lower position. Gentle punch-in cuts on the face camera are allowed (clash 7).
 - Letterboxed landscape video in 9:16 (Nick's test format, Edu 4, 15 Nov): captions in the black area BELOW the
   video, white outline.
 
@@ -73,15 +74,15 @@ Zooms (screen recordings only, never the face camera):
 - Audits: zoom on the opening line (the plumber + odd detail) from the first second until the name + reviews are shown, and on
   head-title text he reads with the mouse (31 Oct).
 
-Titles: don't burn a title into the reel unless Nick asks (25 Oct: he adds titles in Instagram himself). Whether
-the new full edit adds text hooks is part of what he is teaching 17-19 Nov (open item in project memory `open-items.md`).
+Titles (clash 6, 23 Nov): burn the hook's on-screen text into the video from frame 1; Nick no longer adds
+Instagram titles.
 
 Cutting (16 Nov): cut silences and bad takes; the LAST take of each repeated sentence is ~99% the good one.
 Nick is teaching the full edit; visual/sound/text hooks and showing real work (Figma, results) are the aim.
 
 Files:
-- Save as "Audit N - captions.mp4", "Edu N - captions.mp4", "B Roll N - captions.mp4" next to the originals,
-  in the folder Nick uses (DONE FILES\DONE <format> until he gives the new folder structure).
+- Save as "<Format> N - final.mp4" (e.g. "Audit 3 - final.mp4", "Skit 1 - final.mp4") in the folder Nick uses
+  (DONE FILES\DONE <format> until the Dropbox CLAUDE EDITOR folders exist) (clash 15).
 - Never overwrite a file name; save under a new name. Verify the PC copy by hash before saying it is saved.
 - /mnt/project-files silently changes .mp4 files, and device commits cap at 25 MB per file: zip -0, split,
   re-hash, then join and check the hash on the PC.

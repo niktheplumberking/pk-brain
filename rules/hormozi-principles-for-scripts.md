@@ -10,7 +10,7 @@ Written 2026-11-06 by thread "Study Hormozi content rules". Sources at bottom. L
 ## The 12 rules every script must pass
 1. **Hook - Retain - Reward** (FACT, $100M Leads). Hook = first 1-3 s. Retain = curiosity, list or steps. Reward = the promise paid off. Big hook + tiny payoff = fail.
 2. **Callout first** (FACT, paid-ads chapter): name who it's for in the first line. "Plumbers," "If you run a plumbing company," "Plumber in Phoenix...". Hormozi: "Always call out who you're looking for."
-3. **Hook = 80% of the work** (FACT: "After you've written your headline, you've spent 80 cents of your advertising dollar"). Write 5 hooks per script, keep the best. Hook rules he uses: "curiosity is king, different is ideal."
+3. **Hook = 80% of the work** (FACT: "After you've written your headline, you've spent 80 cents of your advertising dollar"). Write 5 hooks per script, keep the best. Superseded 23 Nov (clash 8, his 2026 data: clear beats curious): the hook states the point; curiosity lives in the open loops.
 4. **Proof beats promise** (FACT: "Proof will always outdo promise"). Show the real site, real number, real review count on screen. Never claim without showing.
 5. **Value per second / no such thing as too long, only too boring** (FACT). Cut every line that doesn't teach or move the story. One idea per reel.
 6. **"How I" beats "How to"** (FACT, 7 content lessons). "Here's how I fixed..." / "I'm replacing this button..." beats "You should...". Ed's best non-offer reel (4,501 views) is exactly this: "I'm replacing this call icon..."

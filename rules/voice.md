@@ -16,7 +16,8 @@ with a guess.
 
 ## Accounts and safety (never break these)
 
-- Any Instagram reading or scraping uses **sukunda02 only, never nick.bennettx**.
+- Instagram reading (view only) may use nick.bennettx, incl. his own reel insights, or sukunda02 (Nick, 23 Nov).
+  Never likes, follows, comments or DMs by automation on either account.
 - nick.bennettx: no automated DMs, posts, likes or follows. Nick posts by hand.
 - nick.bennettx had a false "asking for money" flag and blocked DMs. Avoid the
   word "free" in first DMs and in posts. Send one test DM before any DM batch.
@@ -55,8 +56,7 @@ with a guess.
 
 ## Content system
 
-- Three formats, never mixed: educational, B-roll with voiceover, audit. How the
-  ~14 a week split across them is an open item for Nick.
+- Formats and the weekly mix: skill `pka-video-scripts` section 3 (8 formats, mixing allowed; Nick 23 Nov).
 - Weekends: shoot 14 videos into Dropbox. Post 2 a day. This replaces the
   posting schedule in /ig-plan.
 - Daily cover and in-between posts are paused since 1 Nov.
@@ -93,20 +93,19 @@ verdict on audit hooks. Accuracy to the screen comes first.
 - **Hard rule: never write a description by transcribing the video.**
 - Format per type: see skill `pka-post-descriptions` (audit, B-roll and educational
   shapes). Always the steps or fix the video does NOT say.
-  No comment word (Nick's decision, 2026-11-08).
+  No comment word, except the 2 comment-word test reels a week (Nick 23 Nov).
 - caption.py's checks still apply: first line, hashtag cap, no links in the body.
 
 ## The ask
 
-- Most reels: no ask at all. Audit reels: never.
-- Comment-word reels on nick.bennettx had a median of 143 views against 200 with
-  no ask, and 3 comments in total. Do not default to a comment word in a reel.
-  The skills' "one ask at the end" does not apply here.
+- Asks: skill `pka-video-scripts` section 7 (comment word tested on 2 of 14 reels; Nick 23 Nov).
+- History: comment-word reels on nick.bennettx had a median of 143 views against 200 with
+  no ask (before 8 Nov). The skills' "one ask at the end" does not apply here.
 
 ## Burned-in video captions (editing, not an ig-* skill)
 
 - Split-screen: captions centred in the black gap, clear of the Instagram icons.
-- Phone-only: usual lower position, no zooms.
+- Phone-only: usual lower position; gentle punch-in cuts on the face camera allowed (Nick 23 Nov).
 - Zooms: slow, steady and gentle. Hold once zoomed. Zoom out after the highlight
   clears, never during a cut. Zoom on what Nick emphasises.
 

@@ -1,6 +1,6 @@
 ---
 name: pka-video-scripts
-description: Writes Nick's Instagram reel scripts for Plumber King Agency (plumbers only) - website AUDIT scripts (screen recording of a real plumber's site), EDUCATIONAL talking-head scripts and B-ROLL voiceover scripts, each B-roll with its own Figma task. Use whenever Nick says scripts, script, reel script, batch, weekly batch, weekend scripts, Friday, Friday scripts, audits, audit this site (a reel audit, not an SEO audit), B-roll, b roll, edu, educational, hooks, hook or voiceover, or sends a plumber's link plus a note for an audit. Holds every must-follow rule - three formats never mixed, a unique hook per script, Nick's real spoken voice, lengths, Claude Doc delivery, Hormozi checks, the audit workflow, and scripts ready the night before. Not for the text under a finished video - when Nick says "script" about a video that is already made or posted he means its post description (use pka-post-descriptions).
+description: Writes Nick's Instagram reel scripts for Plumber King Agency (plumbers only) - website AUDIT scripts (screen recording of a real plumber's site), EDUCATIONAL talking-head scripts and B-ROLL voiceover scripts, each B-roll with its own Figma task, plus the new Claude Editor formats (teardown, before/after, contrarian, steal-this, money math, skit, build in public, news, viral re-makes). Use whenever Nick says scripts, script, reel script, batch, weekly batch, weekend scripts, Friday, Friday scripts, audits, audit this site (a reel audit, not an SEO audit), B-roll, b roll, edu, educational, hooks, hook or voiceover, or sends a plumber's link plus a note for an audit. Holds every must-follow rule - the formats (mixing allowed), a unique hook per script, Nick's real spoken voice, lengths, Google Doc delivery (one page per script), Hormozi checks, the audit workflow, and scripts ready the night before. Not for the text under a finished video - when Nick says "script" about a video that is already made or posted he means its post description (use pka-post-descriptions).
 ---
 
 # PKA video scripts
@@ -35,33 +35,43 @@ Where a reference file disagrees with this skill, this skill wins (it holds the 
 - Audience = owners of plumbing companies (B2B), English-speaking US/Canada market. Every reel is about a
   plumber's calls, jobs, money, Google. No lifestyle, no agency inside talk.
 
-## 3. The three formats - keep them separate, never mix them
+## 3. Formats (Nick, 23 Nov: approved plan section 9 + clash 1 and 5)
+The three original formats (audit, educational, B-roll) are three of eight. Mixing is allowed (for example a
+visual hook shot before a talking head). Screen inserts are allowed in any format when they show proof.
+The other formats: before/after of a real site, contrarian stance with money, "steal this", money math, lead-seller
+or customer skit, build in public (the 40-day challenge), news, and viral re-makes (Nick sends the reference; we
+keep the format, change the topic to plumbing owners, and credit the source in the caption).
 
 | Format | What is filmed | Script |
 |---|---|---|
-| AUDIT | Screen recording of a real plumber's website (desktop view, Nick points with the mouse). Screen recordings are ONLY for audits. | Follows the audit workflow (section 8). |
+| AUDIT | Screen recording of a real plumber's website (desktop view, Nick points with the mouse). | Follows the audit workflow (section 8). |
 | EDUCATIONAL | Talking head: Nick teaching straight to camera. | Moment, tip, rule line. Stays talking head; never turned into an audit or a B-roll (not even to chase hook data). |
-| B-ROLL | A camera on a tripod, at an angle, filming Nick at his computer doing ONE real Figma task that matches that clip's script. NEVER a screen recording. Voiceover recorded separately and laid over the footage (no pace matching). | Plain "how I" voiceover, e.g. what he is adding to a plumber's site and why. |
+| B-ROLL | A camera on a tripod, at an angle, filming Nick at his computer doing ONE real Figma task that matches that clip's script. The main footage is the camera, not a screen recording (screen inserts for proof are fine). Voiceover recorded separately and laid over the footage (no pace matching). | Plain "how I" voiceover, e.g. what he is adding to a plumber's site and why. |
 
 B-roll rules:
 - Every B-roll script comes with its own specific Figma task, written next to it. A different task per
   clip; never one generic clip reused for all of them.
 - The task must match what the script says he is doing.
-- For the look, check his posted IG B-rolls (IG reading only via sukunda02, never nick.bennettx).
+- For the look, check his posted IG B-rolls (reading his own nick.bennettx is allowed, view only: Nick 23 Nov).
 - Nick has not given a list of example Figma tasks. If the right task for a script is unclear, ask him.
 
 ## 4. Hooks
 - Every script opens on its own strong hook: a moment, a bold claim or an odd real detail.
 - Never the same opener across scripts. Not "Plumbers, ..." on all of them, not "I'm ..." on all of them,
   not "This plumber ..." on all of them.
-- The plumber is named or obvious in the first 2 seconds; the strangest real detail first; proof on
-  screen by 3 seconds.
+- The plumber is named or obvious within 2 seconds of the first spoken word (a 1-2 s silent visual hook may come
+  first) and named in the on-screen text from frame 1; the strangest real detail first; proof on screen by 3
+  seconds after the first word (Nick 23 Nov, clash 12).
 - Best hooks so far (Nick's own numbers): a real named site plus an odd, specific quoted detail
-  ("Yank The Tankasaurus" 1,005 views). Generic question and list hooks did worst.
+  ("Yank The Tankasaurus" 1,005 views). Vague "Did you know?" question hooks did worst: banned. A numbered list is
+  allowed when each item is concrete and the count is on screen (clash 11).
+- The hook says the point clearly; curiosity lives in the open loops/rehooks later (clash 8). It still opens a
+  question an owner wants answered (plan section 3).
 - Write 5 hook options per script, keep the best.
 - Every script Nick films has a labelled HOOK block on top: visual + on-screen text + spoken first line,
   all different per script. Never drop the HOOK block from "final" versions.
-- No gimmick hooks (B2B, not viral/B2C).
+- Visual hooks yes (a movement or action in the first 1-2 s), always tied to plumbing work or the business, never a
+  random trick (clash 2). Sound hooks count too.
 
 ## 5. Nick's voice
 Read `rules/nick-voice-persona.md` first. If a line would not come out of his mouth naturally, rewrite it.
@@ -73,7 +83,8 @@ Read `rules/nick-voice-persona.md` first. If a line would not come out of his mo
 - His words: "head title" (not headline), "call button", "homeowner", "the next guy", "wanna", "gonna".
 - Fillers/reactions: at most 2 per script.
 - Medium sentences joined with "and", "so", "because". Talks to "you" (the plumber).
-- Never: repeated openers; staccato fragment chains ("No links. Three names. Done."); neat triple lists;
+- Never: repeated openers; staccato fragment chains ("No links. Three names. Done."); neat triple lists (the 3 bodies of the 8-block
+  structure stay uneven in length and style so it never sounds like a list of three, clash 13);
   "Here's the thing", "Let's dive in", "game-changer", "elevate", "seamless", "In today's world";
   utilize, leverage, optimize, solution, ensure; generic "follow for more".
 - Plain words, third-grade level. No "CTA", "conversion", "UX" or "SEO" unless explained in the same breath.
@@ -82,15 +93,17 @@ Read `rules/nick-voice-persona.md` first. If a line would not come out of his mo
 - Ed (@edwin.radd) is the content model: copy his style and structure, never his words.
 
 ## 6. Lengths
-- Audit: about 25 seconds, under 25 s (N flaws: one short beat per flaw, 4-6 sentences).
-- Educational: under 35 seconds, about 65-80 words.
+- Short (6-block) version of any format: under 35 seconds. Long (8-block) version: up to 45 seconds, for the
+  8-vs-6 test only (clash 3).
+- Audit: about 25 seconds when it is a plain audit (N flaws: one short beat per flaw, 4-6 sentences).
+- Educational: under 35 seconds, about 65-80 words (6-block).
 - B-roll: Nick has set no length. Data only (Ed's 16 "me working" reels, 31 Oct): 50-78 word voiceovers
   did better.
 
 ## 7. Asks, proof and facts
-- Most reels: no ask. Audit reels: never an ask, no CTA. At most 1 reel in 5 has an ask, and only one
-  comment word for a free thing that really exists. Avoid the word "free" in posts and first DMs
-  (nick.bennettx had a false "asking for money" flag).
+- Most reels: no comment-word ask. Test (clash 4): a comment word on 2 of 14 reels a week, for a real thing to
+  send, never using the word "free" (nick.bennettx had a false "asking for money" flag). Other reels may end on a
+  follow ask or no ask. Plain audit reels: no CTA.
 - Proof beats promise: show the real site, the real number, the real review count on screen.
 - Never invent reviews, quotes, prices, clients, results or numbers. Unknown number: leave
   `{{your number}}` and flag it.
@@ -132,15 +145,20 @@ script is delivered.
 - Big full-site audits are DM-only for warm leads and are not posted.
 - The flaw list is Nick's; he may edit it with you. Don't change the workflow files on your own.
 
-## 9. Delivery
-- One clean Claude Doc (Docs connector) for the batch. Never plain text in chat, never a .md or .txt file.
-- In the doc: a short contents list at the top, then per script:
-  1. Header: number, company name (or topic for educational/B-roll), website (when there is one).
-  2. HOOK: visual / on-screen text / spoken first line.
-  3. FIGMA TASK (B-roll only): the one real task he does on camera for this clip.
-  4. The script (voiceover): one sentence per line, a blank line between beats.
-- Nothing else: no research report, no own-words draft, no proof, no notes, no shot lists, camera angles,
-  mouse paths, where-to-click steps, recording coaching, beat sheets or scorecards (unless he asks).
+## 9. Delivery (Nick, 23 Nov)
+- ONE fixed Google Doc in Nick's Drive (doc id in project memory `claude-editor-decisions.md`), one page per script
+  (page break between scripts). Each new batch deletes the old pages and writes the new ones in the same file. Never
+  plain text in chat, never a .md or .txt file, never a Claude Doc for scripts.
+- Per page:
+  1. Header: number, format, company name or topic, website (when there is one).
+  2. HOOK: visual (what is on screen in the first second) / on-screen text / spoken first line.
+  3. TONE: one line (happy / serious / dramatic / dramatic ambience), used for the colour grade.
+  4. DELIVERY: one note on where to pause or slow down.
+  5. FIGMA TASK (B-roll only): the one real task he does on camera for this clip.
+  6. The script (voiceover): one sentence per line, a blank line between beats.
+- Nothing else: no research report, no own-words draft, no proof, no notes, no full shot lists, camera angles,
+  mouse paths, where-to-click steps, beat sheets or scorecards (unless he asks). The visual-hook, tone and delivery
+  lines are the only additions allowed (clash 10).
 - Chat message: 1-2 lines + the doc link.
 - When answering about scripts or clips: one sentence per item ("B1: ... B2: ..."), and always say what
   did NOT change so he doesn't redo work. No extra options, no tips he didn't ask for.
