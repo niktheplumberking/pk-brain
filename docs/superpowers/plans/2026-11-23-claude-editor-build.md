@@ -46,8 +46,9 @@
 ## Phase B: Scripts
 ### Task B1: Script skill rewrite
 **Files:** Modify `.claude/skills/pka-video-scripts/SKILL.md`; Create `tools/content/check_script.py`, `tools/content/tests/test_check_script.py`.
-**Interfaces:** `check_script(card: dict) -> list[str]` returns failed checks (empty = pass). Card fields: format, job (reach/lead/follow), hook_visual, hook_line, on_screen_text, lock_in, bodies[], rehooks[], payoff, cta, tone (happy|serious|dramatic|dramatic ambience), delivery_note, structure (8|6), source_credit (optional), test_tag.
-- [ ] Failing tests: missing lock_in -> "lock-in missing"; rehooks empty with structure 8 -> "rehook missing"; tone not in list -> "tone invalid"; hook_line over 3 s spoken (~9 words) -> "hook too long".
+**Interfaces:** `check_script(card: dict) -> list[str]` returns failed checks (empty = pass). Card fields: format, job (reach|follow|client: Dan Martell top/middle/bottom of funnel, ref DcL47JZiiu0), hook_visual, hook_line, on_screen_text, lock_in, bodies[], rehooks[], payoff, cta, tone (happy|serious|dramatic|dramatic ambience), delivery_note, structure (8|6), source_credit (optional), test_tag.
+- [ ] Failing tests: missing lock_in -> "lock-in missing"; rehooks empty with structure 8 -> "rehook missing"; tone not in list -> "tone invalid"; hook_line over 3 s spoken (~9 words) -> "hook too long"; job missing or not reach|follow|client -> "job missing"; job client with no cta -> "client reel needs a CTA".
+- [ ] Skill: every script names its JOB before writing (reach = new eyeballs, anyone would watch; follow = education/story, why follow Nick; client = speaks to the owner's pain, one CTA). Each weekly 14 is a planned mix (starting split waits on Nick's pick; recorded in the skill). The comment-word test reels are client reels.
 - [ ] Implement; tests pass; skill says every card runs the checker + the 10-point checklist (plan s3) before delivery.
 - [ ] Commit.
 ### Task B2: Google Doc delivery
@@ -70,7 +71,7 @@
 ### Task C5: Mind reader
 **Files:** Copy `viewer_profile.mjs`, `flag_cut.mjs` (MIT, credit) into `tools/content/mindreader/`; wire into pka-video-edit step "flags before cuts".
 - [ ] Build `curve.json` from Nick's phone-numbers screenshot; beats from transcript; run flag_cut with profile `none` -> flags printed; a tight clip gives zero flags (Review Focus 3).
-- [ ] 48 h grading row format added to the tracker (E2).
+- [ ] 48 h grading row format added to the tracker (E2). Each reel is judged by its JOB: reach = views, reach outside followers, shares; follow = follows per 1K views; client = comments/DMs/link taps. Never judge a follow or client reel by views alone.
 ### Task C6: last30days (research candidate)
 - [ ] Read repo (MIT, 73K stars); run once on "plumbing business owner marketing" with no keys; keep if it returns real owner questions, else drop.
 ## Phase D: End-to-end test edit
