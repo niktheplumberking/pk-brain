@@ -5,3 +5,5 @@ file used. pka-reel-reviewer fails a reel that uses a sound with no row here.
 
 | File | Source URL | Licence | Author | Downloaded | Used in |
 |---|---|---|---|---|---|
+| deep-whoosh-1-eab8a6e2.mp3 | https://freesound.org/people/Kinoton/sounds/351256 | CC0 1.0 | Kinoton | 2026-11-23 | (fill when used) |
+| swosh-swoosh-whoosh-air-sound-free-high-quality-f1dc6045.mp3 | https://freesound.org/people/qubodup/sounds/60026 | CC0 1.0 | qubodup | 2026-11-23 | (fill when used) |
