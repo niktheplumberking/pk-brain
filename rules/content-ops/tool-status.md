@@ -12,7 +12,7 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 | Effects library (C7) | named Remotion effects (style.md) | cloud + Nick's PC | NOT PROVEN | | (task C7) |
 | Google Doc "PK Reel Scripts" + build_scripts_docx.py | script delivery, 1 page per script | connector + Nick's PC Chrome | PROVEN | 2026-11-23 | SOP tools/content/gdoc_scripts.md; same doc id 2->3 pages and 3->1 page, PDF export checked, old text gone; 4/4 builder tests |
 | Remotion 4.0.540 (tools/content/remotion) + skill remotion-best-practices | cards, motion, captions render | cloud (PC: not yet) | PROVEN (cloud); skill fresh-thread check pending | 2026-11-23 | 5 s render 1080x1920 30 fps H.264 bt709, Urbanist font, hook + word captions + pop card; frames checked. Free licence while 3 people or fewer |
-| remocn | ready-made motion parts | with Remotion | NOT PROVEN | | (task C3) |
+| remocn (copied parts only, MIT @995f1be) | ready-made motion parts | with Remotion | PROVEN: check-list | 2026-11-23 | check-list + handwrite rendered over the test clip (6 s), local Caveat font; list in tools/content/remotion/src/remocn/README.md |
 | openverse_fetch.py | CC0 sound effects and music | cloud | NOT PROVEN | | (task C4) |
 | mind reader (viewer_profile.mjs, flag_cut.mjs; MIT, christianjohnston-ai) | retention flags before a cut | cloud | NOT PROVEN | | (task C5) |
 | last30days (MIT, mvanhorn) | Reddit/web research | cloud | NOT PROVEN | | (task C6) |

@@ -1,12 +1,14 @@
 import React from "react";
 import "@fontsource/urbanist/900.css";
 import "@fontsource/urbanist/700.css";
+import { CheckList } from "./remocn/check-list";
 import { AbsoluteFill, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, interpolate, spring, Sequence } from "remotion";
 
 export type Word = { w: string; s: number; e: number };
 export type Card = { text: string; from: number; to: number };
-export type ReelProps = { video: string; seconds: number; hook: string; words: Word[]; cards: Card[] };
-export const reelSchemaDefaults: ReelProps = { video: "test.mp4", seconds: 5, hook: "", words: [], cards: [] };
+export type List = { items: string[]; from: number; to: number };
+export type ReelProps = { video: string; seconds: number; hook: string; words: Word[]; cards: Card[]; lists?: List[] };
+export const reelSchemaDefaults: ReelProps = { video: "test.mp4", seconds: 5, hook: "", words: [], cards: [], lists: [] };
 
 const PINK = "#FF3D8B"; // brand Hot Pink (agency-brand memory); only WHITE text on pink
 const CHARCOAL = "#141414";
@@ -51,7 +53,7 @@ const PopCard: React.FC<{ text: string; frames: number }> = ({ text, frames }) =
   );
 };
 
-export const Reel: React.FC<ReelProps> = ({ video, hook, words, cards }) => {
+export const Reel: React.FC<ReelProps> = ({ video, hook, words, cards, lists = [] }) => {
   const { fps } = useVideoConfig();
   return (
     <AbsoluteFill style={{ background: "black" }}>
@@ -61,6 +63,15 @@ export const Reel: React.FC<ReelProps> = ({ video, hook, words, cards }) => {
       {cards.map((c, k) => (
         <Sequence key={k} from={Math.round(c.from * fps)} durationInFrames={Math.round((c.to - c.from) * fps)}>
           <PopCard text={c.text} frames={Math.round((c.to - c.from) * fps)} />
+        </Sequence>
+      ))}
+      {lists.map((l, k) => (
+        <Sequence key={`l${k}`} from={Math.round(l.from * fps)} durationInFrames={Math.round((l.to - l.from) * fps)}>
+          <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+            <div style={{ background: "white", borderRadius: 36, padding: "48px 56px", boxShadow: "0 20px 60px rgba(0,0,0,.5)" }}>
+              <CheckList items={l.items} width={760} fontSize={64} color={CHARCOAL} boxColor={CHARCOAL} tickColor={PINK} />
+            </div>
+          </AbsoluteFill>
         </Sequence>
       ))}
     </AbsoluteFill>
