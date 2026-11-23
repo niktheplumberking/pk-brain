@@ -1,6 +1,6 @@
 ---
 name: pka-video-scripts
-description: Writes Nick's Instagram reel scripts for Plumber King Agency (plumbers only) - website AUDIT scripts (screen recording of a real plumber's site), EDUCATIONAL talking-head scripts and B-ROLL voiceover scripts, each B-roll with its own Figma task, plus the new Claude Editor formats (teardown, before/after, contrarian, steal-this, money math, skit, build in public, news, viral re-makes). Use whenever Nick says scripts, script, reel script, batch, weekly batch, weekend scripts, Friday, Friday scripts, audits, audit this site (a reel audit, not an SEO audit), B-roll, b roll, edu, educational, hooks, hook or voiceover, or sends a plumber's link plus a note for an audit. Holds every must-follow rule - the formats (mixing allowed), a unique hook per script, Nick's real spoken voice, lengths, Google Doc delivery (one page per script), Hormozi checks, the audit workflow, and scripts ready the night before. Not for the text under a finished video - when Nick says "script" about a video that is already made or posted he means its post description (use pka-post-descriptions).
+description: Writes Nick's Instagram reel scripts for Plumber King Agency (plumbers only) - AUDIT (screen recording of a real plumber's site), EDUCATIONAL talking head, B-ROLL voiceover with its own Figma task, and the newer formats (before/after, contrarian, steal-this, money math, skit, build in public, news, viral re-makes). Use whenever Nick says scripts, script, reel script, batch, weekly batch, weekend or Friday scripts, audits, audit this site (a reel audit, not SEO), B-roll, edu, educational, hooks or voiceover, or sends a plumber's link plus a note. Holds the formats, job per script (reach/follow/client), hooks, Nick's voice, lengths, the script checker, Google Doc delivery (one page per script) and the audit workflow. Not for text under a finished video - "script" about a made or posted video means its post description (pka-post-descriptions).
 ---
 
 # PKA video scripts
@@ -54,6 +54,30 @@ B-roll rules:
 - The task must match what the script says he is doing.
 - For the look, check his posted IG B-rolls (reading his own nick.bennettx is allowed, view only: Nick 23 Nov).
 - Nick has not given a list of example Figma tasks. If the right task for a script is unclear, ask him.
+
+## 3a. Job and structure (every script, Nick 23 Nov: plan section 3 + Dan Martell ref DcL47JZiiu0)
+- Before writing, give every script ONE job:
+  - REACH: new eyeballs; anyone in the trade would watch even if they never heard of Nick.
+  - FOLLOW: education or Nick's story; a reason to follow him.
+  - CLIENT: speaks to the owner's pain (calls, jobs, money) and ends on one ask. The 2 comment-word reels are client reels.
+- The weekly 14 is a planned mix of the three. Split: Nick's pick, pending (recommended starting test 7 reach / 4 follow /
+  3 client). Show the split in the chat line when delivering a batch.
+- Structure (Robin Tempe / Robert): 8 blocks = hook, lead (to 10 s), body 1, open loop, body 2, open loop, body 3, CTA or
+  closing line. 6 blocks (short) = hook, lead, body 1, open loop, body 3, CTA or closing line. Default 6; 8 only for the
+  8-vs-6 test (section 6).
+- The lead is the lock-in: 2-3 lines that tell the owner why to keep watching (Nick's data: viewers drop from 100% to
+  ~50% by 7 s, so the lock-in is the weakest spot).
+- 10-point checklist (plan section 3), every script:
+  1. Hook asks or answers an owner question in under 3 s.
+  2. The topic is in the words, on screen and in the first visual.
+  3. Lock-in: 2-3 lines.
+  4. A rehook (open loop) before the last body.
+  5. A real example on screen.
+  6. The payoff answers the hook.
+  7. A visual change every 2-3 s (write the visual next to each beat in your private draft, not on the page).
+  8. TONE line plus a DELIVERY note.
+  9. One ask that matches the job (none for reach and plain audits).
+  10. A source credit for viral re-makes.
 
 ## 4. Hooks
 - Every script opens on its own strong hook: a moment, a bold claim or an odd real detail.
@@ -152,7 +176,8 @@ script is delivered.
 - Per page:
   1. Header: number, format, company name or topic, website (when there is one).
   2. HOOK: visual (what is on screen in the first second) / on-screen text / spoken first line.
-  3. TONE: one line (happy / serious / dramatic / dramatic ambience), used for the colour grade.
+  3. JOB + TONE: one line, e.g. "JOB: reach - TONE: dramatic" (tone = happy / serious / dramatic / dramatic
+     ambience, used for the colour grade).
   4. DELIVERY: one note on where to pause or slow down.
   5. FIGMA TASK (B-roll only): the one real task he does on camera for this clip.
   6. The script (voiceover): one sentence per line, a blank line between beats.
@@ -178,7 +203,12 @@ script is delivered.
 - [ ] "How I" beats "How to" where it fits; works for a stranger who never saw Nick.
 
 ## 11. Before you deliver
-- Grade every script with an independent subagent for hook, voice and facts.
+- Write each script as a card (JSON fields: format, job, hook_visual, hook_line, on_screen_text, lock_in, bodies[],
+  rehooks[], payoff, cta, tone, delivery_note, structure 6|8, source_credit, test_tag) and run
+  `python3 tools/content/check_script.py cards.json`. Every card must PASS; fix and re-run, never deliver a FAIL.
+  Format names: audit, educational, broll, before_after, contrarian, steal_this, money_math, skit, build_in_public,
+  news, remake. If a check is wrong for a script, tell Nick; do not edit the checker to get a pass.
+- Then grade every script with the independent agent `pka-script-reviewer` (10-point checklist, hook, voice, facts).
 - Check what Nick already posted (his posting history, e.g. nick.json) and the used list (section 12); never repeat a
   company or topic.
 - Ignore the Higgsfield virality predictor; it ranked his reels upside down (14 Nov).

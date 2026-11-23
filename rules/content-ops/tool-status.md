@@ -8,7 +8,7 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 |---|---|---|---|---|---|
 | ffmpeg / ffprobe | probe, convert, cut, loudness, export | cloud + Nick's PC | NOT PROVEN | | (task C1) |
 | faster-whisper (small.en) | word-timed transcript | cloud + Nick's PC | NOT PROVEN | | (task C1) |
-| check_script.py | script checker (10-point + JOB) | cloud | NOT PROVEN | | (task B1) |
+| check_script.py | script checker (10-point + JOB) | cloud | PROVEN | 2026-11-23 | tools/content/tests: 18/18 pass |
 | Google Doc "PK Reel Scripts" | script delivery, 1 page per script | Google Drive connector | NOT PROVEN | | (task B2) |
 | Remotion + remotion-dev/skills | cards, motion, captions render | cloud + Nick's PC | NOT PROVEN | | (task C2) |
 | remocn | ready-made motion parts | with Remotion | NOT PROVEN | | (task C3) |

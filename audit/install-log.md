@@ -57,3 +57,6 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 | PR #2 | merged at Nick's yes | plumber-king-agency main 0c9f955 has clients/ + new Calendly link |
 | 6 default branch | switched in Nick's Chrome at his yes | `git ls-remote --symref origin HEAD` = refs/heads/main |
 | daily research, first scheduled run | get_trigger trig_01G2djPR6pavdtQJek7ZMTrE + daily_picks | PASS: fired 2026-11-17 23:41:26 UTC into the CRM session, status SUCCEEDED; daily_picks day 2026-11-18 = 6 rows created 23:43:57 UTC |
+| Claude Editor A1 | 15 clashes applied, losers deleted | commit 5f4f14d (23 Nov) |
+| Claude Editor A2 | skill map: pka-video-edit, pka-content-research, pka-clipping, agents pka-reel-reviewer + pka-script-reviewer, rules/content-ops/, routing | commit c4af52e. Fresh thread 23 Nov 20:40 UTC: HEAD c4af52e, 4 skills + 2 agents listed, 4/4 requests routed right, each with a rule found only in that skill (grep). Not tested there: invoking agents (done in D1/D2) |
+| Claude Editor B1 | script skill section 3a (JOB, structure, 10-point list) + tools/content/check_script.py | 18/18 pytest pass (23 Nov) |

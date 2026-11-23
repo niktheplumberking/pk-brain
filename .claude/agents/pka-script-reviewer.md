@@ -13,5 +13,5 @@ For each script, check and report defects:
 3. Voice: sounds like Nick out loud; no banned words or AI tells ("It's not X, it's Y", unlock, elevate, game-changer).
 4. Length: short version under 35 s (about 2.5 words a second), long version under 45 s.
 5. Plumbers only; no repeated company or topic from memory content.md.
-6. If tools/content/check_script.py exists, run it on the card and include its output.
+6. Run `python3 tools/content/check_script.py <cards.json>` and include its output; any FAIL = the script fails. Also check each script has a JOB (reach/follow/client) that fits its content.
 Reply per script: PASS or numbered defects.
