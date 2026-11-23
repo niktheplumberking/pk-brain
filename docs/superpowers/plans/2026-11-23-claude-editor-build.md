@@ -74,6 +74,12 @@
 - [ ] 48 h grading row format added to the tracker (E2). Each reel is judged by its JOB: reach = views, reach outside followers, shares; follow = follows per 1K views; client = comments/DMs/link taps. Never judge a follow or client reel by views alone.
 ### Task C6: last30days (research candidate)
 - [ ] Read repo (MIT, 73K stars); run once on "plumbing business owner marketing" with no keys; keep if it returns real owner questions, else drop.
+### Task C7: Effects library (Nick 23 Nov, ref Def9pj5TWtA)
+**Files:** Create `tools/content/effects/` (one Remotion component per effect), `tools/content/effects/README.md` (name, what it does, inputs).
+- [ ] First set: phone mockup, checklist (list on screen, current item lit), headline wall, chart grow, zoom-through cut, pull-back reveal.
+- [ ] Each renders a 3 s 1080x1920 30 fps test on the test clip; ffprobe passes; still frame checked by eye; row PROVEN in tool-status.md.
+- [ ] The other 11 named effects (style.md) built only when a script needs them.
+
 ## Phase D: End-to-end test edit
 ### Task D1: One full edit of a real reel
 - [ ] Take Nick's reel `DgDEpMpTpIP.mp4` (and one raw clip from his PC if found): transcript -> flags -> cuts -> captions (Urbanist, outline per skill) -> cards -> SFX -> loudness -> export.

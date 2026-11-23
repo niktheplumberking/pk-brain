@@ -60,3 +60,5 @@ Times UTC. Labels: PASS / FAIL / OPEN (needs Nick) / NOTE.
 | Claude Editor A1 | 15 clashes applied, losers deleted | commit 5f4f14d (23 Nov) |
 | Claude Editor A2 | skill map: pka-video-edit, pka-content-research, pka-clipping, agents pka-reel-reviewer + pka-script-reviewer, rules/content-ops/, routing | commit c4af52e. Fresh thread 23 Nov 20:40 UTC: HEAD c4af52e, 4 skills + 2 agents listed, 4/4 requests routed right, each with a rule found only in that skill (grep). Not tested there: invoking agents (done in D1/D2) |
 | Claude Editor B1 | script skill section 3a (JOB, structure, 10-point list) + tools/content/check_script.py | 18/18 pytest pass (23 Nov) |
+| Claude Editor B2 | Google Doc delivery | PROVEN 23 Nov: doc 1WpwdSz-...FjFwI replaced 2->3 and 3->1 pages via docx staging + Nick's Chrome; PDF export page counts match, old text gone. HTML page breaks fail (2 tests). First paste attempt failed silently, fixed by a screenshot check in the SOP. 22/22 tests |
+| Plan additions 23 Nov | Dan Martell DcL47JZiiu0 (job per script, 0d242ee); @tenfoldmarc Def9pj5TWtA (effects library task C7) | plan file updated |

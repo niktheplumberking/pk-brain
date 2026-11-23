@@ -170,7 +170,7 @@ script is delivered.
 - The flaw list is Nick's; he may edit it with you. Don't change the workflow files on your own.
 
 ## 9. Delivery (Nick, 23 Nov)
-- ONE fixed Google Doc in Nick's Drive (doc id in project memory `claude-editor-decisions.md`), one page per script
+- ONE fixed Google Doc in Nick's Drive ("PK Reel Scripts"; how to write it: `tools/content/gdoc_scripts.md`), one page per script
   (page break between scripts). Each new batch deletes the old pages and writes the new ones in the same file. Never
   plain text in chat, never a .md or .txt file, never a Claude Doc for scripts.
 - Per page:

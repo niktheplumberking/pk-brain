@@ -9,7 +9,8 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 | ffmpeg / ffprobe | probe, convert, cut, loudness, export | cloud + Nick's PC | NOT PROVEN | | (task C1) |
 | faster-whisper (small.en) | word-timed transcript | cloud + Nick's PC | NOT PROVEN | | (task C1) |
 | check_script.py | script checker (10-point + JOB) | cloud | PROVEN | 2026-11-23 | tools/content/tests: 18/18 pass |
-| Google Doc "PK Reel Scripts" | script delivery, 1 page per script | Google Drive connector | NOT PROVEN | | (task B2) |
+| Effects library (C7) | named Remotion effects (style.md) | cloud + Nick's PC | NOT PROVEN | | (task C7) |
+| Google Doc "PK Reel Scripts" + build_scripts_docx.py | script delivery, 1 page per script | connector + Nick's PC Chrome | PROVEN | 2026-11-23 | SOP tools/content/gdoc_scripts.md; same doc id 2->3 pages and 3->1 page, PDF export checked, old text gone; 4/4 builder tests |
 | Remotion + remotion-dev/skills | cards, motion, captions render | cloud + Nick's PC | NOT PROVEN | | (task C2) |
 | remocn | ready-made motion parts | with Remotion | NOT PROVEN | | (task C3) |
 | openverse_fetch.py | CC0 sound effects and music | cloud | NOT PROVEN | | (task C4) |
