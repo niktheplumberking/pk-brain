@@ -8,7 +8,6 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 
 | # | Due / start | Item | Owner | Main thread | Added | Source |
 |---|---|---|---|---|---|---|
-| 22 Nov | Reminder: Nick's new ideas to make content work easier (was #33). Talking them through is still open with Nick | Claude Editor | project chat 22 Nov 09:01 UTC reminder message (cmsg_015Ezzhub3Y5NMvHaXpu5C3f2jhdNwnC8cU4bCK2QcYY2B); Nick has not sent the ideas yet |
 | 1 | Start Tue 17 Nov, all week (to Thu 19 Nov) | Focus: Claude Editor. Nick teaches Claude scripting + editing; they become skills, rules and workflows. The parked script/editing clashes (memory `open-items.md`) get settled here | Nick + Claude | Claude Editor | 17 Nov | Nick, 17 Nov. 20 Nov: week ended, never started (no Claude Editor thread or teaching found). 20 Nov 08:34 UTC: Nick started teaching (thread "Claude Editor" cmsg_015Ezzhub3Y5NMvHaXpu5C3fVvCXCpZ6o76foddrVyXadx); plan delivered 20 Nov 21:02 UTC https://claude.ai/artifact/CnNMzBisqTyZyTuVLtMMKa; nothing installed |
 | 2 | Fri 20 Nov | Test the scripts (Claude writes all weekend scripts + prep; Nick tests them) | Nick + Claude | Claude Editor | 17 Nov | Nick, 17 Nov. 21 Nov: not done, no scripts written yet (waiting on Nick's yes on the plan, see #34). 22 Nov: still not done, no Claude Editor activity in 24h. 23 Nov: still not done |
 | 3 | Sat 21 + Sun 22 Nov | Nick films (~14 videos, raw footage to Dropbox); Claude edits all of them | Nick films, Claude edits | Claude Editor | 17 Nov | Nick, 17 Nov. 22 Nov: no scripts exist and no footage reported, so filming on Sat 21: don't know (inferring not done). 23 Nov: weekend over; Nick said 22 Nov 12:07 UTC he had a crazy 2 days; no footage reported (inferring not filmed) |
@@ -43,6 +42,7 @@ time zone; the daily brief reads them in Europe/Belgrade). Owner = who must act.
 
 | Done | Item | Main thread | Proof |
 |---|---|---|---|
+| 22 Nov | Reminder: Nick's new ideas to make content work easier (was #33). Talking them through is still open with Nick | Claude Editor | project chat 22 Nov 09:01 UTC reminder message (cmsg_015Ezzhub3Y5NMvHaXpu5C3f2jhdNwnC8cU4bCK2QcYY2B); Nick has not sent the ideas yet |
 | 19 Nov | Old-project reminder fired: per-language clip markets (was #31) | none (old project) | trig_01PMKTYJjFF2ikh2eu1useXH no longer in the enabled list 20 Nov 04:01 UTC; whether Nick read it: don't know |
 | 18 Nov | Two old-project reminders fired (CRM, content analysis, auto-cutting) (was #12) | CRM | one-shot tasks trig_01USLXioCokgtQuPa6Bh5iU5 + trig_01AXFJSir2KD8g3TrQAEuN1F no longer in the enabled list 19 Nov 04:01 UTC (fired); whether Nick read them: don't know |
 | 18 Nov | Mike's faint small text fixed to pass accessibility (was #28) | Client - Mike's Plumbing Services | Mike thread 18 Nov 13:21 UTC: axe 0 errors on 21 pages after fix round 1 (Nick's yes 07:11 UTC) |
