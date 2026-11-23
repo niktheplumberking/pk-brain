@@ -48,7 +48,7 @@
 **Files:** Modify `.claude/skills/pka-video-scripts/SKILL.md`; Create `tools/content/check_script.py`, `tools/content/tests/test_check_script.py`.
 **Interfaces:** `check_script(card: dict) -> list[str]` returns failed checks (empty = pass). Card fields: format, job (reach|follow|client: Dan Martell top/middle/bottom of funnel, ref DcL47JZiiu0), hook_visual, hook_line, on_screen_text, lock_in, bodies[], rehooks[], payoff, cta, tone (happy|serious|dramatic|dramatic ambience), delivery_note, structure (8|6), source_credit (optional), test_tag.
 - [ ] Failing tests: missing lock_in -> "lock-in missing"; rehooks empty with structure 8 -> "rehook missing"; tone not in list -> "tone invalid"; hook_line over 3 s spoken (~9 words) -> "hook too long"; job missing or not reach|follow|client -> "job missing"; job client with no cta -> "client reel needs a CTA".
-- [ ] Skill: every script names its JOB before writing (reach = new eyeballs, anyone would watch; follow = education/story, why follow Nick; client = speaks to the owner's pain, one CTA). Each weekly 14 is a planned mix (starting split waits on Nick's pick; recorded in the skill). The comment-word test reels are client reels.
+- [ ] Skill: every script names its JOB before writing (reach = new eyeballs, anyone would watch; follow = education/story, why follow Nick; client = speaks to the owner's pain, one CTA). Each weekly 14 is a planned mix (7 reach / 4 follow / 3 client, Nick 23 Nov). The comment-word test reels are client reels.
 - [ ] Implement; tests pass; skill says every card runs the checker + the 10-point checklist (plan s3) before delivery.
 - [ ] Commit.
 ### Task B2: Google Doc delivery

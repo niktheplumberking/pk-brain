@@ -60,8 +60,8 @@ B-roll rules:
   - REACH: new eyeballs; anyone in the trade would watch even if they never heard of Nick.
   - FOLLOW: education or Nick's story; a reason to follow him.
   - CLIENT: speaks to the owner's pain (calls, jobs, money) and ends on one ask. The 2 comment-word reels are client reels.
-- The weekly 14 is a planned mix of the three. Split: Nick's pick, pending (recommended starting test 7 reach / 4 follow /
-  3 client). Show the split in the chat line when delivering a batch.
+- The weekly 14 is a planned mix: 7 reach / 4 follow / 3 client (Nick, 23 Nov; a starting test, regraded on data).
+  Show the split in the chat line when delivering a batch.
 - Structure (Robin Tempe / Robert): 8 blocks = hook, lead (to 10 s), body 1, open loop, body 2, open loop, body 3, CTA or
   closing line. 6 blocks (short) = hook, lead, body 1, open loop, body 3, CTA or closing line. Default 6; 8 only for the
   8-vs-6 test (section 6).
