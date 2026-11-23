@@ -282,11 +282,11 @@ Nick has a lot of freedom to design and post concepts, but not total freedom, be
 
 ---
 
-## 11. Font register: never reuse a font [NICK, 26 Oct 2026]
+## 11. Font register [NICK, 26 Oct 2026; rule replaced 23 Nov 2026]
 
-**Rule:** every design uses a heading font AND a body font that no earlier design in the Plumber King designs Figma file has used. It must also LOOK different: not the same style group as the last designs (Nick's review: Paul's Fraunces and Paradise's DM Serif Display are different files but both read as "the same serif").
+**Rule (Nick, 23 Nov 2026):** if the client has his own fonts, ALWAYS use them. If he has none, use premium fonts that no earlier client used, and that also LOOK different from earlier clients' fonts (not the same style group: Paul's Fraunces and Paradise's DM Serif Display are different files but both read as "the same serif"). Rows for clients who use their own brand fonts are records only; they never block another client's own fonts.
 
-Before picking fonts: read this register, pick from an unused style group, then add your row here in the same session.
+Before picking fonts for a client with no fonts of his own: read this register, pick from an unused style group, then add your row here in the same session.
 
 | Design (Figma page) | Heading font | Body font | Extra | Style group used |
 |---|---|---|---|---|
@@ -350,7 +350,7 @@ Mobile (seen on OC, SD, CH, UP)
 1. **Areas we cover = a real Google Maps screenshot.** Open Google Maps on their service area, screenshot, place it as an image. Never generate it, never draw it, never use OpenStreetMap. Name the layer "map (Google Maps screenshot, <date>)". If the cloud browser can't load Google Maps, take it on Nick's PC through Remote Control.
 2. **Ratings = the real Google numbers.** Read the stars and review count from the client's Google profile and write them everywhere a rating shows (hero chip, review widget, footer). Date them in the layer name. If Google blocks the cloud browser, read them in Nick's PC browser through Remote Control (worked 26 Oct 2026 for Smart Plumbing: 4.9, 115 reviews). Never leave "[count]" in a finished design.
 3. **Nothing covers a face.** Badges, stickers and chips go on a layer BEHIND the person cut-out, or beside them. Check the screenshot.
-4. **Fonts never repeat** across designs, and must look different too (section 11).
+4. **Fonts:** the client's own fonts if he has them; otherwise premium fonts no earlier client used, that look different too (section 11, rule of 23 Nov 2026).
 5. **No text overlaps** other text, photos or lines. Process lines pass through the numbers.
 6. **Never say something can't be done without testing it live first**, using every route including Remote Control on Nick's PC.
 7. **Every design page gets 3 content blocks** (Nick, 26 Oct 2026, for his content videos; style from the reel instagram.com/p/DeyfWguCIs2): **01 Old vs New Sitemap** (pill lists; old = their real current homepage sections, new = ours with NEW tags and a "X blocks → Y blocks" note), **02 Brand Moodboard** (logo tile, real photos only, "Aa" font tile, their real tagline + owner signature tile, real Google rating tile, icon tile), **03 Colors & Fonts** (big heading-font "Aa" left, body font below, 4 brand colours with HEX + CMYK right). Each 1320 wide; copy the layout from Plumbing by Paul (frames 112:1528 / 112:1621 / 112:1721) and restyle to the client's fonts and colours. Position on the page doesn't matter.

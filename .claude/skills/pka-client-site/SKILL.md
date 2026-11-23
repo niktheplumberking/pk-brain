@@ -141,9 +141,9 @@ plumber's site. Facts about each client live in project memory `clients.md` (Uni
      under the button.
   6. Repeat check + facts check across all pages, then the independent review (above). It also checks 0 placeholders and
      no other client's name, town, phone or photo. Desktop + mobile.
-- Fonts: for free concept designs, never reuse a heading/body font or style group from the register (SOP section 11), and add
-  the new row. For real client builds the client's own brand fonts win (Paul = Montserrat / Russo One / Yellowtail).
-  Open question for Nick: confirm this split (see project memory `open-items.md`).
+- **Fonts (Nick, 23 Nov, permanent):** if the client has his own fonts (logo, van, site, flyers), ALWAYS use them (Paul =
+  Montserrat / Russo One / Yellowtail). If he has none, pick premium fonts that no earlier client used, and that don't look
+  like an earlier client's fonts (register: homepage SOP section 11). Add the row to the register in the same session.
 - Yellow "<client> to confirm" sticky notes sit BESIDE frames, never in them.
 - Figma gotchas: start EVERY use_figma call with `await figma.setCurrentPageAsync(<your company page>)` and create frames on
   that page explicitly: other threads work in the same file and switch the current page, so new frames can land on another

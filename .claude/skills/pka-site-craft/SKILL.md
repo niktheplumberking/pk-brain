@@ -230,7 +230,7 @@ an LED tile; nothing is shared but the discipline.
 
 ## 11. Check before showing Nick (add to pka-client-site step 6 QA)
 
-- [ ] Non-plumber client flagged to Nick first (CLAUDE.md); fonts checked against the SOP section 11 register.
+- [ ] Non-plumber client flagged to Nick first (CLAUDE.md); client's own fonts used; if he has none, premium fonts not used for any earlier client (SOP section 11 register).
 - [ ] BRAND-AUDIT, anatomy (or reuse), 3 directions + translation table, DESIGN-SYSTEM, page sheet all exist as files.
 - [ ] Every client-column cell in the translation table differs from United, Paul and every other client.
 - [ ] Motif comes only from owned objects; budget per page met.
