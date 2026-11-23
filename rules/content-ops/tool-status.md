@@ -14,7 +14,7 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 | Remotion 4.0.540 (tools/content/remotion) + skill remotion-best-practices | cards, motion, captions render | cloud (PC: not yet) | PROVEN (cloud); skill fresh-thread check pending | 2026-11-23 | 5 s render 1080x1920 30 fps H.264 bt709, Urbanist font, hook + word captions + pop card; frames checked. Free licence while 3 people or fewer |
 | remocn (copied parts only, MIT @995f1be) | ready-made motion parts | with Remotion | PROVEN: check-list | 2026-11-23 | check-list + handwrite rendered over the test clip (6 s), local Caveat font; list in tools/content/remotion/src/remocn/README.md |
 | Earshot (MIT @7a7f7c5, venv) + openverse_fetch.py (CC0 only) | sound effects | cloud | PROVEN | 2026-11-23 | Earshot made whoosh/pop/cash register/shutter; Openverse fetched 2 CC0 whooshes with credit rows; see tools/content/sfx/README.md |
-| mind reader (viewer_profile.mjs, flag_cut.mjs; MIT, christianjohnston-ai) | retention flags before a cut | cloud | NOT PROVEN | | (task C5) |
+| mind reader (viewer_profile.mjs, flag_cut.mjs; MIT Christian Johnston) + make_beats.py | retention flags before a cut | cloud | PROVEN (no profile yet) | 2026-11-23 | test clip: 10 beats, flags F1 pause 0.7 s + F2 "That's it." after payoff; tight clip: 0 flags, no crash. Profile needs 2+ past reels with curves (E2) |
 | last30days (MIT, mvanhorn) | Reddit/web research | cloud | NOT PROVEN | | (task C6) |
 | pka-reel-reviewer agent | independent check of a finished reel | cloud | NOT PROVEN | | (task D1) |
 | pka-script-reviewer agent | independent check of scripts | cloud | NOT PROVEN | | (task D2) |

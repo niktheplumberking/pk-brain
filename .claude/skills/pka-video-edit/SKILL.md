@@ -27,9 +27,12 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
 3. Transcribe: `python3 -I tools/content/edit/transcribe.py <work.mp4> words.json` -> `[{w,s,e}]`. Check: word count vs
    duration sane (talking head about 2-3 words a second).
 4. Match to script: map each spoken block to its script block; lines that differ are flagged, never fixed silently.
-5. Mind reader flags: build beats.json (labels from words only, before any curve), run
-   `tools/content/mindreader/flag_cut.mjs` with Nick's profile (or `none`). Flags F1, F2... saved as flags.json in the
-   work folder. Never cut the hook, main point, payoff or CTA. Check: flags.json exists for EVERY reel.
+5. Mind reader flags (before any cut): `python3 -I tools/content/mindreader/make_beats.py words.json beats.json "<reel>"`,
+   then label every spoken beat FROM THE WORDS ONLY, before looking at any curve (labels and rules:
+   `tools/content/mindreader/mind-reader-method.md`), then `node tools/content/mindreader/flag_cut.mjs <profile.json|none> beats.json`
+   -> flags.json (F1, F2...). Hook, claim, payoff and CTA are never flagged. Profile: `viewer_profile.mjs` over Nick's past
+   reels (curve.json + beats.json each; needs 2+ to run, 5+ per label for a verdict); until then use `none` (pauses and
+   after-the-payoff only). Check: flags.json exists for EVERY reel, even when empty.
 6. Cut: silences and bad takes (the LAST take of a repeated sentence is ~99% the good one) + approved flags. Rule:
    flags are applied only where Nick approved, or where the SOP allows auto-cuts (pauses >= 0.6 s, repeated takes).
 7. Scene plan: one line per block: what is on screen (card, number, zoom, B-roll, screen insert), which sound
