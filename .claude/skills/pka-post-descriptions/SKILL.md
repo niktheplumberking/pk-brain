@@ -1,6 +1,6 @@
 ---
 name: pka-post-descriptions
-description: "Writes the Instagram post description (the caption text under a reel) for Nick's finished Plumber King Agency videos - audits, B-rolls and educational reels - in Ed's (@edwin.radd) description pattern. Use when Nick asks for descriptions, post descriptions, captions, caption text or \"what do I write under it\", or says \"script\" about a video that is already made or posted (that means its description). Short rows, never a transcript, no comment word, all done videos in one go, delivered ready to paste in a code block. Also holds the video editing rules (burned-in caption placement and outline, zooms, loudness, cutting and file saving); use it when Nick says edit the videos, edit the reels, cut the footage, caption the videos, add zooms or the raw footage is in Dropbox."
+description: "Writes the Instagram post description (the caption text under a reel) for Nick's finished Plumber King Agency videos - audits, B-rolls and educational reels - in Ed's (@edwin.radd) description pattern. Use when Nick asks for descriptions, post descriptions, captions, caption text or \"what do I write under it\", or says \"script\" about a video that is already made or posted (that means its description). Short rows, never a transcript, no comment word, all done videos in one go, delivered ready to paste in a code block. Post text only: video editing (burned-in captions, zooms, loudness, cutting, saving files) lives in skill pka-video-edit."
 ---
 
 # PKA post descriptions
@@ -45,44 +45,6 @@ Copy the approved shape: Audit 8/9/10 in the thread "Write post descriptions for
   go, with the one he is posting now on top. Never only the few he named.
 - Send each ready to paste in a code block, nothing else around it.
 
-## If also burning captions into video
-Placement:
-- Default: plain text, Urbanist, no box behind it, 2 px outline, centred at about 66% of the height.
-- Outline colour: white on dark backgrounds; charcoal #141414 on bright screens, white pages, or when his
-  shirt behind the captions is pink or white. Never black on pink.
-- B-roll: captions go in the empty space ABOVE Nick's head, NEVER over the monitor, laptop or what he is
-  doing (seeing the work is the point). Check his head height across frames for every clip.
-- Split screen (site on top, camera below) with a black gap: captions centred in the gap, one line, clear of
-  Instagram's icons, wherever the gap is. Measure the screen and camera rows for each video.
-- Split screen with no gap (screen top, his face below): never across his face; the top is for his title;
-  put them below his chin (measure the chin across frames first).
-- Phone-only videos: the usual lower position. Gentle punch-in cuts on the face camera are allowed (clash 7).
-- Letterboxed landscape video in 9:16 (Nick's test format, Edu 4, 15 Nov): captions in the black area BELOW the
-  video, white outline.
-
-Sound and words:
-- Voice levelled to -14 LUFS.
-- Fix speech-to-text mishears against his script before rendering (names, "plumber near me" and similar).
-  Where he actually said something different from the script, keep what he said and flag it.
-
-Zooms (screen recordings only, never the face camera):
-- One zoom at a time: in, hold, fully out. Never zoom while already zoomed.
-- Every zoom-out finishes before any cut, camera jump, voice break or fast scroll. Find the cuts first.
-- About 2x max; subtle, B2B. Zoom on what Nick emphasises and where his mouse points; slow designed paths
-  along his swipe, hold still otherwise; zoom out right after the highlight clears. No zoom during slow
-  scrolls. Audit 2 (Ogborn) is the reference standard. Don't let zooms get static or sparse.
-- Audits: zoom on the opening line (the plumber + odd detail) from the first second until the name + reviews are shown, and on
-  head-title text he reads with the mouse (31 Oct).
-
-Titles (clash 6, 23 Nov): burn the hook's on-screen text into the video from frame 1; Nick no longer adds
-Instagram titles.
-
-Cutting (16 Nov): cut silences and bad takes; the LAST take of each repeated sentence is ~99% the good one.
-Nick is teaching the full edit; visual/sound/text hooks and showing real work (Figma, results) are the aim.
-
-Files:
-- Save as "<Format> N - final.mp4" (e.g. "Audit 3 - final.mp4", "Skit 1 - final.mp4") in the folder Nick uses
-  (DONE FILES\DONE <format> until the Dropbox CLAUDE EDITOR folders exist) (clash 15).
-- Never overwrite a file name; save under a new name. Verify the PC copy by hash before saying it is saved.
-- /mnt/project-files silently changes .mp4 files, and device commits cap at 25 MB per file: zip -0, split,
-  re-hash, then join and check the hash on the PC.
+## Editing
+All video editing rules (burned-in captions, zooms, loudness, cutting, file saving) moved to skill `pka-video-edit`
+on 23 Nov. This skill is post text only.

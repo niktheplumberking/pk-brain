@@ -10,9 +10,11 @@ Nick's personal preferences (how to talk to him) load separately from his accoun
 ## Routing: which skill or file to use (load it BEFORE starting)
 | Task (Nick's words) | Use |
 |---|---|
-| scripts, weekend/Friday batch, audits, B-roll, edu/educational, hooks, reel script | skill `pka-video-scripts` |
-| post descriptions, captions text, "script" for a finished video, burning captions into a video | skill `pka-post-descriptions` |
-| edit the videos/reels, cut the raw footage, zooms, loudness, saving the finished files | skill `pka-post-descriptions` (editing section) |
+| scripts, weekend/Friday batch, audits, B-roll, edu/educational, hooks, reel script | skill `pka-video-scripts` (scripts checked by agent `pka-script-reviewer`) |
+| post descriptions, captions text, "script" for a finished video | skill `pka-post-descriptions` |
+| edit the videos/reels, cut the raw footage, captions burned in, zooms, sound effects, loudness, saving the finished files | skill `pka-video-edit` (finished reel checked by agent `pka-reel-reviewer`) |
+| viral reel to break down or recreate, research, intel, find formats, ideas bank | skill `pka-content-research` |
+| long video, long-form, clips, clipping, podcast clips | skill `pka-clipping` (then each clip through `pka-video-edit`) |
 | client site, redesign, Figma, build/launch a site | skill `pka-client-site` + skill `pka-site-craft` (how to reach United/Paul quality) (+ claude-seo skills `seo-*` for SEO) |
 | sales call, prep a call, one-call close, proposal on the call | skill `pka-sales-call` |
 | SEO, audit a site's SEO, schema, sitemap, GEO | claude-seo skills in `.claude/skills/seo*` (copied 17 Nov, see `tools/claude-seo/README.md`) |
@@ -73,7 +75,8 @@ already settled by date are listed in `audit/FLAGS-content.md`. Superseded lines
 - To-dos, plans and reminders: `todo.md` (rule above). Memory `open-items.md` keeps only clashes and stale notes.
 - Rules for repeat work: `.claude/skills/<skill>/SKILL.md`. A new or changed rule from Nick goes into the right skill **in the same turn**, gets committed, and is noted in project memory. Push it to the default branch only if
   Nick gave the standing yes (INSTALL step 2, recorded in project memory); otherwise put it on a branch and ask him once.
-- Reference files the skills point to: `rules/` (incl. `rules/sop/` for the homepage CRO and one-call-close SOPs).
+- Reference files the skills point to: `rules/` (incl. `rules/sop/` for the homepage CRO and one-call-close SOPs, and
+  `rules/content-ops/` for Claude Editor: tool status, incident log, sound credits, folders, ideas bank, style).
 - Facts and state: project memory (seeded 16 Nov 2026 from this repo's former `memory/` folder, now the frozen
   `seed-memory-2026-11-16/`, which is no longer live). Keep one file per subject; the index stays short.
 - Finished files for Nick go on his PC, in the matching folder of `Desktop\PLUMBER KING` (map: memory `pc-folders.md`), through

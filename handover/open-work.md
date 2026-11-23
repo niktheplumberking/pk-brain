@@ -30,9 +30,9 @@ cmsg_01JcVwzrWUQdguS5Ff2vqQcwHBbykTPq2SmPBGifjRYYcw · In-between post topic lis
    script rules stay until Claude Editor replaces them. Remind him of Jake's 13 ig-* skills during scripting work.
 6. Plumbing by Paul: Nick's review of round 4; Paul's blanks; launch steps (skill pka-client-site, step 6).
 7. PKA own site: homepage FAQ update (title, Q&A 1-8, duck + "Still got a question?" box); 28 Oct audit items.
-8. Content skills exist (`pka-video-scripts`, `pka-post-descriptions`). When Nick teaches scripting and editing, write each
-   new rule into the right skill the same turn (full-edit rules go in the editing section of `pka-post-descriptions` unless
-   Nick wants a separate editing skill).
+8. Content skills: `pka-video-scripts`, `pka-post-descriptions` (post text only), `pka-video-edit` (all editing, 23 Nov),
+   `pka-content-research`, `pka-clipping`. When Nick teaches scripting or editing, write each new rule into the right skill
+   the same turn.
 9. Clashes only Nick can settle: project memory `open-items.md` (raise them in the install interview, not before).
 
 ## Live links
