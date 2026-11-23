@@ -19,6 +19,9 @@ file on arrival and before delivery, so a swapped or changed file is caught.
 How files move (cloud, Nick's PC off):
 - In: the Dropbox connector lists 01/02 and gives a one-time download link; Claude downloads it to the cloud work folder and
   hashes it (sha256) on arrival.
-- Out: the Dropbox connector cannot upload video (text files only). Finished reels go to Nick's Google Drive through the Drive
-  connector (file upload by reference, no conversion), hash checked by downloading it back; the link goes in the chat.
-  When the PC is on, the copy can also go to 06 REVIEW through Remote Control.
+- Out (PROVEN 23 Nov 21:33 UTC): the Dropbox connector cannot upload video and the Drive connector refuses uploads over
+  10 MB (a 35 s reel is ~19 MB). So the finished reel is copied to `/mnt/project-files/claude-editor/` and attached to the
+  chat message (Nick opens/downloads it from the Library on any device). That folder rewrites the mp4 container (file hash
+  changes, +~6 KB), but the video and audio streams stay bit-identical: verify with
+  `ffmpeg -v error -i <file> -map 0:v -c copy -f md5 -` (and `-map 0:a`) on both copies; both must match.
+  When the PC is on, a copy can also go to Dropbox 06 REVIEW through Remote Control (whole-file hash must match there).

@@ -91,5 +91,6 @@ Files:
 - Save as "<Format> N - final.mp4" (e.g. "Audit 3 - final.mp4", "Skit 1 - final.mp4") in the folder Nick uses
   (DONE FILES\DONE <format> until the Dropbox CLAUDE EDITOR folders exist) (clash 15).
 - Never overwrite a file name; save under a new name. Verify the PC copy by hash before saying it is saved.
-- /mnt/project-files silently changes .mp4 files, and device commits cap at 25 MB per file: zip -0, split,
-  re-hash, then join and check the hash on the PC.
+- /mnt/project-files rewrites the .mp4 container (streams stay identical; check stream md5s, see
+  `rules/content-ops/folders.md`). Device commits cap at 25 MB per file: zip -0, split, re-hash, then join and check the
+  hash on the PC.

@@ -36,13 +36,13 @@ const Hook: React.FC<{ text: string }> = ({ text }) => (
 // Outline is charcoal on bright/pink backgrounds (never black on pink). highlight=null -> current word grows instead of recolouring.
 const Captions: React.FC<{ words: Word[]; style?: CaptionStyle }> = ({ words, style = {} }) => {
   const t = useCurrentFrame() / useVideoConfig().fps;
-  const { centerY = 1267, outline = CHARCOAL, highlight = PINK, size = 80 } = style;
+  const { centerY = 1267, outline = CHARCOAL, highlight = PINK, size = 74 } = style; // 800 px wide band: clear of IG's right-side buttons (x >= 950)
   const i = words.findIndex((w) => t >= w.s && t < w.e + 0.15);
   if (i < 0) return null;
   const start = i - (i % 3);
   const chunk = words.slice(start, start + 3);
   return (
-    <div style={{ position: "absolute", top: centerY - size * 0.6, left: 70, right: 70, textAlign: "center", lineHeight: 1.1, fontFamily: FONT, fontWeight: 900,
+    <div style={{ position: "absolute", top: centerY - size * 0.6, left: 140, right: 140, textAlign: "center", lineHeight: 1.1, fontFamily: FONT, fontWeight: 900,
       fontSize: size, color: "white", WebkitTextStroke: `2px ${outline}`, paintOrder: "stroke fill",
       textShadow: `0 0 2px ${outline}, 0 4px 14px rgba(0,0,0,.55)` }}>
       {chunk.map((w, k) => {
@@ -60,8 +60,8 @@ const Captions: React.FC<{ words: Word[]; style?: CaptionStyle }> = ({ words, st
 const PopCard: React.FC<Omit<Card, "from" | "to"> & { frames: number }> = ({ text, frames, color = "pink", y, size = 110 }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const s = spring({ frame: f, fps, config: { damping: 12 } });
-  const out = interpolate(f, [frames - 6, frames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const s = spring({ frame: f, fps, config: { damping: 14, stiffness: 220 } });
+  const out = interpolate(f, [frames - 5, frames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const bg = color === "pink" ? PINK : color === "white" ? "white" : CHARCOAL;
   const fg = color === "white" ? CHARCOAL : "white";
   const box = (
