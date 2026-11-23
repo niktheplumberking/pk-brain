@@ -20,9 +20,12 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
 
 ## Steps (each ends with its own check; do not skip)
 1. Raw in: copy the clip to the work folder; record its hash (sha256). Check: hash logged.
-2. Probe: `tools/content/edit/probe.sh` (size, fps, codec, HDR/VFR). iPhone HEVC/HDR/VFR gets converted to 30 fps
-   SDR H.264 first. Check: probe of the working copy reads 30 fps, SDR.
-3. Transcribe: `tools/content/edit/transcribe.py` -> words.json `{w,s,e}`. Check: word count vs duration sane.
+2. Probe: `tools/content/edit/probe.sh <clip>` (size, fps, codec, HDR, VFR by rate AND real frame gaps). If it prints
+   `ready_for_edit=no`, run `tools/content/edit/normalize.sh <clip> <work.mp4>` (1080x1920, constant 30 fps, SDR
+   bt709, H.264 + AAC 48k; landscape is padded, never stretched; reframing a landscape clip is pka-clipping's job).
+   Check: probe of the working copy prints `ready_for_edit=yes`.
+3. Transcribe: `python3 -I tools/content/edit/transcribe.py <work.mp4> words.json` -> `[{w,s,e}]`. Check: word count vs
+   duration sane (talking head about 2-3 words a second).
 4. Match to script: map each spoken block to its script block; lines that differ are flagged, never fixed silently.
 5. Mind reader flags: build beats.json (labels from words only, before any curve), run
    `tools/content/mindreader/flag_cut.mjs` with Nick's profile (or `none`). Flags F1, F2... saved as flags.json in the
@@ -35,7 +38,8 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
    (rules below), sound effects (CC0/own only, logged in `rules/content-ops/sound-credits.md`).
 9. Look: light grade by the script's TONE line (happy = warm, serious = neutral, dramatic = more contrast, dramatic
    ambience = darker edges). Subtle; it is a test.
-10. Sound: voice at -14 LUFS integrated (loudness standard), music under voice, effects on the cut.
+10. Sound: voice at -14 LUFS integrated (loudness standard), music under voice, effects on the cut. Last audio step:
+    `tools/content/edit/loudness.sh <in> <out>` (two-pass, true peak <= -1 dBTP); it must print `pass=yes`.
 11. Export: 1080x1920, 30 fps, H.264 + AAC, `<Format> N - final.mp4`.
 12. Check before done: `pka-reel-reviewer` agent reviews (size/fps, LUFS, captions vs words, captions clear of face
     and IG buttons, nothing from another client, licences logged, flags.json present). Fix everything it finds.

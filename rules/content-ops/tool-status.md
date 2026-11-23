@@ -6,8 +6,8 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 
 | Tool | Job | Runs where | Status | Date | Proof |
 |---|---|---|---|---|---|
-| ffmpeg / ffprobe | probe, convert, cut, loudness, export | cloud + Nick's PC | NOT PROVEN | | (task C1) |
-| faster-whisper (small.en) | word-timed transcript | cloud + Nick's PC | NOT PROVEN | | (task C1) |
+| ffmpeg 6.1 + probe.sh / normalize.sh / loudness.sh | probe, convert, loudness | cloud (PC: not yet) | PROVEN (cloud) | 2026-11-23 | test clip: vp9 -> h264 30 fps ready=yes; -14.25 LUFS, TP -1.17; synthetic HDR+VFR landscape -> 1080x1920 30 fps SDR, A/V within 0.014 s; 4 pytest |
+| faster-whisper small.en + transcribe.py | word-timed transcript | cloud (PC: not yet) | PROVEN (cloud) | 2026-11-23 | test clip: 99 words in 30 s, 12 s run |
 | check_script.py | script checker (10-point + JOB) | cloud | PROVEN | 2026-11-23 | tools/content/tests: 18/18 pass |
 | Effects library (C7) | named Remotion effects (style.md) | cloud + Nick's PC | NOT PROVEN | | (task C7) |
 | Google Doc "PK Reel Scripts" + build_scripts_docx.py | script delivery, 1 page per script | connector + Nick's PC Chrome | PROVEN | 2026-11-23 | SOP tools/content/gdoc_scripts.md; same doc id 2->3 pages and 3->1 page, PDF export checked, old text gone; 4/4 builder tests |
