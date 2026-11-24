@@ -14,6 +14,19 @@ LABEL = {"broll": "B-ROLL", "before_after": "BEFORE/AFTER", "steal_this": "STEAL
          "build_in_public": "BUILD IN PUBLIC", "remake": "VIRAL RE-MAKE"}
 
 
+def _link(paragraph, url, text):
+    """Clickable hyperlink run (python-docx has no API for it)."""
+    from docx.oxml.shared import OxmlElement, qn
+    rid = paragraph.part.relate_to(url, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+                                   is_external=True)
+    h = OxmlElement("w:hyperlink"); h.set(qn("r:id"), rid)
+    r = OxmlElement("w:r"); rpr = OxmlElement("w:rPr")
+    u = OxmlElement("w:u"); u.set(qn("w:val"), "single"); rpr.append(u)
+    col = OxmlElement("w:color"); col.set(qn("w:val"), "1155CC"); rpr.append(col)
+    r.append(rpr); t = OxmlElement("w:t"); t.text = text; r.append(t); h.append(r)
+    paragraph._p.append(h)
+
+
 def build(cards, out):
     bad = {c.get("number", i + 1): check_script(c) for i, c in enumerate(cards) if check_script(c)}
     if bad:
@@ -30,7 +43,12 @@ def build(cards, out):
         d.add_paragraph(f'On screen: {c["on_screen_text"]}')
         d.add_paragraph(f'Spoken: {c["hook_line"]}')
         if c.get("hook_ref"):
-            p = d.add_paragraph(); p.add_run("HOOK REF: ").bold = True; p.add_run(c["hook_ref"])
+            p = d.add_paragraph(); p.add_run("HOOK REF: ").bold = True
+            label, _, url = c["hook_ref"].rpartition(": ")
+            if url.startswith("http"):
+                _link(p, url, (label or "Watch the hook") + " (tap to watch)")
+            else:
+                p.add_run(c["hook_ref"])
         p = d.add_paragraph(); p.add_run(f'JOB: {c["job"]} - TONE: {c["tone"]}').bold = True
         p = d.add_paragraph(); p.add_run("DELIVERY: ").bold = True; p.add_run(c["delivery_note"])
         if c["format"] == "broll" and c.get("figma_task"):
