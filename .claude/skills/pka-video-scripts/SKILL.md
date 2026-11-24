@@ -189,6 +189,10 @@ script is delivered.
    care and it takes too long to explain. Before calling something a flaw, ask if the business has a reason for it (two
    Pay Bill buttons = he bills in two states, which is fine). Batch 1 lesson: Reeves "two Pay Bill buttons" and Idaho
    "1000+ vs 1,523 reviews" were both wrong picks for this reason.
+   Nick 24 Nov 15:20: Reeves was not a pick at all: a video logo, a clear title and their own podcast right under it build
+   trust, even if the look is not modern. Small layout nitpicks (a logo twice) on a trusted-looking site make no sense.
+   Pick only sites whose UI looks weak in the first 2 s of looking (e.g. Weilhammer: review in tiny pale grey text, a
+   white-glove thumbs-up photo instead of their team).
 5. Write privately in plain words first, then the final script: Ed's audit structure (opens on the
    plumber + the number/odd detail, one visual proof, the cost or the fix, a short rule line) in Nick's
    spoken voice. Flaws in the order Nick reaches them on screen, top to bottom. Frame it as how to fix it
