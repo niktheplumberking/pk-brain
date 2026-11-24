@@ -16,5 +16,6 @@ Check, with evidence (command output or a frame you looked at):
 5. Nothing from another client or a wrong brand appears.
 6. Sound credits: every effect/music used is in rules/content-ops/sound-credits.md with a CC0 or own licence.
 7. flags.json (mind reader) exists in the work folder.
+8a. Sound effects: count them (max 1 per 5 s of reel) and check each sits under the voice (Nick 24 Nov: too loud = FAIL).
 8. No black frames, frozen frames or audio gaps over 0.6 s (ffmpeg blackdetect, freezedetect, silencedetect).
 Reply: PASS, or the defects with timestamps and how you saw them.

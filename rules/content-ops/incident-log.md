@@ -5,6 +5,7 @@ add a check so it cannot happen twice. Newest first.
 
 | Date | What went wrong | Found by | Cause | Fix (commit) | New check added |
 |---|---|---|---|---|---|
+| 2026-11-24 | D1 test reel reached Nick with sound effects too loud and an edit he called "super simple" | Nick | 14 effects in 35 s at guessed volumes (0.35-0.6), never measured vs voice; no style refs (03 INSPIRATION empty); reviewer has no taste/sfx check | pka-video-edit step 8 sfx rule + refs-first rule (this commit) | reviewer: count effects (max 1 per 5 s) and check they sit under the voice |
 | 2026-11-23 | D1 test reel v1: captions ran into IG's right-side buttons; current word's scale ate the space between words | pka-reel-reviewer + contact sheet | caption band was full width, scale on inline words | Reel.tsx 800 px band, margin per word (afc231c) | reviewer measures caption x-range vs x>=950 |
 | 2026-11-23 | D1 v1: true peak -0.84 dBTP (limit -1) | loudness.sh pass=no | linear loudnorm let sfx transients through, AAC overshoot | 4x-oversampled -2 dB limiter after loudnorm (1465dc2) | loudness.sh still fails the export if TP > -1 |
 | 2026-11-23 | D1 v1: punch-in 4 frames before the footage cut (double jump) | pka-reel-reviewer | punch time typed by hand, not taken from the EDL | punch starts on the EDL join | scene plan takes punch/cut times from <cut>.edl.json |

@@ -39,6 +39,9 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
    lands where. Something changes every 2-3 s and always matches the words (plan s3). Check against the style file.
 8. Build: captions (rules below), burned hook text from frame 1, motion cards/counters (Remotion + remocn), zooms
    (rules below), sound effects (CC0/own only, logged in `rules/content-ops/sound-credits.md`).
+   Sound effects stay UNDER the voice (Nick 24 Nov: D1 effects "too loud"): at most 1 effect per 5 s of reel, only on a
+   real moment (card in, number, cut); start every effect at -18 dB under the voice and listen-check; never louder than the
+   word it lands on. Edit style comes from the format's refs in Dropbox 03 INSPIRATION; with no refs, say so before editing.
 9. Look: light grade by the script's TONE line (happy = warm, serious = neutral, dramatic = more contrast, dramatic
    ambience = darker edges). Subtle; it is a test.
 10. Sound: voice at -14 LUFS integrated (loudness standard), music under voice, effects on the cut. Last audio step:
