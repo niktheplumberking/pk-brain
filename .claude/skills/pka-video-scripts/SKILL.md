@@ -102,6 +102,9 @@ B-roll rules:
   CAMERA: where the phone stands and which way it points (e.g. "on the desk in front of you, facing you, chest height").
   YOU: what you do, in order, with short sentences. Never ask the camera to see a laptop or phone screen; if the screen
   matters, write "I add the screen in the edit". Only use what Nick has (phone, laptop, desk, chair, couch, paper, pen).
+- Every talking-head script that talks about a website thing (form, button, reviews) needs a REAL example the viewer
+  sees (Nick, 24 Nov): Claude finds it and screen-records it (Playwright, 1080x1920), saves it to Dropbox
+  CLAUDE EDITOR\04 ASSETS before filming, and the hook line says "You do NOT record the screen". Nick never has to guess.
 - Hook REFERENCE CLIP on every script (Nick, 24 Nov: "the biggest push down" is guessing what a written visual hook means).
   Never only describe the visual hook. Every script gets one short clip that SHOWS what to do, linked on its page:
   - Talking-head / other formats: pick the visual hook from the hook library (`rules/content-ops/hook-library.md`, cut from
