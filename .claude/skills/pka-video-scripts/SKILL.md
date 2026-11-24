@@ -141,6 +141,8 @@ Read `rules/nick-voice-persona.md` first. If a line would not come out of his mo
   did better.
 
 ## 7. Asks, proof and facts
+- Our own client work (Nick, 24 Nov): build-in-public stories about clients (e.g. Mike, Paul) are fine to post. No names,
+  never framed as their review of us, never cocky; stay respectful.
 - Most reels: no comment-word ask. Test (clash 4): a comment word on 2 of 14 reels a week, for a real thing to
   send, never using the word "free" (nick.bennettx had a false "asking for money" flag). Other reels may end on a
   follow ask or no ask. Plain audit reels: no CTA.
