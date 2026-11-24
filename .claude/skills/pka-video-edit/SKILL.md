@@ -39,7 +39,8 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
    flags are applied only where Nick approved, or where the SOP allows auto-cuts (pauses >= 0.6 s, repeated takes).
 7. Scene plan: one line per block: what is on screen (card, number, zoom, B-roll, screen insert), which sound
    lands where. Something changes every 2-3 s and always matches the words (plan s3). Check against the style file.
-8. Build: captions (rules below), burned hook text from frame 1, motion cards/counters (Remotion + remocn), zooms
+8. Build: captions (rules below), motion that backs up his words (graphics, photos, screen inserts, video; face moved or
+   shrunk to make room), motion cards/counters (Remotion + remocn), zooms
    (rules below), sound effects (CC0/own only, logged in `rules/content-ops/sound-credits.md`). For any Remotion code load skill
    `remotion-best-practices` (its PK-OVERRIDES.md wins).
    Sound effects stay UNDER the voice (Nick 24 Nov: D1 effects "too loud"): at most 1 effect per 5 s of reel, only on a
@@ -87,8 +88,8 @@ Zooms (screen recordings only, never the face camera):
 - Audits: zoom on the opening line (the plumber + odd detail) from the first second until the name + reviews are shown, and on
   head-title text he reads with the mouse (31 Oct).
 
-Titles (clash 6, 23 Nov): burn the hook's on-screen text into the video from frame 1; Nick no longer adds
-Instagram titles.
+Titles (Nick, 24 Nov, replaces clash 6): NO bold hook sentence on screen. From the first second, show what he is talking
+about (graphic, photo, screen, video) and move or shrink his face to make room. Captions stay.
 
 Cutting (16 Nov): cut silences and bad takes; the LAST take of each repeated sentence is ~99% the good one.
 Nick is teaching the full edit; visual/sound/text hooks and showing real work (Figma, results) are the aim.

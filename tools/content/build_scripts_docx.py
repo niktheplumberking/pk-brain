@@ -39,8 +39,8 @@ def build(cards, out):
             head += f' - {c["website"]}'
         d.add_heading(head, 1)
         p = d.add_paragraph(); p.add_run("HOOK").bold = True
-        d.add_paragraph(f'Visual: {c["hook_visual"]}')
-        d.add_paragraph(f'On screen: {c["on_screen_text"]}')
+        for ln in c["hook_visual"].split("\n"):
+            d.add_paragraph(ln if ln.startswith(("CAMERA", "YOU", "SCREEN", "MOUSE")) else f'Visual: {ln}')
         d.add_paragraph(f'Spoken: {c["hook_line"]}')
         if c.get("hook_ref"):
             p = d.add_paragraph(); p.add_run("HOOK REF: ").bold = True

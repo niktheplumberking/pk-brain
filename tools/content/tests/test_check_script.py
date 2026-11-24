@@ -62,9 +62,9 @@ def test_banned_hook_and_phrases():
     assert "banned phrase: did you know" in check_script(card(hook_line="Did you know plumbers lose calls?"))
     assert "banned phrase: here's the thing" in check_script(card(payoff="Here's the thing, fix it."))
 
-def test_on_screen_text_and_delivery_required():
+def test_delivery_and_visual_required_on_screen_text_not():
     errs = check_script(card(on_screen_text="", delivery_note="", hook_visual=""))
-    assert "on-screen text missing" in errs and "delivery note missing" in errs and "visual hook missing" in errs
+    assert "on-screen text missing" not in errs and "delivery note missing" in errs and "visual hook missing" in errs
 
 def test_too_long_for_structure():
     long_body = " ".join(["word"] * 80)

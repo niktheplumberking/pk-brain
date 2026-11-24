@@ -84,18 +84,24 @@ B-roll rules:
 - Never the same opener across scripts. Not "Plumbers, ..." on all of them, not "I'm ..." on all of them,
   not "This plumber ..." on all of them.
 - The plumber is named or obvious within 2 seconds of the first spoken word (a 1-2 s silent visual hook may come
-  first) and named in the on-screen text from frame 1; the strangest real detail first; proof on screen by 3
-  seconds after the first word (Nick 23 Nov, clash 12).
+  first); the strangest real detail first; proof on screen by 3 seconds after the first word (Nick 23 Nov, clash 12).
+- NO on-screen hook text (Nick, 24 Nov, replaces clash 6): Nick does not write a bold hook sentence on screen and the
+  scripts never give him one. The edit backs up his words with motion, graphics, photos, screen inserts and video, and
+  moves or shrinks his face to make room. The page never has an "On screen" line.
 - Best hooks so far (Nick's own numbers): a real named site plus an odd, specific quoted detail
   ("Yank The Tankasaurus" 1,005 views). Vague "Did you know?" question hooks did worst: banned. A numbered list is
   allowed when each item is concrete and the count is on screen (clash 11).
 - The hook says the point clearly; curiosity lives in the open loops/rehooks later (clash 8). It still opens a
   question an owner wants answered (plan section 3).
 - Write 5 hook options per script, keep the best.
-- Every script Nick films has a labelled HOOK block on top: visual + on-screen text + spoken first line,
+- Every script Nick films has a labelled HOOK block on top: visual (CAMERA + YOU lines) + spoken first line,
   all different per script. Never drop the HOOK block from "final" versions.
 - Visual hooks yes (a movement or action in the first 1-2 s), always tied to plumbing work or the business, never a
   random trick (clash 2). Sound hooks count too.
+- Write the visual hook in very simple English (Nick is not a native speaker, 24 Nov): two short lines.
+  CAMERA: where the phone stands and which way it points (e.g. "on the desk in front of you, facing you, chest height").
+  YOU: what you do, in order, with short sentences. Never ask the camera to see a laptop or phone screen; if the screen
+  matters, write "I add the screen in the edit". Only use what Nick has (phone, laptop, desk, chair, couch, paper, pen).
 - Hook REFERENCE CLIP on every script (Nick, 24 Nov: "the biggest push down" is guessing what a written visual hook means).
   Never only describe the visual hook. Every script gets one short clip that SHOWS what to do, linked on its page:
   - Talking-head / other formats: pick the visual hook from the hook library (`rules/content-ops/hook-library.md`, cut from
@@ -198,7 +204,7 @@ script is delivered.
   plain text in chat, never a .md or .txt file, never a Claude Doc for scripts.
 - Per page:
   1. Header: number, format, company name or topic, website (when there is one).
-  2. HOOK: visual (what is on screen in the first second) / on-screen text / spoken first line /
+  2. HOOK: CAMERA: where the phone stands and what it sees / YOU: what Nick does, step by step / spoken first line /
      HOOK REF: link to the reference clip that shows it (section 4; Nick 24 Nov, wins over clash 10 for the hook only).
   3. JOB + TONE: one line, e.g. "JOB: reach - TONE: dramatic" (tone = happy / serious / dramatic / dramatic
      ambience, used for the colour grade).

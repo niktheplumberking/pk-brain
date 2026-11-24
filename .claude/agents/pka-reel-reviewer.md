@@ -12,7 +12,7 @@ Check, with evidence (command output or a frame you looked at):
 3. Captions: extract a frame every second (ffmpeg fps=1); read them. Every caption word matches what is said (transcribe
    the export with faster-whisper and compare) and the script facts (names, numbers, area codes). Captions never cover
    the face, the work on screen, or Instagram's right-side buttons / bottom caption zone.
-4. Hook text is on screen from the first frame.
+4. From the first second something on screen backs up the spoken hook (graphic, photo, screen, video); no bold hook sentence.
 5. Nothing from another client or a wrong brand appears.
 6. Sound credits: every effect/music used is in rules/content-ops/sound-credits.md with a CC0 or own licence.
 7. flags.json (mind reader) exists in the work folder.

@@ -48,8 +48,6 @@ def check_script(card):
         errs.append("hook missing")
     elif len(_words(hook)) > HOOK_MAX_WORDS:
         errs.append("hook too long")
-    if not _txt(card, "on_screen_text"):
-        errs.append("on-screen text missing")
     if not _txt(card, "lock_in"):
         errs.append("lock-in missing")
     if not _txt(card, "payoff"):
