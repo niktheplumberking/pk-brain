@@ -1,4 +1,7 @@
 # Ed's audit flaw list (from all 33 of his audit reels, transcripts in /mnt/project-files/plumber-king-agency/edwin-radd-research/items.jsonl)
+
+> Nick, 24 Nov (wins over this file): reel audits are UI ONLY. Never pick a flaw about how the site works (tap-to-call,
+> meta/SEO, speed, review counts not syncing, button logic). See skill pka-video-scripts section 8 step 4.
 > Paths starting `/mnt/project-files/` in this file are old project files; they may not exist in the new project.
 > Outdated line: "Used to pick ONE flaw" (since 30 Oct 15:47: 1-3 flaws by the % rule, skill `pka-video-scripts` section 8).
 Used to pick ONE flaw per business. Views = reel plays on 2026-10-24.

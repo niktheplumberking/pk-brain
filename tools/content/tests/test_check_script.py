@@ -5,6 +5,7 @@ from check_script import check_script
 GOOD = {
     "format": "educational", "job": "follow",
     "hook_visual": "Nick slams a phone on the desk",
+    "hook_ref": "Hook move: lean in: https://drive.google.com/file/d/x/view",
     "hook_line": "Your phone number is costing you jobs.",
     "on_screen_text": "Plumbers: your number is hiding",
     "lock_in": "I checked 40 plumber sites this week and 31 made the same mistake.",
@@ -84,3 +85,7 @@ def test_cli_exit_codes(tmp_path):
     f = tmp_path / "c.json"; f.write_text(json.dumps([GOOD, card(job="")]))
     r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "check_script.py"), str(f)], capture_output=True, text=True)
     assert r.returncode == 1 and "Script 1: PASS" in r.stdout and "Script 2: FAIL" in r.stdout
+
+
+def test_hook_ref_required():
+    assert "hook reference clip missing" in check_script(card(hook_ref=""))

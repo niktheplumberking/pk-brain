@@ -20,6 +20,12 @@ const hasProfile = profilePath !== 'none' && existsSync(profilePath);
 const profile = hasProfile ? JSON.parse(await readFile(profilePath, 'utf8')) : { labels: {}, videos: 0 };
 const cut = JSON.parse(await readFile(beatsPath, 'utf8'));
 const beats = (cut.beats || []).map((b) => ({ ...b, start: Number(b.start), end: Number(b.end) })).sort((a, b) => a.start - b.start);
+// Guard (install check 24 Nov): unlabeled beats would leave the hook and payoff unprotected, so refuse.
+const unlabeled = beats.filter((b) => !b.label);
+if (!beats.length || unlabeled.length) {
+  console.error(`refusing: ${unlabeled.length} of ${beats.length} beats have no label; label them from the words first (make_beats.py)`);
+  process.exit(3);
+}
 
 // Never offered as cuts, whatever the data says: without the hook, the main point, the payoff or the call to action the
 // video stops being the video. If one of these leaks, the fix is rewriting or tightening it, which is the creator's job.

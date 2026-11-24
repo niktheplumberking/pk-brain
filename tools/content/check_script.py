@@ -41,6 +41,8 @@ def check_script(card):
         errs.append("job missing")
     if not _txt(card, "hook_visual"):
         errs.append("visual hook missing")
+    if "http" not in _txt(card, "hook_ref"):
+        errs.append("hook reference clip missing")  # Nick 24 Nov: every script links a clip that shows the hook
     hook = _txt(card, "hook_line")
     if not hook:
         errs.append("hook missing")

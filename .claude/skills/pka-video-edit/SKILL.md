@@ -38,7 +38,8 @@ KEEP THE VIEWER WATCHING (Nick, 23 Nov). Full creative freedom inside these rule
 7. Scene plan: one line per block: what is on screen (card, number, zoom, B-roll, screen insert), which sound
    lands where. Something changes every 2-3 s and always matches the words (plan s3). Check against the style file.
 8. Build: captions (rules below), burned hook text from frame 1, motion cards/counters (Remotion + remocn), zooms
-   (rules below), sound effects (CC0/own only, logged in `rules/content-ops/sound-credits.md`).
+   (rules below), sound effects (CC0/own only, logged in `rules/content-ops/sound-credits.md`). For any Remotion code load skill
+   `remotion-best-practices` (its PK-OVERRIDES.md wins).
    Sound effects stay UNDER the voice (Nick 24 Nov: D1 effects "too loud"): at most 1 effect per 5 s of reel, only on a
    real moment (card in, number, cut); start every effect at -18 dB under the voice and listen-check; never louder than the
    word it lands on. Edit style comes from the format's refs in Dropbox 03 INSPIRATION; with no refs, say so before editing.
@@ -92,7 +93,7 @@ Nick is teaching the full edit; visual/sound/text hooks and showing real work (F
 
 Files:
 - Save as "<Format> N - final.mp4" (e.g. "Audit 3 - final.mp4", "Skit 1 - final.mp4") in the folder Nick uses
-  (DONE FILES\DONE <format> until the Dropbox CLAUDE EDITOR folders exist) (clash 15).
+  (Dropbox CLAUDE EDITOR 06 REVIEW, route in `rules/content-ops/folders.md`) (clash 15).
 - Never overwrite a file name; save under a new name. Verify the PC copy by hash before saying it is saved.
 - /mnt/project-files rewrites the .mp4 container (streams stay identical; check stream md5s, see
   `rules/content-ops/folders.md`). Device commits cap at 25 MB per file: zip -0, split, re-hash, then join and check the

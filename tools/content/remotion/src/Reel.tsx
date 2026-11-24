@@ -139,7 +139,7 @@ export const Reel: React.FC<ReelProps> = ({ video, hook, hookSeconds = 0, words,
       ))}
       {sfx.map((x, k) => (
         <Sequence key={`a${k}`} from={sec(x.at, fps)}>
-          <Audio src={staticFile(x.src)} volume={x.volume ?? 0.5} />
+          <Audio src={staticFile(x.src)} volume={x.volume ?? 0.13} />
         </Sequence>
       ))}
     </AbsoluteFill>

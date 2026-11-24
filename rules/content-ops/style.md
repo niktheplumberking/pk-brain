@@ -1,7 +1,9 @@
 # Edit style per format
 
 STATUS: PLACEHOLDER. Filled from Nick's inspiration references (03 INSPIRATION) per format; Nick wants to test different
-styles per format. Until a format has a row, use pka-video-edit defaults.
+styles per format. Until a format has a row, tell Nick there are no refs for it before editing (pka-video-edit step 8, Nick 24 Nov).
+To test when refs arrive (from sources Nick sent, not yet used): on-screen step/progress counter "01/05" (@corbinsylk);
+Nick approves a short scene plan before the render (@lamon.leonardo); an "avoid AI slop" list for cards and motion (@millee.md).
 
 | Format | Reference reels | Captions | Cards/motion | Cuts and zooms | Sound | Status |
 |---|---|---|---|---|---|---|

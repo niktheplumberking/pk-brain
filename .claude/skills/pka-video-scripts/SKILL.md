@@ -152,8 +152,6 @@ Read `rules/nick-voice-persona.md` first. If a line would not come out of his mo
 - Never say photos are fake or AI without proof shown (Google Lens / reverse image).
 - Real faces or names in promo content need the owner's consent. United Plumbing (Jim): another agency
   took him on 9 Nov; get Jim's OK before any content showing him.
-- Before filming a tap-to-call flaw, Nick must tap the number on his own iPhone (Safari can make a
-  non-link number tappable).
 
 ## 8. Audit workflow (summary - full detail in `rules/audit/AUDIT-SCRIPT-WORKFLOW.md` and `rules/audit/AUDIT-STEP-PROMPTS.md`)
 Input: one link (website, IG or Google) + an optional note from Nick. Steps 1-5 are private; only the final

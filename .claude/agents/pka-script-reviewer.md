@@ -14,4 +14,7 @@ For each script, check and report defects:
 4. Length: short version under 35 s (about 2.5 words a second), long version under 45 s.
 5. Plumbers only; no repeated company or topic from memory content.md.
 6. Run `python3 tools/content/check_script.py <cards.json>` and include its output; any FAIL = the script fails. Also check each script has a JOB (reach/follow/client) that fits its content.
+7. Nick's 24 Nov rules: audits judge only how the site LOOKS (UI), never how it works (UX, SEO, speed, review sync), and
+   any flaw with an obvious business reason fails; every hook visual uses only what Nick has (phone, laptop, desk, couch,
+   paper, pen; no whiteboard or special props) and has a HOOK REF link to a clip that shows it.
 Reply per script: PASS or numbered defects.

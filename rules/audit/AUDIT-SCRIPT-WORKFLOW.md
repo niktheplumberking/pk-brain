@@ -1,4 +1,7 @@
 # Audit script workflow (approved by Nick 2026-10-30, proven on Valley Air)
+
+> Nick, 24 Nov (wins over this file): reel audits are UI ONLY. Never pick a flaw about how the site works (tap-to-call,
+> meta/SEO, speed, review counts not syncing, button logic). See skill pka-video-scripts section 8 step 4.
 > Examples and Jev request shapes are in pk-brain (`rules/audit/examples/`, `rules/jev/examples/`). Reports are written to
 > `/mnt/project-files/plumber-king-agency/content/3-audits/reports/` (create it if missing).
 > Outdated lines (skill `pka-video-scripts` section 8 wins): "the cloud is blocked by Google" (Google Maps works from the
