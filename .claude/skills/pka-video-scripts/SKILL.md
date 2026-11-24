@@ -96,6 +96,16 @@ B-roll rules:
   all different per script. Never drop the HOOK block from "final" versions.
 - Visual hooks yes (a movement or action in the first 1-2 s), always tied to plumbing work or the business, never a
   random trick (clash 2). Sound hooks count too.
+- Hook REFERENCE CLIP on every script (Nick, 24 Nov: "the biggest push down" is guessing what a written visual hook means).
+  Never only describe the visual hook. Every script gets one short clip that SHOWS what to do, linked on its page:
+  - Talking-head / other formats: pick the visual hook from the hook library (`rules/content-ops/hook-library.md`, cut from
+    the reels Nick sent: Brock's 7, @abigaildaniellla's 6, and any new refs) and link that clip. Prefer these proven hooks
+    over inventing new ones.
+  - Audits: a screen recording of the real site (desktop) doing exactly the hook move and scroll Nick will do.
+  - Clips go to Nick's Google Drive folder "PK Hook Refs" (under 10 MB each); the link goes on the HOOK REF line.
+- Use what Nick has (Nick, 24 Nov): no whiteboard, no special props. He has his phone, laptop, desk, couch, paper and a
+  pen in his apartment. A number on paper + a zoom in the edit beats a prop he doesn't own. When a prop is truly needed,
+  say so on the page; never assume it.
 
 ## 5. Nick's voice
 Read `rules/nick-voice-persona.md` first. If a line would not come out of his mouth naturally, rewrite it.
@@ -115,6 +125,12 @@ Read `rules/nick-voice-persona.md` first. If a line would not come out of his mo
 - Describe the moment, not the benefit ("2am, water on the kitchen floor..."). Give a "because" reason.
 - The script must make logical sense from start to end.
 - Ed (@edwin.radd) is the content model: copy his style and structure, never his words.
+- Nick changes the dynamics of every script when he films (Nick, 24 Nov). His posted reels were mostly read from our old
+  scripts, so they are NOT a clean sample of his voice: lean on rules/nick-voice-persona.md and his unscripted talk, and
+  aim for "close enough that he can say it to camera", not a perfect copy.
+- Pivot to what we sell when it fits (Nick, 24 Nov, script 9 example): a money or cost reel ends on the way out, e.g.
+  calls from ranking higher on Google, more traffic and a site that turns it into calls, inside the reel structure,
+  never a story with no structure.
 
 ## 6. Lengths
 - Short (6-block) version of any format: under 35 seconds. Long (8-block) version: up to 45 seconds, for the
@@ -160,6 +176,13 @@ script is delivered.
    say so.
 4. The flaw must be one a plumber instantly feels costs him customers (faces, calls, reviews), obvious on
    screen within 2 seconds. Never tech trivia (file size, file names).
+   UI ONLY, NEVER UX (Nick, 24 Nov, permanent): judge the site as another plumber watching the posted video sees it: how it
+   LOOKS (layout, clutter, text size and contrast, photos, colours, where the phone number and stars sit on screen, dated
+   look). Never how it works or why (button logic, review counts not syncing, speed, SEO, missing links). If the UI looks
+   strong (many stars, real photos, bright reviews), it is not an audit pick, even if the backend is weak: plumbers don't
+   care and it takes too long to explain. Before calling something a flaw, ask if the business has a reason for it (two
+   Pay Bill buttons = he bills in two states, which is fine). Batch 1 lesson: Reeves "two Pay Bill buttons" and Idaho
+   "1000+ vs 1,523 reviews" were both wrong picks for this reason.
 5. Write privately in plain words first, then the final script: Ed's audit structure (opens on the
    plumber + the number/odd detail, one visual proof, the cost or the fix, a short rule line) in Nick's
    spoken voice. Flaws in the order Nick reaches them on screen, top to bottom. Frame it as how to fix it
@@ -175,7 +198,8 @@ script is delivered.
   plain text in chat, never a .md or .txt file, never a Claude Doc for scripts.
 - Per page:
   1. Header: number, format, company name or topic, website (when there is one).
-  2. HOOK: visual (what is on screen in the first second) / on-screen text / spoken first line.
+  2. HOOK: visual (what is on screen in the first second) / on-screen text / spoken first line /
+     HOOK REF: link to the reference clip that shows it (section 4; Nick 24 Nov, wins over clash 10 for the hook only).
   3. JOB + TONE: one line, e.g. "JOB: reach - TONE: dramatic" (tone = happy / serious / dramatic / dramatic
      ambience, used for the colour grade).
   4. DELIVERY: one note on where to pause or slow down.

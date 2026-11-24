@@ -1,7 +1,7 @@
 """Build the weekly scripts .docx: one page per script (real page breaks), layout = pka-video-scripts section 9.
 
 python3 tools/content/build_scripts_docx.py cards.json out.docx
-Cards use the check_script.py fields plus: number, title (company or topic), website (optional), figma_task (B-roll only).
+Cards use the check_script.py fields plus: number, title (company or topic), website (optional), figma_task (B-roll only), hook_ref (link to the hook reference clip, pka-video-scripts s4).
 Every card must pass check_script first; this script refuses to build otherwise.
 """
 import json, sys, os
@@ -29,6 +29,8 @@ def build(cards, out):
         d.add_paragraph(f'Visual: {c["hook_visual"]}')
         d.add_paragraph(f'On screen: {c["on_screen_text"]}')
         d.add_paragraph(f'Spoken: {c["hook_line"]}')
+        if c.get("hook_ref"):
+            p = d.add_paragraph(); p.add_run("HOOK REF: ").bold = True; p.add_run(c["hook_ref"])
         p = d.add_paragraph(); p.add_run(f'JOB: {c["job"]} - TONE: {c["tone"]}').bold = True
         p = d.add_paragraph(); p.add_run("DELIVERY: ").bold = True; p.add_run(c["delivery_note"])
         if c["format"] == "broll" and c.get("figma_task"):
