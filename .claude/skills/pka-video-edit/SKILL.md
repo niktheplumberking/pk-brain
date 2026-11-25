@@ -114,4 +114,9 @@ Files:
   needs libgles2/libegl1). Code: tools/content/remotion/src/pk25 + the matte script noted in tool-status.md.
 - Audit layout (Nick 25 Nov): site recording full width at the top (browser bar cropped off), Nick centred and pushed down under
   it; switch to full-frame Nick for the rehook, short reactions and the last line.
-- The 4 OBS screen recordings carry no sound; sync by Nick's "~0.1 s" note plus a visual check of what is on screen.
+- Sound effect gain is set against the VOICE, not full scale: level the voice track to about -16/-18 LUFS BEFORE it goes into
+  Remotion, then effects at 0.06-0.09 gain land ~18 dB under it. (Round 1 on 25 Nov had a -36 LUFS voice and every effect ended
+  up louder than Nick after the final loudness pass.)
+- Graphic windows and caption positions use the SAME time window (incl. fade in/out), or captions sit on the graphic.
+- Cover a take's lead-in (him walking into frame, turning to camera) with the previous graphic instead of showing an empty frame.
+- The OBS screen recording carries no sound; sync by Nick's "~0.1 s" note plus a visual check of what is on screen.

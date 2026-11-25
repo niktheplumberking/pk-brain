@@ -5,7 +5,7 @@ import { AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile 
 import { BehindText, CHARCOAL, Captions, Chip, Chunk, FONT, Flash, PINK, Stars, Vignette, clamp, ease, grade, life, popS, useT } from "./lib";
 
 export const C2_SECONDS = 34.7;
-const CHART: [number, number] = [6.2, 11.45]; // full-screen chart cutaway, face shrinks to a card
+const CHART: [number, number] = [6.2, 12.1]; // full-screen chart cutaway, face shrinks to a card
 
 const CHUNKS: Chunk[] = [
   { a: 0.0, b: 0.6, k: "okay," },
@@ -30,7 +30,7 @@ const CHUNKS: Chunk[] = [
   { a: 21.84, b: 23.0, w: "over", k: "one bad review" },
   { a: 23.0, b: 24.14, w: "and", k: "second of all" },
   { a: 24.14, b: 25.48, k: "never ever" },
-  { a: 25.48, b: 27.02, w: "buy", k: "fake reviews" },
+  { a: 25.48, b: 27.02, w: "buy a", k: "fake reviews" },
   { a: 27.02, b: 28.65, w: "just to", k: "cover it up" },
   { a: 28.65, b: 30.14, w: "real reviews with a few", k: "honest" },
   { a: 30.14, b: 31.64, k: "bad ones", after: "make the business" },
@@ -62,7 +62,7 @@ const NewsBar: React.FC = () => {
         <div style={{ background: PINK, color: "white", fontSize: 44, padding: "0 30px", display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ width: 20, height: 20, borderRadius: 99, background: "white", opacity: blink }} /> FLASH NEWS
         </div>
-        <div style={{ flex: 1, background: "rgba(20,20,20,.88)", color: "white", fontSize: 38, display: "flex", alignItems: "center", paddingLeft: 26, whiteSpace: "nowrap" }}>
+        <div style={{ flex: 1, background: "rgba(20,20,20,.88)", color: "white", fontSize: 38, display: "flex", alignItems: "center", paddingLeft: 26, whiteSpace: "nowrap", overflow: "hidden" }}>
           <span style={{ transform: `translateX(${-(t - 0.8) * 90}px)` }}>5-STAR RATINGS · FEWER CALLS · NEW RESEARCH · 5-STAR RATINGS</span>
         </div>
       </div>
@@ -77,9 +77,9 @@ const FiveBehind: React.FC = () => {
   const slash = interpolate(t, [1.95, 2.3], [0, 1], { ...clamp, easing: ease });
   return (
     <>
-      <BehindText text="5.0" a={1.1} b={3.15} y={560} size={560} color="white" />
+      <BehindText text="5.0" a={1.1} b={3.15} y={610} size={500} color="white" />
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: life(t, 1.95, 3.15, 0.05, 0.25) }}>
-        <line x1={150} y1={760} x2={150 + 780 * slash} y2={760 - 420 * slash} stroke={PINK} strokeWidth={46} strokeLinecap="round" />
+        <line x1={170} y1={790} x2={170 + 740 * slash} y2={790 - 360 * slash} stroke={PINK} strokeWidth={46} strokeLinecap="round" />
       </svg>
     </>
   );
@@ -169,8 +169,10 @@ const FaceCard: React.FC = () => {
   return (
     <div style={{ position: "absolute", left: 720, top: 130, width: W, height: H, borderRadius: 34, overflow: "hidden", opacity: out,
       transform: `scale(${s})`, transformOrigin: "100% 0%", border: `5px solid ${PINK}`, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }}>
-      <div style={{ position: "absolute", left: -120, top: -170, width: 1080, height: 1920, transform: "scale(0.5) scaleX(-1)", transformOrigin: "0 0" }}>
-        <OffthreadVideo src={staticFile("e25/c2cam.mp4")} muted style={{ width: 1080, height: 1920 }} />
+      <div style={{ position: "absolute", left: -120, top: -170, width: 1080, height: 1920, transform: "scale(0.5)", transformOrigin: "0 0" }}>
+        <div style={{ width: 1080, height: 1920, transform: "scaleX(-1)" }}>
+          <OffthreadVideo src={staticFile("e25/c2cam.mp4")} muted style={{ width: 1080, height: 1920 }} />
+        </div>
       </div>
     </div>
   );
@@ -202,7 +204,7 @@ const ProfileCard: React.FC = () => {
 
 const Checklist: React.FC = () => {
   const t = useT();
-  const a = 20.15, b = 28.6;
+  const a = 20.8, b = 28.6;
   if (t < a || t > b) return null;
   const s = popS(t, a, 30, 14);
   const out = interpolate(t, [b - 0.25, b], [1, 0], clamp);
@@ -241,10 +243,10 @@ const ReviewWall: React.FC = () => {
   if (t < a || t > b) return null;
   const out = interpolate(t, [b - 0.25, b], [1, 0], clamp);
   const cards = [
-    { x: 70, y: 190, r: -6, n: 5, at: 28.7 },
-    { x: 600, y: 150, r: 5, n: 5, at: 28.95 },
-    { x: 120, y: 470, r: 4, n: 4, at: 29.2 },
-    { x: 590, y: 450, r: -4, n: 2, at: 30.15, honest: true },
+    { x: 40, y: 140, r: -6, n: 5, at: 28.7 },
+    { x: 620, y: 120, r: 5, n: 5, at: 28.95 },
+    { x: 60, y: 300, r: 4, n: 4, at: 29.2 },
+    { x: 600, y: 290, r: -4, n: 2, at: 30.15, honest: true },
   ];
   return (
     <>
@@ -267,15 +269,16 @@ const ReviewWall: React.FC = () => {
 export const Contra2: React.FC = () => {
   const t = useT();
   const inChart = t >= CHART[0] + 0.3 && t < CHART[1] - 0.25;
-  const paperTime = t < 3.15; // he holds the paper at chest height: captions go up top
+  const paperTime = t < 3.5;
+  const chartCap = t >= CHART[0] - 0.05 && t < CHART[1] + 0.05; // he holds the paper at chest height: captions go up top
   return (
     <AbsoluteFill style={{ background: CHARCOAL }}>
       {!inChart ? <Cam /> : null}
       <FiveBehind />
-      <BehindText text="5.0" a={14.4} b={15.5} y={540} size={480} glass />
-      <BehindText text="too good" a={15.52} b={17.0} y={330} size={190} serif color={PINK} sub="TO BE TRUE?" />
-      <BehindText text="NATURAL" a={31.64} b={33.5} y={470} size={240} color="white" />
-      <BehindText text="WINS" a={33.5} b={34.7} y={560} size={420} color={PINK} />
+      <BehindText text="5.0" a={14.4} b={15.5} y={420} size={420} color="white" />
+      <BehindText text="too good" a={15.52} b={17.0} y={270} size={170} serif color={PINK} />
+      <BehindText text="NATURAL" a={31.64} b={33.5} y={330} size={180} color="white" />
+      <BehindText text="WINS" a={33.5} b={34.7} y={330} size={280} color={PINK} />
       {!inChart && (t < 3.2 || (t >= 14.35 && t < 17.05) || t >= 31.6) ? <Cam person /> : null}
       <Vignette strength={0.4} />
       <NewsBar />
@@ -285,17 +288,17 @@ export const Contra2: React.FC = () => {
       <ProfileCard />
       <Checklist />
       <ReviewWall />
-      <Chip a={33.55} b={34.7} y={1560} bg={PINK} fg="white" size={44}>REAL &gt; PERFECT</Chip>
-      <Captions chunks={CHUNKS} y={paperTime ? 330 : inChart ? 1560 : 1320} key2={inChart ? PINK : "white"} />
+      <Chip a={33.55} b={34.7} y={1450} bg={PINK} fg="white" size={44}>REAL &gt; PERFECT</Chip>
+      <Captions chunks={CHUNKS} y={paperTime ? 300 : chartCap ? 1490 : 1320} key2={chartCap ? PINK : "white"} />
       <Flash at={[11.45, 13.5, 17.0, 28.65]} />
       <Audio src={staticFile("e25/c2voice.wav")} />
       {/* Sound: max 1 per 5 s, -18 dB under the voice */}
-      <Sequence from={Math.round(0.55 * 30)}><Audio src={staticFile("e25/chime.wav")} volume={0.1} /></Sequence>
-      <Sequence from={Math.round(6.15 * 30)}><Audio src={staticFile("e25/whoosh.wav")} volume={0.13} /></Sequence>
-      <Sequence from={Math.round(11.4 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.1} /></Sequence>
-      <Sequence from={Math.round(21.9 * 30)}><Audio src={staticFile("e25/tick.wav")} volume={0.12} /></Sequence>
-      <Sequence from={Math.round(28.65 * 30)}><Audio src={staticFile("e25/pop.wav")} volume={0.13} /></Sequence>
-      <Sequence from={Math.round(33.7 * 30)}><Audio src={staticFile("e25/impact.wav")} volume={0.13} /></Sequence>
+      <Sequence from={Math.round(0.55 * 30)}><Audio src={staticFile("e25/chime.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(6.15 * 30)}><Audio src={staticFile("e25/whoosh.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(12.05 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(21.9 * 30)}><Audio src={staticFile("e25/tick.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(28.65 * 30)}><Audio src={staticFile("e25/pop.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(33.7 * 30)}><Audio src={staticFile("e25/impact.wav")} volume={0.06} /></Sequence>
     </AbsoluteFill>
   );
 };

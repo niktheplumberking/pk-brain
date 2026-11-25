@@ -8,7 +8,7 @@ export const A1_SECONDS = 27.8;
 const PANEL_Y = 170, PANEL_H = 548; // 2160x1096 screen clip shown at 1080x548
 const SPLIT_DY = 330; // camera pushed down in split layout
 // Full-frame (no panel) windows: the rehook, "Easy.", and the last line's payoff.
-const FULL: [number, number][] = [[14.1, 15.1], [23.2, 23.95], [25.95, 27.8]];
+const FULL: [number, number][] = [[13.55, 15.1], [23.2, 23.95], [25.95, 28.6]];
 const isFull = (t: number) => FULL.some(([a, b]) => t >= a && t < b);
 // 0 = split, 1 = full; 0.22 s slide either way
 const fullness = (t: number) => Math.max(...FULL.map(([a, b]) => Math.min(interpolate(t, [a - 0.12, a + 0.1], [0, 1], { ...clamp, easing: ease }), interpolate(t, [b - 0.1, b + 0.12], [1, 0], { ...clamp, easing: ease }))));
@@ -16,7 +16,7 @@ const fullness = (t: number) => Math.max(...FULL.map(([a, b]) => Math.min(interp
 // Screen zooms (one at a time; each fully out before the next cut). fx/fy = focus in panel fractions.
 const ZOOMS = [
   { a: 0.0, b: 2.75, s: 1.85, fx: 0.3, fy: 0.5, inS: 0.01 }, // opening: the review card + glove, out before the 2.9 cut
-  { a: 3.2, b: 4.55, s: 2.2, fx: 0.0, fy: 0.06 }, // "since this year": Established in 1901
+  { a: 3.2, b: 4.55, s: 2.2, fx: 0.0, fy: 0.0 }, // "since this year": Established in 1901
   { a: 7.0, b: 8.75, s: 1.45, fx: 0.45, fy: 0.6 }, // "look what's next to it": the glove
   { a: 9.0, b: 10.55, s: 1.6, fx: 0.46, fy: 0.58 }, // glove thumbs up
   { a: 11.0, b: 13.55, s: 2.1, fx: 0.15, fy: 0.56 }, // no face on the review card
@@ -40,7 +40,7 @@ const CHUNKS: Chunk[] = [
   { a: 6.96, b: 8.95, w: "and look what's", k: "next to it" },
   { a: 8.95, b: 10.6, w: "there's a glove giving it a", k: "thumbs up" },
   { a: 10.6, b: 11.82, w: "but there's not a", k: "single picture" },
-  { a: 11.82, b: 13.7, w: "from the", k: "owner", after: "or his crew" },
+  { a: 11.82, b: 13.55, w: "from the", k: "owner", after: "or his crew" },
   { a: 14.08, b: 15.15, w: "so what is the", k: "fix", after: "here?" },
   { a: 15.3, b: 16.36, w: "instead, what you", k: "should do" },
   { a: 16.36, b: 17.9, w: "is make it", k: "big & dark" },
@@ -59,7 +59,7 @@ const Screen: React.FC = () => {
   return (
     <div style={{ position: "absolute", inset: 0, transform: `scale(${k})`, transformOrigin: `${fx * 100}% ${fy * 100}%` }}>
       <OffthreadVideo src={staticFile("e25/a1scr.mp4")} muted style={{ width: 1080, height: PANEL_H }} />
-      <DoodleCircle cx={490} cy={315} rx={120} ry={140} a={7.05} b={13.6} arrow />
+      <DoodleCircle cx={490} cy={315} rx={120} ry={140} a={7.05} b={10.75} arrow />
     </div>
   );
 };
@@ -193,8 +193,8 @@ export const Audit1: React.FC = () => {
     <AbsoluteFill style={{ background: CHARCOAL }}>
       <Camera src="e25/a1cam.mp4" />
       {/* text behind Nick in the full-frame beats (matte) */}
-      <BehindText text="FIX?" a={14.1} b={15.1} y={520} size={400} color={PINK} />
-      <BehindText text="EASY." a={23.22} b={23.95} y={520} size={330} glass />
+      <BehindText text="FIX?" a={13.55} b={15.1} y={520} size={400} color={PINK} />
+      <BehindText text="EASY." a={23.22} b={23.95} y={520} size={330} color={PINK} />
       <BehindText text="0" a={25.98} b={27.8} y={560} size={760} color={PINK} />
       <Chip a={26.1} b={27.8} y={180} bg="white" fg={CHARCOAL} size={44}>REVIEWS THAT COUNT: <span style={{ color: PINK }}>0</span></Chip>
       {(isFull(t)) ? <Camera src="e25/a1person.webm" transparent /> : null}
@@ -202,15 +202,15 @@ export const Audit1: React.FC = () => {
       <Panel />
       <BRAND_BAR />
       <Overheads />
-      <Captions chunks={CHUNKS} y={isFull(t) ? 1330 : 1530} />
-      <Flash at={[14.1, 15.1, 23.2, 25.95]} />
+      <Captions chunks={CHUNKS} y={isFull(t) ? 1330 : 1470} />
+      <Flash at={[13.55, 15.1, 23.2, 25.95]} />
       <Audio src={staticFile("e25/a1voice.wav")} />
       {/* Sound: max 1 per 5 s, -18 dB under the voice (~0.13 gain) */}
-      <Sequence from={Math.round(0.9 * 30)}><Audio src={staticFile("e25/pop.wav")} volume={0.13} /></Sequence>
-      <Sequence from={Math.round(7.0 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.1} /></Sequence>
-      <Sequence from={Math.round(14.05 * 30)}><Audio src={staticFile("e25/whoosh.wav")} volume={0.13} /></Sequence>
-      <Sequence from={Math.round(19.5 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.1} /></Sequence>
-      <Sequence from={Math.round(25.95 * 30)}><Audio src={staticFile("e25/impact.wav")} volume={0.14} /></Sequence>
+      <Sequence from={Math.round(0.9 * 30)}><Audio src={staticFile("e25/pop.wav")} volume={0.09} /></Sequence>
+      <Sequence from={Math.round(7.0 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(13.5 * 30)}><Audio src={staticFile("e25/whoosh.wav")} volume={0.08} /></Sequence>
+      <Sequence from={Math.round(19.5 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(25.95 * 30)}><Audio src={staticFile("e25/impact.wav")} volume={0.07} /></Sequence>
     </AbsoluteFill>
   );
 };
