@@ -115,9 +115,24 @@ B-roll rules:
 - Use what Nick has (Nick, 24 Nov): no whiteboard, no special props. He has his phone, laptop, desk, couch, paper and a
   pen in his apartment. A number on paper + a zoom in the edit beats a prop he doesn't own. When a prop is truly needed,
   say so on the page; never assume it.
+- ONE phone only (Nick, 25 Nov): he films with his only phone, so a script never shows a second phone. Phone calls, texts
+  and screens are added in the edit.
+- Start talking at once (Nick, 25 Nov): in most scripts Nick speaks in the first second. Silent actions before the first
+  word (walk in, sit down, type, close a laptop) waste the 2-3 s that hold the viewer. Allowed only as a rare, planned
+  exception where the silence itself builds tension (example he approved: #11 the dramatic sit-down). Max 1-2 per batch.
+- Talk-to-camera hooks still need a visual: a move WHILE talking (raise a paper, lean in) or the edit adds it.
 
 ## 5. Nick's voice
 Read `rules/nick-voice-persona.md` first. If a line would not come out of his mouth naturally, rewrite it.
+- Nick's own edits of batch 1 (25 Nov, scripts 1-4; his text is in the live Doc and the batch cards `nick_script`): he
+  makes lines longer and more spoken, adds joiners ("But", "So", "First of all ... and secondly", "Instead what you
+  should do is", "But here's where it gets interesting", "So a lesson to y'all"), turns a flat claim hook into a question
+  ("Does your website contact form have too many boxes?"), and drops hard names a plumber doesn't know ("Northwestern's
+  Spiegel Research Center" became "A research center"). Write closer to that from the start.
+- From batch 2 (Nick, 25 Nov): picture the EDIT first, then write. Pick the edit style per format from the refs in Dropbox
+  03 INSPIRATION and the batch-1 results, decide what is on screen for each beat, then write the words to fit it.
+- Before rebuilding the Doc, read the live Doc first: Nick edits scripts and writes filming notes (often in Serbian) in it.
+  Copy them into the cards (`nick_script`, `nick_notes`) so a rebuild never deletes them.
 - Friendly, direct, a bit cheeky: a guy showing a buddy something on his screen, not a presenter.
 - His moves: opens on the plumber + the odd thing; reacts and points ("I mean, I'm not joking. Take a
   look."); walks through what he sees ("we have X, then we have Y"); one reaction line ("I mean, come

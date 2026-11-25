@@ -1,7 +1,9 @@
 """Build the weekly scripts .docx: one page per script (real page breaks), layout = pka-video-scripts section 9.
 
 python3 tools/content/build_scripts_docx.py cards.json out.docx
-Cards use the check_script.py fields plus: number, title (company or topic), website (optional), figma_task (B-roll only), hook_ref (link to the hook reference clip, pka-video-scripts s4).
+Cards use the check_script.py fields plus: number, title (company or topic), website (optional), figma_task (B-roll only), hook_ref (link to the hook reference clip, pka-video-scripts s4),
+nick_script (list of lines: Nick's own edited script text, printed instead of the card beats) and nick_notes
+(Nick's filming notes). Before any rebuild, read the live Doc and copy Nick's edits into these fields (never overwrite them).
 Every card must pass check_script first; this script refuses to build otherwise.
 """
 import json, sys, os
@@ -28,7 +30,9 @@ def _link(paragraph, url, text):
 
 
 def build(cards, out):
-    bad = {c.get("number", i + 1): check_script(c) for i, c in enumerate(cards) if check_script(c)}
+    # Pages Nick edited himself (nick_script set) are his words: they win over the checker (pka-video-scripts: Nick > skill).
+    bad = {c.get("number", i + 1): check_script(c) for i, c in enumerate(cards)
+           if not c.get("nick_script") and check_script(c)}
     if bad:
         raise ValueError(f"cards fail check_script: {bad}")
     d = docx.Document()
@@ -63,8 +67,10 @@ def build(cards, out):
         beats.append(c["payoff"])
         if c.get("cta"):
             beats.append(c["cta"])
-        for b in beats:
+        for b in (c.get("nick_script") or beats):
             d.add_paragraph(b)
+        for n in c.get("nick_notes", []):  # Nick's own filming notes, kept verbatim on every rebuild
+            d.add_paragraph(""); p = d.add_paragraph(); p.add_run(n).bold = True
         if i < len(cards) - 1:
             d.paragraphs[-1].add_run().add_break(WD_BREAK.PAGE)
     d.save(out)
