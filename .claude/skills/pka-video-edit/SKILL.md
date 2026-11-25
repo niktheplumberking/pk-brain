@@ -99,7 +99,7 @@ Files:
   (Dropbox CLAUDE EDITOR 07 DONE, route in `rules/content-ops/folders.md`) (clash 15).
 - Never overwrite a file name; save under a new name. Verify the PC copy by hash before saying it is saved.
 - /mnt/project-files rewrites the .mp4 container (streams stay identical; check stream md5s, see
-  `rules/content-ops/folders.md`). Device commits cap at 25 MB per file: zip -0, split, re-hash, then join and check the
+  `rules/content-ops/folders.md`). Device commits cap at about 19-22 MB per file in practice (25 Nov: 19.0 MB went through, 22.9 MB was refused as "over 25 MB"). Two-pass encode the reel to about 18 MB (SSIM 0.99 vs the master, still above IG's upload bitrate) when the PC's Linux workspace is off; otherwise: zip -0, split, re-hash, then join and check the
   hash on the PC.
 
 ## Lessons from the first real edit (25 Nov, Audit 1 + Contrarian 2)

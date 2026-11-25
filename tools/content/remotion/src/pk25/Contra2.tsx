@@ -1,10 +1,10 @@
-// Contrarian 2 - "5.0 can cost you jobs" (edit test 25 Nov). Cut timeline 34.7 s. TONE: dramatic.
+// Contrarian 2 - "5.0 can cost you jobs" (edit test 25 Nov). Cut timeline 35.05 s. TONE: dramatic.
 // Camera is mirrored by the phone (his paper read backwards), so the whole video is flipped back.
 import React from "react";
 import { AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile } from "remotion";
 import { BehindText, CHARCOAL, Captions, Chip, Chunk, FONT, Flash, PINK, Stars, Vignette, clamp, ease, grade, life, popS, useT } from "./lib";
 
-export const C2_SECONDS = 34.7;
+export const C2_SECONDS = 35.05;
 const CHART: [number, number] = [6.2, 12.1]; // full-screen chart cutaway, face shrinks to a card
 
 const CHUNKS: Chunk[] = [
@@ -32,17 +32,17 @@ const CHUNKS: Chunk[] = [
   { a: 24.14, b: 25.48, k: "never ever" },
   { a: 25.48, b: 27.02, w: "buy a", k: "fake reviews" },
   { a: 27.02, b: 28.65, w: "just to", k: "cover it up" },
-  { a: 28.65, b: 30.14, w: "real reviews with a few", k: "honest" },
-  { a: 30.14, b: 31.64, k: "bad ones", after: "make the business" },
-  { a: 31.64, b: 32.68, w: "feel more", k: "natural" },
-  { a: 32.68, b: 34.7, w: "and natural", k: "wins you the job" },
+  { a: 28.65, b: 30.49, w: "real reviews with a few", k: "honest" },
+  { a: 30.49, b: 31.99, k: "bad ones", after: "make the business" },
+  { a: 31.99, b: 33.03, w: "feel more", k: "natural" },
+  { a: 33.03, b: 35.05, w: "and natural", k: "wins you the job" },
 ];
 
 const Cam: React.FC<{ person?: boolean }> = ({ person }) => {
   const t = useT();
   const push = t >= 13.5 && t < 17.0 ? interpolate(t, [13.5, 17.0], [1.0, 1.14], clamp) : 1; // slow push on "too good to be true"
   const punch = t >= 18.66 && t < 20.15 ? 1.12 : 1; // punch-in on "Google profile"
-  const endPush = t >= 28.65 ? interpolate(t, [28.65, 34.7], [1.0, 1.08], clamp) : 1;
+  const endPush = t >= 28.65 ? interpolate(t, [28.65, 35.05], [1.0, 1.08], clamp) : 1;
   return (
     <AbsoluteFill style={{ transform: `scaleX(-1) scale(${push * punch * endPush})`, transformOrigin: "50% 38%", filter: grade("dramatic") }}>
       <OffthreadVideo src={staticFile(person ? "e25/c2person.webm" : "e25/c2cam.mp4")} muted transparent={person} style={{ width: 1080, height: 1920 }} />
@@ -161,7 +161,7 @@ const RatingChart: React.FC = () => {
 
 const FaceCard: React.FC = () => {
   const t = useT();
-  const [a, b] = CHART;
+  const a = CHART[0], b = 11.4; // card ends before the next take's walk-in reaches it
   if (t < a || t > b) return null;
   const s = interpolate(t, [a, a + 0.3], [0, 1], { ...clamp, easing: ease });
   const out = interpolate(t, [b - 0.2, b], [1, 0], clamp);
@@ -204,7 +204,7 @@ const ProfileCard: React.FC = () => {
 
 const Checklist: React.FC = () => {
   const t = useT();
-  const a = 20.8, b = 28.6;
+  const a = 20.8, b = 28.65;
   if (t < a || t > b) return null;
   const s = popS(t, a, 30, 14);
   const out = interpolate(t, [b - 0.25, b], [1, 0], clamp);
@@ -239,14 +239,14 @@ const Checklist: React.FC = () => {
 // Headline-wall style review cards around him: a few 5s and one honest bad one (no invented quotes, stars only).
 const ReviewWall: React.FC = () => {
   const t = useT();
-  const a = 28.7, b = 31.7;
+  const a = 28.75, b = 32.05;
   if (t < a || t > b) return null;
   const out = interpolate(t, [b - 0.25, b], [1, 0], clamp);
   const cards = [
-    { x: 40, y: 140, r: -6, n: 5, at: 28.7 },
-    { x: 620, y: 120, r: 5, n: 5, at: 28.95 },
-    { x: 60, y: 300, r: 4, n: 4, at: 29.2 },
-    { x: 600, y: 290, r: -4, n: 2, at: 30.15, honest: true },
+    { x: 40, y: 140, r: -6, n: 5, at: 28.75 },
+    { x: 620, y: 120, r: 5, n: 5, at: 29.3 },
+    { x: 60, y: 300, r: 4, n: 4, at: 29.55 },
+    { x: 600, y: 290, r: -4, n: 2, at: 30.5, honest: true },
   ];
   return (
     <>
@@ -266,20 +266,37 @@ const ReviewWall: React.FC = () => {
   );
 };
 
+
+// 28.65-29.0: the take starts as he stands back up; cover it with a quick full-screen review cutaway (Snap1 style).
+const RealCut: React.FC = () => {
+  const t = useT();
+  if (t < 28.65 || t >= 29.05) return null;
+  const s = popS(t, 28.65, 30, 12);
+  const out = interpolate(t, [28.95, 29.05], [1, 0], clamp);
+  return (
+    <AbsoluteFill style={{ opacity: out, background: "radial-gradient(ellipse at 50% 40%, #2a1420 0%, #141414 65%)", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ transform: `scale(${0.8 + 0.2 * s})`, textAlign: "center", marginTop: -300 }}>
+        <Stars size={130} fill={4.4} />
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 120, color: "white", marginTop: 20 }}>REAL <span style={{ color: PINK }}>REVIEWS</span></div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 export const Contra2: React.FC = () => {
   const t = useT();
   const inChart = t >= CHART[0] + 0.3 && t < CHART[1] - 0.25;
   const paperTime = t < 3.5;
-  const chartCap = t >= CHART[0] - 0.05 && t < CHART[1] + 0.05; // he holds the paper at chest height: captions go up top
+  const chartCap = t >= CHART[0] - 0.05 && t < CHART[1] - 0.2; // he holds the paper at chest height: captions go up top
   return (
     <AbsoluteFill style={{ background: CHARCOAL }}>
       {!inChart ? <Cam /> : null}
       <FiveBehind />
       <BehindText text="5.0" a={14.4} b={15.5} y={420} size={420} color="white" />
       <BehindText text="too good" a={15.52} b={17.0} y={270} size={170} serif color={PINK} />
-      <BehindText text="NATURAL" a={31.64} b={33.5} y={330} size={180} color="white" />
-      <BehindText text="WINS" a={33.5} b={34.7} y={330} size={280} color={PINK} />
-      {!inChart && (t < 3.2 || (t >= 14.35 && t < 17.05) || t >= 31.6) ? <Cam person /> : null}
+      <BehindText text="NATURAL" a={31.99} b={33.85} y={330} size={180} color="white" />
+      <BehindText text="WINS" a={33.85} b={35.05} y={330} size={280} color={PINK} />
+      {!inChart && (t < 3.2 || (t >= 14.35 && t < 17.05) || t >= 31.95) ? <Cam person /> : null}
       <Vignette strength={0.4} />
       <NewsBar />
       <ResearchCard />
@@ -287,9 +304,10 @@ export const Contra2: React.FC = () => {
       <FaceCard />
       <ProfileCard />
       <Checklist />
+      <RealCut />
       <ReviewWall />
-      <Chip a={33.55} b={34.7} y={1450} bg={PINK} fg="white" size={44}>REAL &gt; PERFECT</Chip>
-      <Captions chunks={CHUNKS} y={paperTime ? 300 : chartCap ? 1490 : 1320} key2={chartCap ? PINK : "white"} />
+      <Chip a={33.9} b={35.05} y={1505} bg={PINK} fg="white" size={44}>REAL &gt; PERFECT</Chip>
+      <Captions chunks={CHUNKS} y={paperTime ? 300 : chartCap ? 1530 : 1320} key2={chartCap ? PINK : "white"} />
       <Flash at={[11.45, 13.5, 17.0, 28.65]} />
       <Audio src={staticFile("e25/c2voice.wav")} />
       {/* Sound: max 1 per 5 s, -18 dB under the voice */}
@@ -297,8 +315,8 @@ export const Contra2: React.FC = () => {
       <Sequence from={Math.round(6.15 * 30)}><Audio src={staticFile("e25/whoosh.wav")} volume={0.07} /></Sequence>
       <Sequence from={Math.round(12.05 * 30)}><Audio src={staticFile("e25/swipe.wav")} volume={0.07} /></Sequence>
       <Sequence from={Math.round(21.9 * 30)}><Audio src={staticFile("e25/tick.wav")} volume={0.07} /></Sequence>
-      <Sequence from={Math.round(28.65 * 30)}><Audio src={staticFile("e25/pop.wav")} volume={0.07} /></Sequence>
-      <Sequence from={Math.round(33.7 * 30)}><Audio src={staticFile("e25/impact.wav")} volume={0.06} /></Sequence>
+      <Sequence from={Math.round(28.75 * 30)}><Audio src={staticFile("e25/pop.wav")} volume={0.07} /></Sequence>
+      <Sequence from={Math.round(34.05 * 30)}><Audio src={staticFile("e25/impact.wav")} volume={0.06} /></Sequence>
     </AbsoluteFill>
   );
 };
