@@ -101,3 +101,17 @@ Files:
 - /mnt/project-files rewrites the .mp4 container (streams stay identical; check stream md5s, see
   `rules/content-ops/folders.md`). Device commits cap at 25 MB per file: zip -0, split, re-hash, then join and check the
   hash on the PC.
+
+## Lessons from the first real edit (25 Nov, Audit 1 + Contrarian 2)
+- Nick leaves SPOKEN notes for Claude in the raw ("this one was good", "this last one was really good, Claude", "now you put a
+  cut here", "for the end you can include it"). Step 3-6: search the transcript for "Claude", "good", "cut", "include" and
+  follow every note; a note beats the last-take rule. Re-run a note's few seconds with the medium model if small.en garbles it.
+- Phone selfie footage can be MIRRORED (his paper read backwards in Contrarian 2). Check any text he holds or shows; if it reads
+  backwards, flip the whole clip (scaleX(-1)).
+- Nick wears pink shirts: a pink caption keyword on a pink shirt is unreadable. Over the shirt the keyword is white with a 3 px
+  charcoal outline; pink keywords only on dark backgrounds.
+- Text behind the subject (effects 2, 12, 16, 17): person cut-out with MediaPipe selfie_multiclass (CPU, ~1 min for 35 s;
+  needs libgles2/libegl1). Code: tools/content/remotion/src/pk25 + the matte script noted in tool-status.md.
+- Audit layout (Nick 25 Nov): site recording full width at the top (browser bar cropped off), Nick centred and pushed down under
+  it; switch to full-frame Nick for the rehook, short reactions and the last line.
+- The 4 OBS screen recordings carry no sound; sync by Nick's "~0.1 s" note plus a visual check of what is on screen.

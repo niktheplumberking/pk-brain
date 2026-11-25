@@ -19,3 +19,5 @@ Test clip: Nick's own reel DgDEpMpTpIP (cloud copy only, never posted again).
 | pka-reel-reviewer agent | independent check of a finished reel | cloud | PROVEN (technical checks only; no taste check, see incident-log 24 Nov) | 2026-11-23 | D1: v1 FAIL 5 defects, v2 PASS |
 | pka-script-reviewer agent | independent check of scripts | cloud | PROVEN | 2026-11-23 | D2: 3 passes caught a wrong study range and fact errors |
 | Dropbox file request -> 07 DONE (reel delivery) | upload finished reels into Dropbox from the cloud | cloud (Playwright on the upload page) | NOT PROVEN: page reached, file added; the upload needs a name + email, waiting on Nick (24 Nov) | 2026-11-24 | request "Claude Editor delivery" (Dropbox > File requests) |
+| matte.py (MediaPipe selfie_multiclass) | person cut-out for text-behind-subject effects | cloud | PROVEN | 2026-11-25 | Contrarian 2 (rooftop) and Audit 1 (office): clean edges at 1080x1920, ~1-2 min per reel |
+| cut_takes.py | cut chosen takes from 4K iPhone .mov + synced screen recording | cloud | PROVEN | 2026-11-25 | Audit 1 (7 takes) + Contrarian 2 (7 takes); whole-file trim filter ran out of memory, per-take seek works |
